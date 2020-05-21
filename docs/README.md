@@ -1,0 +1,41 @@
+# C-DEngine Documentation
+
+Thank you for your interest in the C-DEngine – the rapid application development framework for IoT solutions.
+
+With the C-DEngine (pronounced “seed engine”), you can develop distributed solutions connecting local on-premise devices with enterprise and cloud services.
+
+The C-DEngine can automatically generate a modern Natural Machine Interface (NMI) that is compatible with any HTML5-enabled browser running on mobile devices such as tablets, pads, smart phones, and desktop browsers.
+
+This depot contains the current documentation of the C-DEngine. We are constantly working on new documents.
+
+## Coding with the C-DEngine
+
++ [Development Requirements](Coding/PreReqs.md)
++ [Hello World - creating a first host and plugin](Coding/HelloWorld.md)
++ [C-DEngine API Reference Documentation](https://www.C-Labs.com/docu)
+
+## NMI (User Interface) Development
+
+> coming soon!
+
+## Assembling a solution
+
++ [Working with Plugins - a quick introduction](plugins/UsingPlugins.md)
+
+## Concept and White Papers
+
++ [C-DEngine Sensor Pipeline Model](Concepts/SensorPipelineModel.md)
++ [C-DEngine Settings explained](Concepts/C-DEngineSettings.md)
++ [C-DEngine as a Distributed Web Server](Concepts/C-DEngineDWS.md)
++ [C-DEngine ScopeID and User Manager](Concepts/C-DEngineUserManager.md)
++ [C-DEngine Web to Mesh Connectivity (PDF)](Concepts/C-DEngineWeb-to-MeshConnectivity.pdf)
++ [C-DEngine How to Secure on-premises Relay (PDF)](Concepts/C-DEngineSecureOn-premiseRelays.pdf)
+
+## Diagnostics and Trouble Shooting
+
++ [Debugging Certificate Issues with IIS](Diagnostics/DebugginCertIssues.md)
++ [C-DEngine Change History](C-DEngineChangeHistory.md)
+
+If you want to contribute, please create a branch or fork in the corresponding depot and when you finish create a pull request.
+
+If you have any questions or suggestions, feel free to open an issue on GitHub, or contact us at [info@c-labs.com](mailto:info@c-labs.com).
