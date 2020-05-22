@@ -2,7 +2,7 @@
 
 ## Rapid Application Development Platform for distributed Industrial IoT Solutions
 
-This Getting Started Guide walks you through the development of C# source code for a C-DEngine test hose, C-DEngine service running in a simple plugin, the routing of network traffic through the Cloud.
+This Getting Started Guide walks you through the development of C# source code for a C-DEngine test host, C-DEngine service running in a simple plugin, the routing of network traffic through the Cloud.
 
 + The C-DEngine API reference documentation can be found at http://www.C-Labs.com/docu
 
@@ -13,7 +13,7 @@ Have fun and be creative!
 
 ## Creating your first IoT Solution
 
-C-DEngine IoT solution might contain up to four different elements. 
+A C-DEngine IoT solution might contain up to four different elements. 
 1)	A Host Application – An executable program that creates the main operating system process, then starts the C-DEngine. This could be an existing application being connected to the IoT. 
 2)	One or more plugins – these are dynamic link libraries (DLLs) that contain the business logic and device access code for each device type that wants to participate in the IoT solution. Plugins extend the C-DEngine, and can be used for things like device-specific code or protocol-specific code. 
 3)	Web Browser – enables access to the dashboard created by the host application. No additional coding is required for this component. 
@@ -31,18 +31,14 @@ For this Getting Started exercise, we create a console application.
 + We recommend running Visual Studio as Administrator that the host can use the lower level Http.sys functionality for the web server and WebSockets
 + You can use .NET Core or .NET 4.6.2 or higher
 
-2) Add a reference either to our C-DEngine nuget package or if you have cloned our depot, add a reference to the C-DEngine directly
+2) Add a reference to the C-DEngine NuGet package from nuget.org.
+  > If you have cloned the C-DEngine repo, you can add a reference to the C-DEngine directly (see [here](MultiRepoDevelopment.md) for caveats and tips & tricks)
 
-If you want to compile the C-DEngine you need to add a couple references from our depot:
-+ Utilities/cdeNewtonsoft.JSON (the Newtonsoft library is linked into the C-DEngine to make sure our JSON serialization is not compromised by plugins that might bring their own - possibly older version of Newtonsoft)
-+ cdeUpdater (the updater is used to update the C-DEngine and plugins)
-+ Utilities/cdeZlib (our shared project of the ZLib required by the cdeUpdater. This component might be removed soon)
+3) Add a reference to the CDMyNMIHtmlRT NuGet package.
 
-3) Add a reference to the CDMyNMIHtmlRT nuget or the project from our depot
+4) In the main function of your program.cs add this:
 
-4) in the main function of your program.cs add this:
-
-```
+```C#
    TheScopeManager.SetApplicationID("]@wuhZrj2jnz:pOORnEZv523ANgRZ@]hWif;c:[HFNu?");
    TheBaseApplication BaseApp = new TheBaseApplication();
    TheBaseAssets.MyServiceHostInfo = new TheServiceHostInfo(cdeHostType.Application) //Tells the C-DEngine what host type is used.
@@ -79,8 +75,15 @@ If you want to compile the C-DEngine you need to add a couple references from ou
        }
    }
    BaseApp.Shutdown(false, true); //shutdown the engine properly
-```
+``
 
+You'll also need to add some `using` statement at the beginning of your file:
+
+```C#
+using nsCDEngine.BaseClasses;
+using nsCDEngine.Security;
+using nsCDEngine.ViewModels;
+```
 > The same code works for any other host. Important is that you set the corresponding cdeHostType for the different host variations
 
 
