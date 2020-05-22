@@ -1,10 +1,10 @@
 # C-DEngine Documentation
 
-Thank you for your interest in the C-DEngine – the rapid application development framework for IoT solutions.
+Thank you for your interest in the C-DEngine – the rapid development framework for IoT solutions.
 
 With the C-DEngine (pronounced “seed engine”), you can develop distributed solutions connecting local on-premise devices with enterprise and cloud services.
 
-The C-DEngine can automatically generate a modern Natural Machine Interface (NMI) that is compatible with any HTML5-enabled browser running on mobile devices such as tablets, pads, smart phones, and desktop browsers.
+The C-DEngine can automatically generate a modern Natural Machine Interface (NMI) that is compatible with any HTML5-enabled browser running on mobile devices such as tablets, pads, smart phones, and desktop browsers. The NMI automatically provides a combined view of the user interfaces for all the "Things" on each of the nodes in the distributed solution (we call it a "Mesh" of relay nodes).
 
 This depot contains the current documentation of the C-DEngine. We are constantly working on new documents.
 
@@ -35,6 +35,11 @@ This depot contains the current documentation of the C-DEngine. We are constantl
 
 + [Debugging Certificate Issues with IIS](Diagnostics/DebugginCertIssues.md)
 + [C-DEngine Change History](C-DEngineChangeHistory.md)
+
+## FAQs, Tips & Tricks
+
++ [Build/Tooling Idiosyncracies](https://github.com/TRUMPF-IoT/C-DEngine/blob/master/BuildTools/BuildReadme.md)
++ [Developing and Debugging across Repositories](Coding/MultiRepoDevelopment.md)
 
 If you want to contribute, please create a branch or fork in the corresponding depot and when you finish create a pull request.
 

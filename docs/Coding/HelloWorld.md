@@ -2,7 +2,7 @@
 
 ## Rapid Application Development Platform for distributed Industrial IoT Solutions
 
-This Getting Started Guide walks you through the development of C# source code for a C-DEngine test hose, C-DEngine service running in a simple plugin, the routing of network traffic through the Cloud.
+This Getting Started Guide walks you through the development of C# source code for a C-DEngine test host, C-DEngine service running in a simple plugin, the routing of network traffic through the Cloud.
 
 + The C-DEngine API reference documentation can be found at http://www.C-Labs.com/docu
 
@@ -13,36 +13,30 @@ Have fun and be creative!
 
 ## Creating your first IoT Solution
 
-C-DEngine IoT solution might contain up to four different elements. 
-1)	A Host Application – An executable program that creates the main operating system process, then starts the C-DEngine. This could be an existing application being connected to the IoT. 
-2)	One or more plugins – these are dynamic link libraries (DLLs) that contain the business logic and device access code for each device type that wants to participate in the IoT solution. Plugins extend the C-DEngine, and can be used for things like device-specific code or protocol-specific code. 
-3)	Web Browser – enables access to the dashboard created by the host application. No additional coding is required for this component. 
-4)	Cloud Relay – an optional component to enable access from mobile devices. This evaluation version of the C-DEngine uses a shared cloud-relay node. 
+A C-DEngine IoT solution might contain up to four different elements. 
+1. A Host Application – An executable program that creates the main operating system process, then starts the C-DEngine. This could be an existing application being connected to the IoT. 
+2. One or more plugins – these are dynamic link libraries (DLLs) that contain the business logic and device access code for each device type that wants to participate in the IoT solution. Plugins extend the C-DEngine, and can be used for things like device-specific code or protocol-specific code. 
+3. Web Browser – enables access to the dashboard created by the host application. No additional coding is required for this component. 
+4. Cloud Relay – an optional component to enable access from mobile devices. This evaluation version of the C-DEngine uses a shared cloud-relay node. 
 
 ### Creating a C-DEngine Host-Relay Application
 The C-DEngine is a DLL that manages the IoT communication and user interface elements of "Things". It must be hosted in an operating system process. Possible process types include a Windows Service, a Windows Forms application, a console application, or even an ASP.NET Web application.
 One node can relay information to any other node. The host we create here can relay information from locally attached devices, out to a cloud node that than passes the data on to mobile device or perhaps to business applications. Local mobile phones can connect directly to this host-node without the need to connect to the cloud/internet.
 
 
-### A Console Host in 4 steps:
+### A Console Host in 3 steps:
 For this Getting Started exercise, we create a console application. 
 
-1) Open Visual Studio 2019 and create a new project of type "Console Application". 
-+ We recommend running Visual Studio as Administrator that the host can use the lower level Http.sys functionality for the web server and WebSockets
-+ You can use .NET Core or .NET 4.6.2 or higher
+1. Open Visual Studio 2019 and create a new project of type "Console Application".
+    > We recommend running Visual Studio as Administrator so that the host can use the lower level Http.sys functionality for the web server and WebSockets
+    > You can use .NET Core or .NET 4.6.2 or higher
 
-2) Add a reference either to our C-DEngine nuget package or if you have cloned our depot, add a reference to the C-DEngine directly
+2. Add a reference to the C-DEngine and CDMyNMIHtmlRT NuGet packages (available on nuget.org).
+    > If you have cloned the C-DEngine or cdeNMI repos, you can add a reference to the C-DEngine project directly (see [here](MultiRepoDevelopment.md) for caveats and tips & tricks)
 
-If you want to compile the C-DEngine you need to add a couple references from our depot:
-+ Utilities/cdeNewtonsoft.JSON (the Newtonsoft library is linked into the C-DEngine to make sure our JSON serialization is not compromised by plugins that might bring their own - possibly older version of Newtonsoft)
-+ cdeUpdater (the updater is used to update the C-DEngine and plugins)
-+ Utilities/cdeZlib (our shared project of the ZLib required by the cdeUpdater. This component might be removed soon)
+3. In the main function of your program.cs add this:
 
-3) Add a reference to the CDMyNMIHtmlRT nuget or the project from our depot
-
-4) in the main function of your program.cs add this:
-
-```
+```C#
    TheScopeManager.SetApplicationID("]@wuhZrj2jnz:pOORnEZv523ANgRZ@]hWif;c:[HFNu?");
    TheBaseApplication BaseApp = new TheBaseApplication();
    TheBaseAssets.MyServiceHostInfo = new TheServiceHostInfo(cdeHostType.Application) //Tells the C-DEngine what host type is used.
@@ -79,6 +73,14 @@ If you want to compile the C-DEngine you need to add a couple references from ou
        }
    }
    BaseApp.Shutdown(false, true); //shutdown the engine properly
+```
+
+You'll also need to add some `using` statements at the beginning of your file:
+
+```C#
+using nsCDEngine.BaseClasses;
+using nsCDEngine.Security;
+using nsCDEngine.ViewModels;
 ```
 
 > The same code works for any other host. Important is that you set the corresponding cdeHostType for the different host variations
@@ -144,15 +146,14 @@ Plugins contain business logic, such as
 + algorithms for data pre-(edge)-processing 
 + User interface code for dashboards 
 
-1) Create a new class library (.NET Standard) in your solution and name it "CDMyTestPlugin"
+1. Create a new class library (.NET Standard) in your solution and name it "CDMyTestPlugin"
+    > It is important that the plugin starts with "CDMy" (spoken "seed my ..."). The C-DEngine will try to load plugins with this prefix automatically
 
-> it is important that the plugin starts with "CDMy" (spoken "seed my ..."). The C-DEngine will try to load plugins with this prefix automatically
+2. Add a reference to the C-DEngine as you did for the host
 
-2) Add a reference to the C-DEngine as you did for the host
+3. In the created "Class.cs" exchange all the code with these lines:
 
-3) in the created "Class.cs" exchange all the code with these lines:
-
-```
+```C#
 using nsCDEngine.Engines;
 using nsCDEngine.Engines.NMIService;
 using nsCDEngine.Engines.ThingService;
@@ -193,7 +194,7 @@ namespace CDMyTestPlugin
 }
 ```
 
-4) add your new library as a reference to your Host 
+4. Add your new library as a reference to your Host 
 
 ### Done!
 
