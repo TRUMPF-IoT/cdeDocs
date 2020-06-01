@@ -76,12 +76,12 @@ The Scope ID is a Base32 string with up to 8 characters.
 3) Select NMI Admin and you can see a variety of options.
 ***TODO: Explain NMI Admin here***
 
-TO
+To stop the host, simple press ESC in the console. If you have the browser open you will see that you get immediately logged out of the NMI when the host stops.
 
 ## Adding plugins from our Plugins Depot
-The cdePlugins depot on GitHub has several plugins we can now add to the project. 
+The cdePlugins depot on GitHub has several plugins we can now add to the project. You can clone the projects 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY1OTkzNzE4LC01MTcwMjkwMDAsNjA0Nz
-M5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJd
-fQ==
+eyJoaXN0b3J5IjpbLTEwODI0NDU1NiwtNTE3MDI5MDAwLDYwND
+czOTg5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAy
+XX0=
 -->
