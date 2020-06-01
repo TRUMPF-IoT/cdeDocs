@@ -55,8 +55,12 @@ While the host is running, you can enter "b" in the console and a Brower will op
 **Resource http://yourpc:yourport/lnmi not found***
 Right now the C-DEngine is running in headless mode. We will add the NMI in the next step.
 
+## Adding the NMI Plugin to the Host
+Adding the NMI Runtime to the project is as easy as adding a NuGet:
+1) Open the Nuget Manager and browser for "NMI"
+> you will find a
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjc5NTU2NTcsLTUxNzAyOTAwMCw2MD
-Q3Mzk4OTgsLTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIw
-Ml19
+eyJoaXN0b3J5IjpbLTk0OTE4OTI5OCwtNTE3MDI5MDAwLDYwND
+czOTg5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAy
+XX0=
 -->
