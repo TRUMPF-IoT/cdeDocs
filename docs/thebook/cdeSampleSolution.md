@@ -83,10 +83,12 @@ The cdePlugins depot on GitHub has several plugins we can now add to the project
 
 >C-DEngine automatically recognizes plugins by the prefix "CDMy" or "C-DMy". Therefore its very simple to add new plugins to NuGet and the bin folder
 
-1) Clone the depot to your local drive
+If you want to use the source...
+1) Clone the "cdePlugins" depot to your local drive
+2) Add the project "src/040 - C-DMyComputer (PC)"
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwND
-czOTg5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAy
-XX0=
+eyJoaXN0b3J5IjpbMTg3NjU2NDgzMywxODk5MDY1NDkwLC01MT
+cwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYx
+LDEwMDcwNjMyMDJdfQ==
 -->
