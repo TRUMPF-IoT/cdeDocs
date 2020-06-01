@@ -46,7 +46,7 @@ The rest of the source is fairly self explanatory but I want to point out a coup
 The C-DEngine can ensure that only plugins are loaded that have the proper code signing certificate. Code signing requires a certificate and some extra build steps. For simplicity you can turn Code Signing off during development by setting "DontVerifyTrust=true". 
 >If you are interested in Code Signing, please contact us and we will write more about it
 
-
+### DontVerifyTrust=true
 
 
 ### Creating a Plugin
@@ -56,6 +56,6 @@ The C-DEngine can ensure that only plugins are loaded that have the proper code 
 ### Customizing the NMI with Skins
 ### Securing the Host (SSL/TLS configuration)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MT
-E1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTUzNzkwNDYyMCw2MDQ3Mzk4OTgsLTQyNz
+czOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
 -->
