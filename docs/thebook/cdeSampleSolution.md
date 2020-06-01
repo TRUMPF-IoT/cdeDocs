@@ -36,7 +36,8 @@ The C-DEngine is a DLL that contains all the necessary services required to crea
 2) Name the project "cdeHostNetCore"
 >After a short time you will see a small project with a program.cs and the C-DEngine icon.
 3) Open the program.cs and make one change in line 36 by creating a new GUID with the GuidTool shipping with Visual Studio and pasting the guid in the line.
-
+4) run the project and look at the console output
+>If you see any error in the console, you most likely have a port conflict and something else already uses port 80. If so change line 39 and 43 to use any open 
 
 ### Creating a Plugin
 ### Connecting to the cloud relay
@@ -45,6 +46,6 @@ The C-DEngine is a DLL that contains all the necessary services required to crea
 ### Customizing the NMI with Skins
 ### Securing the Host (SSL/TLS configuration)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MTc2MjE4OCwtNDI3NzM5ODA2LDI5OT
-ExNTk2MSwxMDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbLTE2NTIzODU1NDYsLTQyNzczOTgwNiwyOT
+kxMTU5NjEsMTAwNzA2MzIwMl19
 -->
