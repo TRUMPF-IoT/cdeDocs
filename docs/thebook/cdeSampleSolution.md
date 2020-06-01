@@ -62,11 +62,15 @@ You will find the CDMyNMIHtml5RT package - just add it to the project. You don't
 
 If you now enter "b" in the console the browser is showing a login screen.
 By default the program.cs creates a random Scope for the host (in line 98).
-You can create a different Scope for
+You can create a different Scope for easier development as the Scope will change every time you restart the host.
 
+You will find the Scope ID in the console in the second line of the output:
 
+```Scope ID: XXXXXXXX```
+
+The Scope ID is a Base32 string with up to 8 char
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NTg2MjAxLC01MTcwMjkwMDAsNjA0Nz
-M5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJd
-fQ==
+eyJoaXN0b3J5IjpbLTIxNzQ1NDk2NCwtNTE3MDI5MDAwLDYwND
+czOTg5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAy
+XX0=
 -->
