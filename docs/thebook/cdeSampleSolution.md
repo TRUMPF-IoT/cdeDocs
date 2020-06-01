@@ -1,4 +1,4 @@
-# C-DEngine Tutorial
+# C-DEngine Solution Tutorial
 This tutorial will walk you step by step through the development process of a C-DEngine bases solution.
 
 ## Computer Health Monitoring - A sample Solution for the C-DEngine
@@ -29,7 +29,7 @@ Make sure you have the following options installed when you install VS:
 We also recommend that you install the Visual Studio Project Templates for the C-DEngine. You can find the VSIX here: https://github.com/TRUMPF-IoT/cdeSDK/releases/download/5.105.0/CDEngineSDKTemplates.vsix
 
 ### Creating a host
-The C-DEngine is a DLL that contains all the necessary services required to create an applicaiton.
+The C-DEngine is a DLL that contains all the necessary services required to create an application but it does require a host to run in. The C-DEngine supports a variety of hosts like IIS, ASP.NET, Docker, Console or Windows Service. This Tutorial will use a .NET Cor
 First we need to create a host application for the C
 
 
@@ -40,6 +40,6 @@ First we need to create a host application for the C
 ### Customizing the NMI with Skins
 ### Securing the Host (SSL/TLS configuration)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNz
-A2MzIwMl19
+eyJoaXN0b3J5IjpbLTEyOTUxMTU0NzEsLTQyNzczOTgwNiwyOT
+kxMTU5NjEsMTAwNzA2MzIwMl19
 -->
