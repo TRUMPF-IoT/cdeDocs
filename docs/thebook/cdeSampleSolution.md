@@ -46,16 +46,17 @@ The rest of the source is fairly self explanatory but I want to point out a coup
 The C-DEngine can ensure that only plugins are loaded that have the proper code signing certificate. Code signing requires a certificate and some extra build steps. For simplicity you can turn Code Signing off during development by setting "DontVerifyTrust=true". 
 >If you are interested in Code Signing, please contact us and we will write more about it
 
-### DontVerifyTrust=true
-
+### UseRandomDeviceID=true
+For development it can help to always start the host fresh without storing any information on your Harddrive. This switch turns off all state management and gives the host a new DeviceID with every new start.
 
 ### Creating a Plugin
 ### Connecting to the cloud relay
+### Diagnose any issues
 ### Adding another node to the mesh
 ### Creating an installer
 ### Customizing the NMI with Skins
 ### Securing the Host (SSL/TLS configuration)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNzkwNDYyMCw2MDQ3Mzk4OTgsLTQyNz
-czOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbNTQxMDM2NzAzLDYwNDczOTg5OCwtNDI3Nz
+M5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
