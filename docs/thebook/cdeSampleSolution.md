@@ -53,14 +53,9 @@ The C-DEngine can ensure that only plugins are loaded that have the proper code 
 ### UseRandomDeviceID=true
 For development it can help to always start the host fresh without storing any information on your Harddrive. This switch turns off all state management and gives the host a new DeviceID with every new start. If you keep this as the default (false) the DeviceID and other state information are saved in a folder under your bin file: "ClientBin/cache". You can delete this folder to start fresh with the host again.
 
-### Creating a Plugin
-### Connecting to the cloud relay
-### Diagnose any issues
-### Adding another node to the mesh
-### Creating an installer
-### Customizing the NMI with Skins
-### Securing the Host (SSL/TLS configuration)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNzAyOTAwMCw2MDQ3Mzk4OTgsLTQyNz
-czOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbMjAwMTU4NTEyLC01MTcwMjkwMDAsNjA0Nz
+M5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJd
+fQ==
 -->
