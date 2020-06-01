@@ -29,8 +29,9 @@ Make sure you have the following options installed when you install VS:
 We also recommend that you install the Visual Studio Project Templates for the C-DEngine. You can find the VSIX here: https://github.com/TRUMPF-IoT/cdeSDK/releases/download/5.105.0/CDEngineSDKTemplates.vsix
 
 ### Creating a host
-The C-DEngine is a DLL that contains all the necessary services required to create an application but it does require a host to run in. The C-DEngine supports a variety of hosts like IIS, ASP.NET, Docker, Console or Windows Service. This Tutorial will use a .NET Cor
-First we need to create a host application for the C
+The C-DEngine is a DLL that contains all the necessary services required to create an application but it does require a host to run in. The C-DEngine supports a variety of hosts like IIS, ASP.NET, Docker, Console or Windows Service. This Tutorial will use a .NET Core Console host.
+
+1) To create the host, launch Visual Studio 2019 as Admin and create a new Project using the template "
 
 
 ### Creating a Plugin
@@ -40,6 +41,6 @@ First we need to create a host application for the C
 ### Customizing the NMI with Skins
 ### Securing the Host (SSL/TLS configuration)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTUxMTU0NzEsLTQyNzczOTgwNiwyOT
-kxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbOTI2NjQ1NTkwLC00Mjc3Mzk4MDYsMjk5MT
+E1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
