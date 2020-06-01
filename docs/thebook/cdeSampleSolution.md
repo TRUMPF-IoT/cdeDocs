@@ -31,7 +31,8 @@ We also recommend that you install the Visual Studio Project Templates for the C
 ### Creating a host
 The C-DEngine is a DLL that contains all the necessary services required to create an application but it does require a host to run in. The C-DEngine supports a variety of hosts like IIS, ASP.NET, Docker, Console or Windows Service. This Tutorial will use a .NET Core Console host.
 
-1) To create the host, launch Visual Studio 2019 as Admin and create a new Project using the template "Console Host App for C-Labs 
+1) To create the host, launch Visual Studio 2019 as Admin and create a new Project using the template "Console Host App for C-Labs C-DEngine (.NET Core)".
+> We want to use the kernel http.sys as the WebServer for the host. Only admin has access to the http.sys. If you launch VS without admin, you can still create a host but the C-DEngine will revert back to a use
 
 
 ### Creating a Plugin
@@ -41,6 +42,6 @@ The C-DEngine is a DLL that contains all the necessary services required to crea
 ### Customizing the NMI with Skins
 ### Securing the Host (SSL/TLS configuration)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTAzOTY3MzUsLTQyNzczOTgwNiwyOT
-kxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbNjcxNzg2NDUwLC00Mjc3Mzk4MDYsMjk5MT
+E1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
