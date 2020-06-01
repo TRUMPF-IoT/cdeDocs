@@ -29,7 +29,7 @@ Make sure you have the following options installed when you install VS:
 We also recommend that you install the Visual Studio Project Templates for the C-DEngine. You can find the VSIX here.
 
 ### Creating a host
-The C-DEngine is a DLL that contains all the neceds
+The C-DEngine is a DLL that contains all the necessary services required to create an applicaiton.
 First we need to create a host application for the C
 
 
@@ -40,5 +40,5 @@ First we need to create a host application for the C
 ### Customizing the NMI with Skins
 ### Securing the Host (SSL/TLS configuration)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNjYwOTIxNywxMDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
