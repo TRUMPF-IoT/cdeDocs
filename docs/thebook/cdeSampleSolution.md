@@ -28,7 +28,7 @@ Make sure you have the following options installed when you install VS:
 
 We also recommend that you install the Visual Studio Project Templates for the C-DEngine. You can find the VSIX here: https://github.com/TRUMPF-IoT/cdeSDK/releases/download/5.105.0/CDEngineSDKTemplates.vsix
 
-### Creating a host
+## Creating a host
 The C-DEngine is a DLL that contains all the necessary services required to create an application but it does require a host to run in. The C-DEngine supports a variety of hosts like IIS, ASP.NET, Docker, Console or Windows Service. This Tutorial will use a .NET Core Console host.
 
 1) To create the host, launch Visual Studio 2019 as Admin and create a new Project using the template "Console Host App for C-Labs C-DEngine (.NET Core)" in your favorite project folder
@@ -41,6 +41,9 @@ The C-DEngine is a DLL that contains all the necessary services required to crea
 
 >If you are running VS as admin, you can use the same port for HTTP (MyStationPort) and WebSockets (MyStationWSPort). The http.sys can share the same port for http and websockets. If you are not running under admin, you have to specify a different port for the WebSockets.
 
+The rest of the source is fairly self explanatory but I want to point out a couple details:
+#### DontVerifyTrust=true
+The 
 
 
 
@@ -51,6 +54,6 @@ The C-DEngine is a DLL that contains all the necessary services required to crea
 ### Customizing the NMI with Skins
 ### Securing the Host (SSL/TLS configuration)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMzIwMDQyNiwtNDI3NzM5ODA2LDI5OT
-ExNTk2MSwxMDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbMTcyNjMwOTc3LC00Mjc3Mzk4MDYsMjk5MT
+E1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
