@@ -26,7 +26,7 @@ Make sure you have the following options installed when you install VS:
 * Universal Windows Platform Development (if you want to include the C-DEngine in a UWP application)
 * .NET Core cross-platform development
 
-We also recommend that you install the Visual Studio Project Templates for the C-DEngine. You can find the VSIX here.
+We also recommend that you install the Visual Studio Project Templates for the C-DEngine. You can find the VSIX here.https://github.com/TRUMPF-IoT/cdeSDK/releases/download/5.105.0/CDEngineSDKTemplates.vsix
 
 ### Creating a host
 The C-DEngine is a DLL that contains all the necessary services required to create an applicaiton.
@@ -40,5 +40,6 @@ First we need to create a host application for the C
 ### Customizing the NMI with Skins
 ### Securing the Host (SSL/TLS configuration)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTEwMTgwOTM2MTAsMjk5MTE1OTYxLDEwMD
+cwNjMyMDJdfQ==
 -->
