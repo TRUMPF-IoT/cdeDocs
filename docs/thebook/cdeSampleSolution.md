@@ -79,9 +79,12 @@ The Scope ID is a Base32 string with up to 8 characters.
 To stop the host, simple press ESC in the console. If you have the browser open you will see that you get immediately logged out of the NMI when the host stops.
 
 ## Adding plugins from our Plugins Depot
-The cdePlugins depot on GitHub has several plugins we can now add to the project. You can clone the projects 
+The cdePlugins depot on GitHub has several plugins we can now add to the project. We are working on publishing all plugins as NuGets as well. You can Browser for Compatible plugins by searching for "CDMy" in the NuGet Pac
+
+1) Clone the depot to your local drive
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODI0NDU1NiwtNTE3MDI5MDAwLDYwND
-czOTg5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAy
-XX0=
+eyJoaXN0b3J5IjpbOTM0NjEwNzE4LC01MTcwMjkwMDAsNjA0Nz
+M5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJd
+fQ==
 -->
