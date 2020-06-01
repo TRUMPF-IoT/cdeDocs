@@ -73,9 +73,10 @@ The Scope ID is a Base32 string with up to 8 characters.
 2) Enter the Scope ID in the Login dialog and click on "Set Security ID"
 
 >You will now see the minimalist NMI (Natural Machine Interface) of the Host. 
-3) 
+3) Select NMI Admin and you can see a variety of options.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMDgwOTk1NywtNTE3MDI5MDAwLDYwND
-czOTg5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAy
-XX0=
+eyJoaXN0b3J5IjpbLTE0MzIwMDUzMDksLTUxNzAyOTAwMCw2MD
+Q3Mzk4OTgsLTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIw
+Ml19
 -->
