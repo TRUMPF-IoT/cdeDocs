@@ -58,9 +58,11 @@ Right now the C-DEngine is running in headless mode. We will add the NMI in the 
 ## Adding the NMI Plugin to the Host
 Adding the NMI Runtime to the project is as easy as adding a NuGet:
 1) Open the Nuget Manager and browser for "NMI"
-> you will find a
+You will find the CDMyNMIHtml5RT package - just add it to the project. You don't have to do anything to your program.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0OTE4OTI5OCwtNTE3MDI5MDAwLDYwND
+eyJoaXN0b3J5IjpbMTcxMjMwMzUyOCwtNTE3MDI5MDAwLDYwND
 czOTg5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAy
 XX0=
 -->
