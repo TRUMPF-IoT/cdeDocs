@@ -39,7 +39,9 @@ The C-DEngine is a DLL that contains all the necessary services required to crea
 4) run the project and look at the console output
 >If you see any error in the console, you most likely have a port conflict and something else already uses port 80. If so change line 39 and 43 to use any open port. Our recommendation is to use ports higher than 8700.
 
->If you are running VS as admin, you can use the same port for HTTP (MyStationPort) and WebSockets (MyStationWSPort). If you are not running under admin yo
+>If you are running VS as admin, you can use the same port for HTTP (MyStationPort) and WebSockets (MyStationWSPort). The http.sys can share the same port for http and websockets. If you are not running under admin, you have to specify a different port for the WebSockets.
+
+
 
 
 ### Creating a Plugin
@@ -49,6 +51,6 @@ The C-DEngine is a DLL that contains all the necessary services required to crea
 ### Customizing the NMI with Skins
 ### Securing the Host (SSL/TLS configuration)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTQ4NTk1NjEsLTQyNzczOTgwNiwyOT
-kxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbMjExMzIwMDQyNiwtNDI3NzM5ODA2LDI5OT
+ExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
