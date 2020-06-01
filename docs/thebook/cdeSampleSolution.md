@@ -34,7 +34,9 @@ The C-DEngine is a DLL that contains all the necessary services required to crea
 1) To create the host, launch Visual Studio 2019 as Admin and create a new Project using the template "Console Host App for C-Labs C-DEngine (.NET Core)" in your favorite project folder
 > We want to use the kernel http.sys as the WebServer for the host. Only admin has access to the http.sys. If you launch VS without admin, you can still create a host but the C-DEngine will revert back to a user-mode web server that has less performance.
 2) Name the project "cdeHostNetCore"
->After a short 
+>After a short time you will see a small project with a program.cs and the C-DEngine icon.
+3) Open the program.cs and make one change in line 36 by creating a new GUID with the GuidTool shipping with Visual Studio and pasting the guid in the line.
+
 
 ### Creating a Plugin
 ### Connecting to the cloud relay
@@ -43,6 +45,6 @@ The C-DEngine is a DLL that contains all the necessary services required to crea
 ### Customizing the NMI with Skins
 ### Securing the Host (SSL/TLS configuration)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI3NTE4NDEzLC00Mjc3Mzk4MDYsMjk5MT
-E1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTI4MTc2MjE4OCwtNDI3NzM5ODA2LDI5OT
+ExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
