@@ -41,10 +41,6 @@ The C-DEngine is a DLL that contains all the necessary services required to crea
 
 >If you are running VS as admin, you can use the same port for HTTP (MyStationPort) and WebSockets (MyStationWSPort). The http.sys can share the same port for http and websockets. If you are not running under admin, you have to specify a different port for the WebSockets.
 
-While the host is running, you can enter "b" in the console and a Brower will open with the User Interface of the node. As we have no NMI Runtime installed, yet, the browser will only show:
-
-**Resource http://yourpc:yourport/lnmi not found***
-
 The source of the host is fairly self explanatory but I want to point out a couple details:
 #### DontVerifyTrust=true
 The C-DEngine can ensure that only plugins are loaded that have the proper code signing certificate. Code signing requires a certificate and some extra build steps. For simplicity you can turn Code Signing off during development by setting "DontVerifyTrust=true". 
@@ -53,9 +49,14 @@ The C-DEngine can ensure that only plugins are loaded that have the proper code 
 ### UseRandomDeviceID=true
 For development it can help to always start the host fresh without storing any information on your Harddrive. This switch turns off all state management and gives the host a new DeviceID with every new start. If you keep this as the default (false) the DeviceID and other state information are saved in a folder under your bin file: "ClientBin/cache". You can delete this folder to start fresh with the host again.
 
+### ...meanwhile...
+While the host is running, you can enter "b" in the console and a Brower will open with the User Interface of the node. As we have no NMI Runtime installed, yet, the browser will only show:
+
+**Resource http://yourpc:yourport/lnmi not found***
+Right now the C-DEngine is running in headless mode. We will add the NMI in the next step.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMTU4NTEyLC01MTcwMjkwMDAsNjA0Nz
-M5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJd
-fQ==
+eyJoaXN0b3J5IjpbLTEzMjc5NTU2NTcsLTUxNzAyOTAwMCw2MD
+Q3Mzk4OTgsLTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIw
+Ml19
 -->
