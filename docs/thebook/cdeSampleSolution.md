@@ -74,9 +74,14 @@ The Scope ID is a Base32 string with up to 8 characters.
 
 >You will now see the minimalist NMI (Natural Machine Interface) of the Host. 
 3) Select NMI Admin and you can see a variety of options.
+***TODO: Explain NMI Admin here***
 
+TO
+
+## Adding plugins from our Plugins Depot
+The cdePlugins depot on GitHub has several plugins we can now add to the project. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzIwMDUzMDksLTUxNzAyOTAwMCw2MD
-Q3Mzk4OTgsLTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIw
-Ml19
+eyJoaXN0b3J5IjpbNDY1OTkzNzE4LC01MTcwMjkwMDAsNjA0Nz
+M5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJd
+fQ==
 -->
