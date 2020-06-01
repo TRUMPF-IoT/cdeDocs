@@ -37,7 +37,10 @@ The C-DEngine is a DLL that contains all the necessary services required to crea
 >After a short time you will see a small project with a program.cs and the C-DEngine icon.
 3) Open the program.cs and make one change in line 36 by creating a new GUID with the GuidTool shipping with Visual Studio and pasting the guid in the line.
 4) run the project and look at the console output
->If you see any error in the console, you most likely have a port conflict and something else already uses port 80. If so change line 39 and 43 to use any open 
+>If you see any error in the console, you most likely have a port conflict and something else already uses port 80. If so change line 39 and 43 to use any open port. Our recommendation is to use ports higher than 8700.
+
+>If you are running VS as admin, you can use the same port for HTTP (MyStationPort) and WebSockets (MyStationWSPort). If you are not running under admin yo
+
 
 ### Creating a Plugin
 ### Connecting to the cloud relay
@@ -46,6 +49,6 @@ The C-DEngine is a DLL that contains all the necessary services required to crea
 ### Customizing the NMI with Skins
 ### Securing the Host (SSL/TLS configuration)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTIzODU1NDYsLTQyNzczOTgwNiwyOT
+eyJoaXN0b3J5IjpbLTEwMTQ4NTk1NjEsLTQyNzczOTgwNiwyOT
 kxMTU5NjEsMTAwNzA2MzIwMl19
 -->
