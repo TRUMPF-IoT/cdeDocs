@@ -68,9 +68,14 @@ You will find the Scope ID in the console in the second line of the output:
 
 ```Scope ID: XXXXXXXX```
 
-The Scope ID is a Base32 string with up to 8 char
+The Scope ID is a Base32 string with up to 8 characters.
+
+2) Enter the Scope ID in the Login dialog and click on "Set Security ID"
+
+>You will now see the minimalist NMI (Natural Machine Interface) of the Host. 
+3) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNzQ1NDk2NCwtNTE3MDI5MDAwLDYwND
+eyJoaXN0b3J5IjpbMTYzMDgwOTk1NywtNTE3MDI5MDAwLDYwND
 czOTg5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAy
 XX0=
 -->
