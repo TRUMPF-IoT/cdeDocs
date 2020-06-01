@@ -43,7 +43,9 @@ The C-DEngine is a DLL that contains all the necessary services required to crea
 
 The rest of the source is fairly self explanatory but I want to point out a couple details:
 #### DontVerifyTrust=true
-The C-DEngine can ensure that only plugins are loaded that have the proper code signing certificate. Code signing requires a certificate and some extra build steps. For simplicity you can turn Code Signing off during development by setting "DontVerifyTrust=t
+The C-DEngine can ensure that only plugins are loaded that have the proper code signing certificate. Code signing requires a certificate and some extra build steps. For simplicity you can turn Code Signing off during development by setting "DontVerifyTrust=true". 
+>If you are interested in Code Signing, please contact us and we will write more about it
+
 
 
 
@@ -54,6 +56,6 @@ The C-DEngine can ensure that only plugins are loaded that have the proper code 
 ### Customizing the NMI with Skins
 ### Securing the Host (SSL/TLS configuration)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU2MDc2NzI5LC00Mjc3Mzk4MDYsMjk5MT
+eyJoaXN0b3J5IjpbNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MT
 E1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
