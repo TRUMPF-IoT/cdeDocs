@@ -122,11 +122,13 @@ This brings you back to the main portal
 
 In the "Friendly Name" column you will find your "Google DNS" thing.
 To the left are three buttons:
-***First Button***: 
+***First Button***: Jump to the Thing's NMI
+***Second Button***: This button allows you to download the JSON description of the Thing
+***Third Button***:  This button gives you some more options to analyse your Thing.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjEyNTIxMzksLTkyNjc4MDI3LC0xMD
+eyJoaXN0b3J5IjpbLTE1MTUzMjY3NDIsLTkyNjc4MDI3LC0xMD
 cxNDg4OSwyMTE4MTk3ODc5LDE4NzY1NjQ4MzMsMTg5OTA2NTQ5
 MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwtNDI3NzM5ODA2LDI5OT
 ExNTk2MSwxMDA3MDYzMjAyXX0=
