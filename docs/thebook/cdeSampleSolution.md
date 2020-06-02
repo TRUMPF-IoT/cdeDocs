@@ -197,11 +197,14 @@ This page has multiple sections that are important for diagnostics:
 #### "NodeInfo"
 This section shows a summary of basic information of the node the status page is called from. The section is fairly self explanatory.
 #### "Status of Engines"
-This table shows a list of all currently running "Engines". An Engine (aka "Service") is the main entry point of 
+This table shows a list of all currently running "Engines". 
+>An Engine (aka "Service") is a container service managing one or more "Things". Plugins can have one or more Engines/Services. Most plugins have only one service for better management. 
+
+You can see the version of a service and the last me
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NjYwMjY4NywtODYzNTIxNzUwLDM0ND
+eyJoaXN0b3J5IjpbMTA4OTk0MDkwMiwtODYzNTIxNzUwLDM0ND
 Y5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcs
 LTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MD
 Y1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYs
