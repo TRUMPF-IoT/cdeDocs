@@ -131,10 +131,14 @@ To the left are three buttons:
 Things in the C-DEngine only consists of Properties! All of which are stored in the ThingRegistry (class name: TheThingRegistry). Developer can access things via TheThingRegistry APIs.
 
 ***DESCRIBE MORE OPTIONS ON THINGS***
+## Connecting the Host to the Cloud Relay
 
+Solutions with the C-DEngine can run completely on premises without the need for an internet connection. 
+But if an internet connection is available, the C-DEngine can easily be con
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NTY2NjcsLTE5MjM4NTg3OTUsLTkyNj
-c4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1NjQ4MzMs
-MTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwtNDI3Nz
-M5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbMTU0NDI1NzMzMywxOTk1NjY2NywtMTkyMz
+g1ODc5NSwtOTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4Nzks
+MTg3NjU2NDgzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0Nz
+M5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJd
+fQ==
 -->
