@@ -15,10 +15,11 @@ We go through the following steps:
 6) Diagnosing issues with Relays
 7) Communication between Plugins
 8) Using the Rules Engine
-9) Creating an installer for the Solution
-10) Publishing the installer to the WinGet Depot
-11) Customizing the NMI Skin
-12) Securing the Host using SSL
+9) Adding a local node to your mesh
+10) Creating an installer for the Solution
+11) Publishing the installer to the WinGet Depot
+12) Customizing the NMI Skin
+13) Securing the Host using SSL
 
 ## Getting Visual Studio Ready
 
@@ -219,11 +220,15 @@ The next tables show connected nodes - either out bound or inbound depending on 
 
 > "Passive" Nodes cannot actively connect to other nodes and wait for other nodes to connect to them. A Cloud Relay is a passive node as a cloud relay will never actively connect to another node
 
-> "Relay" nodes can do both - connect to other nodes and have other nodes connect to them. The local host you created during this tutorial is one of the "Relay nodes" as it can connect actively to a Cloud Relay and other nodes can connect to it.
+> "Relay" nodes can do both - connect to other nodes and have other nodes connect to them. The local host you created during this tutorial is one of the "Relay nodes" as it can connect actively to a Cloud Relay and other nodes can connect to it. In Step 9 we show how to local nodes can talk to each other creating a bigger mesh.
+
+The cdeStatus.aspx page has several other options you can explore:
+
+cdeStatus.aspx?SUBDET
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwODg4NjQyNCw3NzU3ODI4MjUsLTg2Mz
-UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
-LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
-Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
-NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbLTE1MTM5MDI5MjQsNzc1NzgyODI1LC04Nj
+M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
+LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
+Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
+LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
 -->
