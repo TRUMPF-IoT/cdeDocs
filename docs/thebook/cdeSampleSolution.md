@@ -29,7 +29,7 @@ You only have to do very little coding during this tutorial. The plugins we are 
 + CDMyVThings: A variety of virtual things, algorithm and helpers (Pre-Processor)
 + CDMyRulesEngine: A minimalistic rules engine to act on trigger (Pre-Processor)
 + CDMyPrometheus: An exporter plugin for prometheus scrapers (Connector)
-+ 
++ CDMyVisitorLog: a plugin that can identify and count incoming connections (Pre-Processor)
 
 ## Getting Visual Studio Ready
 
@@ -300,9 +300,9 @@ To learn more about all the settings for the C-DEngine visit this page:
 ### C-DEngine KPIs
 The C-DEngine has many KPIs that can be used to measure its performance over time. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA1OTA5NzIwLDc3NTc4MjgyNSwtODYzNT
-IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
-OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
-gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
-Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTE1ODkwMjIxMzIsNzc1NzgyODI1LC04Nj
+M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
+LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
+Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
+LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
 -->
