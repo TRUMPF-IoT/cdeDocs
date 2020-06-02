@@ -368,11 +368,15 @@ Go and login to the cloud.c-labs.com/nmi to see the same dashboards you just cre
 Go and play a little with the V-Things plugin. There is a documentation on the V-Things plugins here: [https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/plugins/066-VThing.md](https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/plugins/066-VThing.md)
 
 If you have loaded the CDMyVThings plugin as source you will find references to the "cdeSensorTemplate" NuGet from the cdeSDK depot. This shared project just contains the APIs to create the Sensor Template used by the "Virtual Sensor". You can include that NuGet in your project and add the Sensor Dashboard to any of your plugins. We will do this later in the "Custom Plugin" chapter.
+
+### Export of KPIs to Prometheus
+
+One of the most important diagnostics options is to output all the KPIs of the C-DEngine via the CDMyPrometheus plugin that the KPIs can be consumed by a Prometheus scraper and visualized in Grafana.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMz
-g1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMzQ0Njk2NzA2
-LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAyNywtMTA3MT
-Q4ODksMjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OTkwNjU0OTAs
-LTUxNzAyOTAwMCw2MDQ3Mzk4OTgsLTQyNzczOTgwNiwyOTkxMT
-U5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbLTk1ODg4NDM3OSw0NTc0OTQwMDIsLTE5OT
+cxNzg4OTEsMTEzODUxMDU4Myw3NzU3ODI4MjUsLTg2MzUyMTc1
+MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUsLTkyNj
+c4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1NjQ4MzMs
+MTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwtNDI3Nz
+M5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
