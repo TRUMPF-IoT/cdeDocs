@@ -19,10 +19,14 @@ We go through the following steps:
 10) Publishing the installer to the WinGet Depot
 11) Customizing the NMI Skin
 12) Securing the Host using SSL
-13) 
+13) Creating your own custom plugin
 
 During the tutorial we will make use of a variety of existing plugins.
-You only have to do very little coding during the tutorial
+You only have to do very little coding during this tutorial. The plugins we are using are:
+
++ CMyNetwork: A ping round-trip meter (Digital Twin)
++ CDMyComputer: a health monitor for your hosting PC (Digital Twin)
++ CDMyVThings: A variety of 
 
 ## Getting Visual Studio Ready
 
@@ -293,7 +297,7 @@ To learn more about all the settings for the C-DEngine visit this page:
 ### C-DEngine KPIs
 The C-DEngine has many KPIs that can be used to measure its performance over time. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4Nzk1Mjc5OSw3NzU3ODI4MjUsLTg2Mz
+eyJoaXN0b3J5IjpbLTgyNjcyNTY3Myw3NzU3ODI4MjUsLTg2Mz
 UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
 LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
 Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
