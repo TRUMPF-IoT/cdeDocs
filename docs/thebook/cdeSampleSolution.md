@@ -242,11 +242,14 @@ This is basically the reverse lookup to the previous section. It shows all Scope
 Use this to find out if all expected nodes in a mesh are indeed connected to the same mesh.
 
 #### All known Nodes: XX
-This section shows all known noes
+This section shows all known nodes current connected to the local host.
+XX tells you how many nodes are connected.
+
+Each Node connected also shows the services running on the node, their scope (hash) and in brackets the telegrams sent by the serv
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTMwMDU4NzYsNzc1NzgyODI1LC04Nj
-M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
-LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
-Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
-LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbLTE4MzIyNjg3Myw3NzU3ODI4MjUsLTg2Mz
+UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
+LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
+Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
+NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
