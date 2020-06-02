@@ -275,11 +275,19 @@ If you now want to see the cdeStatus.aspx page you have to add the token in the 
 ```
 http://localhost:8800/cdeStatus.aspx?mysecret
 ```
-You can put this in your App.Config or even write a plugin or extend your host to change this token with any algorith
+You can put this in your App.Config or even write a plugin or extend your host to change this token with any algorithm you like.
+
+During runtime you can access any of the Setting by calling the Settings API. To Set a new token at Runtime call:
+
+```
+TheBaseAssets.MySettings?.SetSetting("StatusToken", "newsecret");
+```
+To learn more about all the settins
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDExNzMzNjEsNzc1NzgyODI1LC04Nj
-M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
-LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
-Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
-LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbOTk0MjgzMTQ2LDc3NTc4MjgyNSwtODYzNT
+IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
+OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
+gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
+Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
