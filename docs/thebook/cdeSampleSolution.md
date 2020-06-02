@@ -169,11 +169,13 @@ A C-DEngine based Cloud-Relay is a highly-tuned, multi-tenant "Access Point" for
 
 #### Scoping is the Key!
 
-Your local host is connecting to the Cloud-Relay with the scope you generated in program.
+Your local host is connecting to the Cloud-Relay with the scope you generated in program.cs. Any browser must use the exact same scope to connect to the same "Mesh" of nodes. The Cloud-Relay is then working as a relay for the data flowing between the local host and the browser.
+
+The NMI is model ba
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NjY1OTE2MiwzNDQ2OTY3MDYsMTk5NT
-Y2NjcsLTE5MjM4NTg3OTUsLTkyNjc4MDI3LC0xMDcxNDg4OSwy
-MTE4MTk3ODc5LDE4NzY1NjQ4MzMsMTg5OTA2NTQ5MCwtNTE3MD
-I5MDAwLDYwNDczOTg5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwx
-MDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbMjY5MDk4MjYzLDM0NDY5NjcwNiwxOTk1Nj
+Y2NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcsLTEwNzE0ODg5LDIx
+MTgxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1NDkwLC01MTcwMj
+kwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEw
+MDcwNjMyMDJdfQ==
 -->
