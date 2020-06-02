@@ -261,11 +261,13 @@ A very important diagnostics tool is the System Log (SYSLOG). It prints all inte
 The amount of verbose output is determined by the "DebugLevel". 
 > you can find the DebugLevel in line 54 of the program.cs. The higher the level the more output the System Log will generate. ***BEWARE: more output also means more load on the system by the log. We do not recommend any setting over 1 (Essential) for production systems!***
 
+Like all other tables on the cdeStatus page, you can export the content to a CSV file for external analyses. Also almost all tables in these sections can be sorted by clicking on one of the headers.
+
 ### Securing the cdeStatus.aspx page
 
 For production system you might not want to expose the cdeStatus page to any user. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NTM0MjgxNiw3NzU3ODI4MjUsLTg2Mz
+eyJoaXN0b3J5IjpbMTIzNDQyODE5OCw3NzU3ODI4MjUsLTg2Mz
 UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
 LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
 Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
