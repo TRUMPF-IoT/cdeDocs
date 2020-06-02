@@ -300,11 +300,17 @@ To learn more about all the settings for the C-DEngine visit this page:
 
 ### C-DEngine KPIs
 The C-DEngine has many KPIs that can be used to measure its performance over time. 
-By defaul these KPIs are turned off. In order to enable the KPIs add this to your configuration set
+By defaul these KPIs are turned off. In order to enable the KPIs add this to your configuration settings:
+
+```
+ArgList["EnableKPIs"] = "True"
+```
+KPIs are collected in p
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQwOTIzMDIwLDc3NTc4MjgyNSwtODYzNT
-IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
-OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
-gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
-Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTEwNjA0ODI3NjksNzc1NzgyODI1LC04Nj
+M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
+LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
+Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
+LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
 -->
