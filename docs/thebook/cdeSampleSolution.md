@@ -253,11 +253,12 @@ The very last entry per node in the table either shows a thumbprint of the Clien
 
 >The WebServer of each node can be set to require a client certificate and only nodes with the correct client certificate can then connect to this server
 
+Use this section to looks at all connected nodes and learn about what Services they consist of. The CMyVisitorLog plugin is able to identify connecting nodes by their "Footprint of Services" for accurate reporting.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMzA0NzgxOCw3NzU3ODI4MjUsLTg2Mz
-UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
-LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
-Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
-NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbMjc2MzQ2ODk4LDc3NTc4MjgyNSwtODYzNT
+IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
+OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
+gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
+Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
