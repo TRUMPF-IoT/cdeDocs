@@ -249,9 +249,13 @@ Each Node connected also shows the services running on the node, their scope (ha
 A node is showing in red, if the node has no valid code-signing certificate. 
 The very last entry per node in the table either shows a thumbprint of the Client Certificate the node is using. If the connection was established without client certificate its reads "No cert".
 
-> The C-DEngine takes security very serious. By adding Code Signing Certificates to the plugins and host you can be ensured 
+> The C-DEngine takes security very serious. By adding Code Signing Certificates to the plugins and host you can be ensured that only signed and therefore no tampered plugins participate in a mesh. 
+
+>The WebServer of each node can be set to require a client certificate and only nodes with the correct client certificate can then connect to this server
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0OTk2MTAyNiw3NzU3ODI4MjUsLTg2Mz
+eyJoaXN0b3J5IjpbMTcyMzA0NzgxOCw3NzU3ODI4MjUsLTg2Mz
 UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
 LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
 Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
