@@ -282,12 +282,14 @@ During runtime you can access any of the Setting by calling the Settings API. To
 ```
 TheBaseAssets.MySettings?.SetSetting("StatusToken", "newsecret");
 ```
-To learn more about all the settins
+To learn more about all the settings for the C-DEngine visit this page:
+[https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/Concepts/C-DEngineSettings.md](https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/Concepts/C-DEngineSettings.md)
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk0MjgzMTQ2LDc3NTc4MjgyNSwtODYzNT
-IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
-OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
-gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
-Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTE1MDM5ODMyNTIsNzc1NzgyODI1LC04Nj
+M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
+LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
+Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
+LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
 -->
