@@ -348,12 +348,13 @@ For example if you change the "Max Value" to 2000 you see the gauge immediately 
 
 If you open the "Value Trend" you will find a long term historian of the KPI.
 
-> This will only work if you have the CDMyC3 plugin installed on your local node because the rendition of the charts data require transformation by the Plugin on the plugin that collects the data. This is required for performance reasons otherwise all the raw data will be sent to the cloud, transformed and then sent back to the browser. In the future the C3 plugin might add even remote transform,a
+> This will only work if you have the CDMyC3 plugin installed on your local node because the rendition of the charts data require transformation by the Plugin on the plugin that collects the data. This is required for performance reasons otherwise all the raw data will be sent to the cloud, transformed and then sent back to the browser. In the future the C3 plugin might add even remote transformation as an option
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MjU2ODI4NCw3NzU3ODI4MjUsLTg2Mz
-UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
-LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
-Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
-NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbNTc5MDYzODM0LDc3NTc4MjgyNSwtODYzNT
+IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
+OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
+gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
+Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
