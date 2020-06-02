@@ -128,11 +128,10 @@ To the left are three buttons:
 
 Things in the C-DEngine only consists of Properties! All of which are stored in the ThingRegistry (class name: TheThingRegistry). Developer can access things via TheThingRegistry APIs.
 
-Other op
-
+***DESCRIBE MORE OPTIONS ON THINGS***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MzYzODQ2NSwtOTI2NzgwMjcsLTEwNz
+eyJoaXN0b3J5IjpbMTk5MzE3NTExMiwtOTI2NzgwMjcsLTEwNz
 E0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1NDkw
 LC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MT
 E1OTYxLDEwMDcwNjMyMDJdfQ==
