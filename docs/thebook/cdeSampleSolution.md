@@ -247,11 +247,13 @@ XX tells you how many nodes are connected.
 
 Each Node connected also shows the services running on the node, their scope (hash) and in brackets the telegrams sent by the service per minute and since start of the node.
 A node is showing in red, if the node has no valid code-signing certificate. 
-The very last entry per node in the table either shows a thumbprint of the Client Certificate the node is using 
+The very last entry per node in the table either shows a thumbprint of the Client Certificate the node is using. If the connection was established without client certificate its reads "No cert".
+
+> The C-DEngine takes security very serious. By adding Code Signing Certificates to the plugins and host you can be ensured 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODIxNzAxNjMsNzc1NzgyODI1LC04Nj
-M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
-LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
-Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
-LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbMTI0OTk2MTAyNiw3NzU3ODI4MjUsLTg2Mz
+UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
+LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
+Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
+NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
