@@ -366,11 +366,13 @@ See Mommy- no hands...
 Go and login to the cloud.c-labs.com/nmi to see the same dashboards you just created in the cloud! 
 
 Go and play a little with the V-Things plugin. There is a documentation on the V-Things plugins here: [https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/plugins/066-VThing.md](https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/plugins/066-VThing.md)
+
+If you have loaded the CDMyVThings plugin as source you will find references to the "cdeSensorTemplate" NuGet from the cdeSDK depot. This shared project just contains the APIs to create the Sensor Template used by the "Virtual Sensor". You can include that NuGet in your project an
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3Nz
-U3ODI4MjUsLTg2MzUyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2Njcs
-LTE5MjM4NTg3OTUsLTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MT
-k3ODc5LDE4NzY1NjQ4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAw
-LDYwNDczOTg5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MD
-YzMjAyXX0=
+eyJoaXN0b3J5IjpbLTM3NjU5MDc4MywtMTk5NzE3ODg5MSwxMT
+M4NTEwNTgzLDc3NTc4MjgyNSwtODYzNTIxNzUwLDM0NDY5Njcw
+NiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcsLTEwNz
+E0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1NDkw
+LC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MT
+E1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
