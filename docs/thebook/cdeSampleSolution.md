@@ -98,10 +98,14 @@ In the C-DEngine a "Digital Twin" is a "Thing" managed by the C-DEngine.
 A "Thing" (or the base class "TheBaseThing") is owned by a plugin and represents the state and events of a physical device. 
 In case of the network plugins, we are creating digital twins of ping-able network end points such as the DNS Server of Google (at 8.8.8.8).
 
-
+1) To add add a digital (endpoint) twin click on the "Devices/Network Status" tile in the NMI
+2) Then click on "Add new Network Service"
+> A wizard will appear. Wizards are part of the plugin and help to create new instances of digital twins
+3) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3Nj
-U2NDgzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4
-LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTE3NjUyMzA3MDIsLTEwNzE0ODg5LDIxMT
+gxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1NDkwLC01MTcwMjkw
+MDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMD
+cwNjMyMDJdfQ==
 -->
