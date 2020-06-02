@@ -287,11 +287,12 @@ TheBaseAssets.MySettings?.SetSetting("StatusToken", "newsecret");
 To learn more about all the settings for the C-DEngine visit this page:
 [https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/Concepts/C-DEngineSettings.md](https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/Concepts/C-DEngineSettings.md)
 
-
+### C-DEngine KPIs
+The C-DEngine has many KPIs that can be used to measure 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNTI2NTQyMSw3NzU3ODI4MjUsLTg2Mz
-UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
-LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
-Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
-NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbLTEzNTQxMzEzNDQsNzc1NzgyODI1LC04Nj
+M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
+LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
+Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
+LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
 -->
