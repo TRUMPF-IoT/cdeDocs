@@ -126,11 +126,13 @@ To the left are three buttons:
 ***Second Button***: This button allows you to download the JSON description of the Thing
 ***Third Button***:  This button gives you some more options to analyse your Thing. Especially interesting is the "All Properties..." Group. If you open it, you will find all properties a Thing has. 
 
-Things in the C-DEngine only consists of Properties! All of which are stored in the ThingRegistry (class name: TheThingRegistry). Developer can access things c
+Things in the C-DEngine only consists of Properties! All of which are stored in the ThingRegistry (class name: TheThingRegistry). Developer can access things via TheThingRegistry APIs.
+
+Other op
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxOTI3MjE4MCwtOTI2NzgwMjcsLTEwNz
+eyJoaXN0b3J5IjpbLTQ3MzYzODQ2NSwtOTI2NzgwMjcsLTEwNz
 E0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1NDkw
 LC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MT
 E1OTYxLDEwMDcwNjMyMDJdfQ==
