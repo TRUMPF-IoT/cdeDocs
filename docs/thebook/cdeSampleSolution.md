@@ -320,17 +320,20 @@ In order to do so we need the CDMyVThings plugin.
 5) in the list click the "Add V-Thing" button on the top left of the table
 6) The table will add a new row and ask you to enter a "friendly name" and "Device Type" for the new V-Thing. Enter:
 
-|  |  |
+|Column  | Selection |
 |--|--|
 | Friendly Name | My KPI |
-| Dev
+| Device Type | Virtual Sensor|
 
+Then select the check to create the new thing.
+***SHOW IMAGE OF NEW TABLE***
 
 > Most plugin dashboard follow the same user interface process: click on Main Tile in the Main Portal leads to the Plugin Dashboard, there you find a "...List" tile which contains a table with all existing thing instances this plugin is managing. There are exceptions to this rule: for example plugins that can scan for their hardware twins automatically and do not need user input to create instances.
 
+7) Click on the button in the first col
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2ODQ1NzQ1NCw3NzU3ODI4MjUsLTg2Mz
+eyJoaXN0b3J5IjpbMTczMzM0NDQ5NSw3NzU3ODI4MjUsLTg2Mz
 UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
 LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
 Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
