@@ -335,12 +335,15 @@ Then select the check to create the new thing.
 ***IMAGE OF SENSOR CONFIG***
 9) In the "Thing Picker" select "Application Host: My-Relay"
 This is the "ApplicationHost" Digital twin of your local host
-10) In the "Property Picker" select any KPI you want to look at. 
+10) In the "Property Picker" select any KPI you want to look at. For example "QKBSent"
+
+Immediately after you selected the property, the sensor template will show values in the charts and gauges. 
+> If you do not see the charts, you probably are ru
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUyMTczNjEsNzc1NzgyODI1LC04NjM1Mj
-E3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05
-MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NTY0OD
-MzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgsLTQy
-NzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbLTE0MTQyMzQwMDIsNzc1NzgyODI1LC04Nj
+M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
+LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
+Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
+LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
 -->
