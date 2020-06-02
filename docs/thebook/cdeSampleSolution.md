@@ -208,9 +208,11 @@ In your plugin code you can set this message using:
 #### "Nodes with SenderType=XXX"
 The next tables show connected nodes - either out bound or inbound depending on the SenderType. There are 10 different SenderTypes the C-DEngine manages - each one having a different purpose:
 
-* LocalHost: This is the node you are currently on/showing the cdeSTa
++ ***LocalHost:*** This is the node you are currently on/showing the cdeStatus of. 
++ ***CloudRoutes:*** If the node is connected to one or more Cloud-Relays you will + find the information about this connection here.
+* ***BackChannels:  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NzIzMDM1Niw3NzU3ODI4MjUsLTg2Mz
+eyJoaXN0b3J5IjpbMTc1OTIzNzY0MCw3NzU3ODI4MjUsLTg2Mz
 UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
 LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
 Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
