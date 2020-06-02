@@ -217,9 +217,11 @@ The next tables show connected nodes - either out bound or inbound depending on 
 
 >Nodes are either "Active", "Passive" or "Relays". An active node has not web-Server and "actively" connects to another node that is either Passive or a Relay. An example of an Active Node is a "Device" or a "Phone"
 
-> "Passive" Nodes cannot actively connect to other nodes
+> "Passive" Nodes cannot actively connect to other nodes and wait for other nodes to connect to them. A Cloud Relay is a passive node as a cloud relay will never actively connect to another node
+
+> "Relay" nodes can do both - connect to other nodes and have other nodes connect to them. The local host you created during this tutorial is one of the "Relay nodes" as it can connect actively to a Cloud Relay and other nodes can connect to it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0OTI3ODk3Myw3NzU3ODI4MjUsLTg2Mz
+eyJoaXN0b3J5IjpbMTgwODg4NjQyNCw3NzU3ODI4MjUsLTg2Mz
 UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
 LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
 Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
