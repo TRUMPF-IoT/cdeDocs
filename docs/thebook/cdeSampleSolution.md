@@ -355,15 +355,16 @@ The live chart is not updating is "Max Value" automatically. In order for it to 
 Can you create another Virtual Sensor for the "Google DNS" digital twin we created earlier?
 
 Here the quick cheat-sheet:
-Go back to the "V-Things List" and "add a new V-Thing"
-Select "Virtual Sensor" as device Type and give it a friendly name
-Open the Sensor Report and "Thing Pick" the "Google DNS"
-Since "Value" is the defa
+1) Go back to the "V-Things List" and "add a new V-Thing"
+2) Select "Virtual Sensor" as device Type and give it a friendly name
+3) Open the Sensor Report and "Thing Pick" the "Google DNS"
+
+Since "Value" is the default property, you will immediately see the values coming in.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ5MTI3ODg1LDc3NTc4MjgyNSwtODYzNT
-IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
-OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
-gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
-Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbMTEzODUxMDU4Myw3NzU3ODI4MjUsLTg2Mz
+UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
+LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
+Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
+NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
