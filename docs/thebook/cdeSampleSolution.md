@@ -165,11 +165,15 @@ The NMI for this "digital twin" only allows viewing of certain controls via the 
 ### What does the Cloud-Relay do?
 By now you might be wondering why you did not have to sign up for any service, subscription or other registration for the Cloud access to work.
 
-A C-DEngine based Cloud-Relay is a highly-tuned, multi-tenant "Access Point" for authorized hosts. As the names suggests it only "relays" data between two or more hosts. 
+A C-DEngine based Cloud-Relay is a highly-tuned, multi-tenant "Access Point" for authorized hosts. As the names suggests it only "relays" data between two or more (C-DEngine) hosts. The browser you are using is a special kind of Host running the JavaScript version of the C-DEngine. 
+
+#### Scoping is the Key!
+
+Your local host is connecting to the Cloud-Relay with the scope you generated in program.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjgwMjQzOTAsMzQ0Njk2NzA2LDE5OT
-U2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAyNywtMTA3MTQ4ODks
-MjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OTkwNjU0OTAsLTUxNz
-AyOTAwMCw2MDQ3Mzk4OTgsLTQyNzczOTgwNiwyOTkxMTU5NjEs
-MTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbLTc5NjY1OTE2MiwzNDQ2OTY3MDYsMTk5NT
+Y2NjcsLTE5MjM4NTg3OTUsLTkyNjc4MDI3LC0xMDcxNDg4OSwy
+MTE4MTk3ODc5LDE4NzY1NjQ4MzMsMTg5OTA2NTQ5MCwtNTE3MD
+I5MDAwLDYwNDczOTg5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwx
+MDA3MDYzMjAyXX0=
 -->
