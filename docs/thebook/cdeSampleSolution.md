@@ -17,8 +17,8 @@ We go through the following steps:
 8) Using the Rules Engine
 9) Creating an installer for the Solution
 10) Publishing the installer to the WinGet Depot
-8 Customizing the NMI Skin
-9) Securing the Host using SSL
+11) Customizing the NMI Skin
+12) Securing the Host using SSL
 
 ## Getting Visual Studio Ready
 
@@ -178,11 +178,15 @@ Your local host is connecting to the Cloud-Relay with the scope you generated in
 
 You can connect as many browsers and local hosts (also called "nodes") to the same mesh (of nodes). As long as all of them use the same Scope ID, they can all see each other. Browsers will see the NMI of all connected nodes in the same portal. Even if you connect your browser to one of the local nodes, you will always see the NMI of all mesh connected nodes.
 
+>A PC can run multiple nodes at the same time. A "node" is a more abstract term for a host 
+
 Look at our concept documents on GitHub ([https://github.com/TRUMPF-IoT/cdeDocs/tree/master/docs](https://github.com/TRUMPF-IoT/cdeDocs/tree/master/docs) for more details
 
+## Diagnosing issues with Relays
 
+The more complex a system gets the more important it becomes to diagnose issues. C-DEngine bases nodes 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4OTc2OTU0NiwtODYzNTIxNzUwLDM0ND
+eyJoaXN0b3J5IjpbLTk5NjYzMjA0NiwtODYzNTIxNzUwLDM0ND
 Y5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcs
 LTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MD
 Y1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYs
