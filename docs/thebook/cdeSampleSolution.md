@@ -138,6 +138,8 @@ This brings you back to the main portal
 3) in the top right corner of the table click the little "Refresh" icon and you will see all "Things" your host is currently managing.
 
 In the "Friendly Name" column you will find your "Google DNS" thing.
+You can also see the "DeviceType" is stating "Ping Service". You will find two other DeviceTypes that the system has created. 
+***"ApplicationHost"((
 To the left are three buttons:
 |Button  |Action  |
 |--|--|
@@ -305,10 +307,10 @@ By defaul these KPIs are turned off. In order to enable the KPIs add this to you
 ```
 ArgList["EnableKPIs"] = "True"
 ```
-KPIs are collected in p
+KPIs are collected in Properties of the "ApplicationHost" thing. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjA0ODI3NjksNzc1NzgyODI1LC04Nj
+eyJoaXN0b3J5IjpbLTEzNTk4ODI2ODEsNzc1NzgyODI1LC04Nj
 M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
 LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
 Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
