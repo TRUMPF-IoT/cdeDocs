@@ -94,10 +94,12 @@ If you want to use the source...
 If you now login to your NMI, you will see the NMI for the Network Plugin.
 Lets create some "Digital Twins" in the network plugin.
 
-In the C-DEngine a "Digital Twin" is a "Thing" 
+In the C-DEngine a "Digital Twin" is a "Thing" managed by the C-DEngine.
+A "Thing" (or the base class "TheBaseThing") is owned by a plugin and represents the state and events of a physical device. 
+In case of the network plugins, we are creating digital twins of pingable network end points
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODE2MTk1OSwyMTE4MTk3ODc5LDE4Nz
+eyJoaXN0b3J5IjpbLTcxNTgyOTk1NCwyMTE4MTk3ODc5LDE4Nz
 Y1NjQ4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5
 OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
