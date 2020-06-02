@@ -108,10 +108,13 @@ Service Type: Select "Ping Service"
 Address: "8.8.8.8:
 ```
 Once you click finish, you see a new tile in the NMI for the Google DNS
+If you click on it, you see the device status:
+***IMAGE OF NMI HERE***
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTQ1MTcyNDYsLTEwNzE0ODg5LDIxMT
-gxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1NDkwLC01MTcwMjkw
-MDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMD
-cwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MT
+k3ODc5LDE4NzY1NjQ4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAw
+LDYwNDczOTg5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MD
+YzMjAyXX0=
 -->
