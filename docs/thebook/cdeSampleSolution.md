@@ -315,13 +315,16 @@ Lets display one of these KPIs in the NMI.
 In order to do so we need the CDMyVThings plugin. 
 1) Add the CDMyV-Things plugin to your project (either using NuGet or include the source of the "cdePlugins/src/066/C-DMyVThings" to your project)
 2) Do not forget to add a reference to the plugin project to your host
+3) Log back into the NMI and you will see a new tile "Virtual Things" in your portal.
+4) Click on the tile then inside the Virtual Things Dashboard, click on "V-Things List"
 
+> Most plugin dashboard follow the same user interface process: Lick on Main Tile in the Main Portal 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxODg3NDY1Niw3NzU3ODI4MjUsLTg2Mz
-UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
-LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
-Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
-NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbODk0OTU1MzQ1LDc3NTc4MjgyNSwtODYzNT
+IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
+OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
+gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
+Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
