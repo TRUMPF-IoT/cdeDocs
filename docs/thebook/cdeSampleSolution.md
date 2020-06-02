@@ -143,11 +143,18 @@ This is as simple as adding one line of code to our hosts program.cs:
 ServiceRoute="wss://cloud.c-labs.com"
 ```
 
-Now start your host project again. If you login to the local NMI you will now see a couple more tiles under the category "Diagnostics" and a new category "C
+Now start your host project again. If you login to the local NMI you will now see a couple more tiles under the category "Diagnostics" and a new category "Node: C-Labs Cloud" is showing.
+
+You can also login to the Cloud now by going to 
+```
+https://Cloud.C-Labs.com/nmi
+```
+You will see the same login dialog as you had locally. 
+After you enter your Scope ID you will see the s
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk5OTg4OTg5LDE5OTU2NjY3LC0xOTIzOD
-U4Nzk1LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwx
-ODc2NTY0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mz
-k4OTgsLTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbNTYxMjA4MDUsMTk5NTY2NjcsLTE5MjM4NT
+g3OTUsLTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4
+NzY1NjQ4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOT
+g5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 
 -->
