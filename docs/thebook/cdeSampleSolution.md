@@ -200,13 +200,16 @@ This section shows a summary of basic information of the node the status page is
 This table shows a list of all currently running "Engines". 
 >An Engine (aka "Service") is a container service managing one or more "Things". Plugins can have one or more Engines/Services. Most plugins have only one service for better management. 
 
-You can see the version of a service and the last me
-
+You can see the version of a service and the "LastMessage" of the service.
+In your plugin code you can set this message using:
+```
+            MyBaseEngine.LastMessage = "Some message here";
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4OTk0MDkwMiwtODYzNTIxNzUwLDM0ND
-Y5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcs
-LTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MD
-Y1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYs
-Mjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbNzc1NzgyODI1LC04NjM1MjE3NTAsMzQ0Nj
+k2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAyNywt
+MTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OTkwNj
+U0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgsLTQyNzczOTgwNiwy
+OTkxMTU5NjEsMTAwNzA2MzIwMl19
 -->
