@@ -224,8 +224,9 @@ The next tables show connected nodes - either out bound or inbound depending on 
 
 The cdeStatus.aspx page has several other options you can explore:
 
-### cdeStatus.aspx?SUBDET
-Shows all current subscriptions for each Scope. This option will add two more sections:
+### cdeStatus.aspx?SUBSUM
+
+This option will adds three more sections around subscriptions on the cdeStatus page:
 #### Current Subscribers by Topic
 Shows all Services and their subscribers segmented by Scope Hash.
 
@@ -240,11 +241,12 @@ This is basically the reverse lookup to the previous section. It shows all Scope
 
 Use this to find out if all expected nodes in a mesh are indeed connected to the same mesh.
 
-
+#### All known Nodes: XX
+This section shows all known noes
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4MjYwNjU4LDc3NTc4MjgyNSwtODYzNT
-IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
-OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
-gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
-Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTE1NTMwMDU4NzYsNzc1NzgyODI1LC04Nj
+M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
+LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
+Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
+LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
 -->
