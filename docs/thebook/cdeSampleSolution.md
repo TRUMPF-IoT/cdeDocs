@@ -162,11 +162,14 @@ The NMI for this "digital twin" only allows viewing of certain controls via the 
 
 >For Development purposes the User Manager is not enabled by default. Also the ***Cloud.C-Labs.com Cloud Relay does not support the user manager and is for testing purposes only!***
 
+### What does the Cloud-Relay do?
+By now you might be wondering why you did not have to sign up for any service, subscription or other registration for the Cloud access to work.
 
+A C-DEngine based Cloud-Relay is a highly-tuned 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzOD
-U4Nzk1LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwx
-ODc2NTY0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mz
-k4OTgsLTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
-
+eyJoaXN0b3J5IjpbLTEyNDA0NTkzOTUsMzQ0Njk2NzA2LDE5OT
+U2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAyNywtMTA3MTQ4ODks
+MjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OTkwNjU0OTAsLTUxNz
+AyOTAwMCw2MDQ3Mzk4OTgsLTQyNzczOTgwNiwyOTkxMTU5NjEs
+MTAwNzA2MzIwMl19
 -->
