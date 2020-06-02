@@ -134,9 +134,12 @@ Things in the C-DEngine only consists of Properties! All of which are stored in 
 ## Connecting the Host to the Cloud Relay
 
 Solutions with the C-DEngine can run completely on premises without the need for an internet connection. 
-But if an internet connection is available, the C-DEngine can easily be con
+But if an internet connection is available, the C-DEngine can easily be connected to a "Cloud Relay" allowing access to the local NMI via cloud connected devices.  
+This is as simple as adding one line of code to our hosts program.cs:
+
+1) in the program.cs add the following line after line
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NDI1NzMzMywxOTk1NjY2NywtMTkyMz
+eyJoaXN0b3J5IjpbLTkzNjk5NDU1OSwxOTk1NjY2NywtMTkyMz
 g1ODc5NSwtOTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4Nzks
 MTg3NjU2NDgzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0Nz
 M5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJd
