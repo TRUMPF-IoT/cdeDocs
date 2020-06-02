@@ -361,11 +361,12 @@ Here the quick cheat-sheet:
 
 Since "Value" is the default property, you will immediately see the values coming in.
 
-See Mommy- no nh
+See Mommy- no hands...
 
 Go and login to the cloud.c-labs.com/nmi to see the same dashboards you just created in the cloud! 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0OTA1MzE3MywxMTM4NTEwNTgzLDc3NT
+eyJoaXN0b3J5IjpbLTIxNTYzOTgyMSwxMTM4NTEwNTgzLDc3NT
 c4MjgyNSwtODYzNTIxNzUwLDM0NDY5NjcwNiwxOTk1NjY2Nywt
 MTkyMzg1ODc5NSwtOTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOT
 c4NzksMTg3NjU2NDgzMywxODk5MDY1NDkwLC01MTcwMjkwMDAs
