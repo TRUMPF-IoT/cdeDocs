@@ -205,11 +205,14 @@ In your plugin code you can set this message using:
 ```
             MyBaseEngine.LastMessage = "Some message here";
 ```
+#### "Nodes with SenderType=XXX"
+The next tables show connected nodes - either out bound or inbound depending on the SenderType. There are 10 different SenderTypes the C-DEngine manages - each one having a different purpose:
 
+* LocalHost: This is the node you are currently on/showing the cdeSTa
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc1NzgyODI1LC04NjM1MjE3NTAsMzQ0Nj
-k2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAyNywt
-MTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OTkwNj
-U0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgsLTQyNzczOTgwNiwy
-OTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbMTI3NzIzMDM1Niw3NzU3ODI4MjUsLTg2Mz
+UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
+LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
+Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
+NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
