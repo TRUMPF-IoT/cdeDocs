@@ -14,12 +14,15 @@ We go through the following steps:
 5) Connecting the Host to the Cloud Relay
 6) Diagnosing issues with Relays
 7) Communication between Plugins
-8) Using the Rules Engine
-9) Adding a local node to your mesh
-10) Creating an installer for the Solution
-11) Publishing the installer to the WinGet Depot
-12) Customizing the NMI Skin
-13) Securing the Host using SSL
+8) Adding a local node to your mesh
+9) Creating an installer for the Solution
+10) Publishing the installer to the WinGet Depot
+11) Customizing the NMI Skin
+12) Securing the Host using SSL
+13) 
+
+During the tutorial we will make use of a variety of existing plugins.
+You only have to do very little coding during the tutorial
 
 ## Getting Visual Studio Ready
 
@@ -288,11 +291,11 @@ To learn more about all the settings for the C-DEngine visit this page:
 [https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/Concepts/C-DEngineSettings.md](https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/Concepts/C-DEngineSettings.md)
 
 ### C-DEngine KPIs
-The C-DEngine has many KPIs that can be used to measure 
+The C-DEngine has many KPIs that can be used to measure its performance over time. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTQxMzEzNDQsNzc1NzgyODI1LC04Nj
-M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
-LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
-Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
-LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbLTg4Nzk1Mjc5OSw3NzU3ODI4MjUsLTg2Mz
+UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
+LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
+Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
+NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
