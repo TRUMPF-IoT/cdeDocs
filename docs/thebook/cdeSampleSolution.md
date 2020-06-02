@@ -231,11 +231,14 @@ Shows all Services and their subscribers segmented by Scope Hash.
 
 A Scope Hash is a 4 digit hash of the Scope ID used for the mesh. For security reason only a 4-digit hash is used and not the full ScopeID.
 
+> The C-DEngine uses the basic principles of Pub/Sub for its communication. With one major twist: All Nodes are Publisher AND subscriber at the same time. This allows forwarding of me
+
+Use this to see if your nodes have all the correct subscriptions. Data between nodes is only flowing if all nodes have the same subscription and the same Scope.
 
 #### Current Scopes and its Subscribers
 This is basically the reverse lookup to the previous section. It shows all Scopes and the corresponding subscribers.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMjYwMzM5Niw3NzU3ODI4MjUsLTg2Mz
+eyJoaXN0b3J5IjpbMTgwNzE3MzY3Nyw3NzU3ODI4MjUsLTg2Mz
 UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
 LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
 Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
