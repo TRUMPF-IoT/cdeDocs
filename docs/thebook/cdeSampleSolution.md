@@ -139,7 +139,9 @@ This brings you back to the main portal
 
 In the "Friendly Name" column you will find your "Google DNS" thing.
 You can also see the "DeviceType" is stating "Ping Service". You will find two other DeviceTypes that the system has created. 
-***"ApplicationHost"((
+***ApplicationHost***:  The Digital Twin of your Local Host application. Contains only basic information about your host but you can dynamically add your own properties to it. The C-DEngine will persist these properties for you
+***IBaseEngine***: For each Service/
+
 To the left are three buttons:
 |Button  |Action  |
 |--|--|
@@ -310,9 +312,9 @@ ArgList["EnableKPIs"] = "True"
 KPIs are collected in Properties of the "ApplicationHost" thing. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTk4ODI2ODEsNzc1NzgyODI1LC04Nj
-M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
-LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
-Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
-LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbODU3ODcwODU3LDc3NTc4MjgyNSwtODYzNT
+IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
+OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
+gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
+Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
