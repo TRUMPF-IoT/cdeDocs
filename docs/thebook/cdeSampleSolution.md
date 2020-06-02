@@ -372,8 +372,12 @@ If you have loaded the CDMyVThings plugin as source you will find references to 
 ### Export of KPIs to Prometheus
 
 One of the most important diagnostics options is to output all the KPIs of the C-DEngine via the CDMyPrometheus plugin that the KPIs can be consumed by a Prometheus scraper and visualized in Grafana.
+
+You can do this very easy by adding the CDMyPrometheus plugin to the project either via NuGet or adding the "cdePlugins/src/188 - CDMyPrometheusExporter" source.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODg4NDM3OSw0NTc0OTQwMDIsLTE5OT
+eyJoaXN0b3J5IjpbLTE0NzI3OTc4OSw0NTc0OTQwMDIsLTE5OT
 cxNzg4OTEsMTEzODUxMDU4Myw3NzU3ODI4MjUsLTg2MzUyMTc1
 MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUsLTkyNj
 c4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1NjQ4MzMs
