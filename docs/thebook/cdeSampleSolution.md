@@ -318,11 +318,11 @@ In order to do so we need the CDMyVThings plugin.
 3) Log back into the NMI and you will see a new tile "Virtual Things" in your portal.
 4) Click on the tile then inside the Virtual Things Dashboard, click on "V-Things List"
 
-> Most plugin dashboard follow the same user interface process: Lick on Main Tile in the Main Portal 
+> Most plugin dashboard follow the same user interface process: click on Main Tile in the Main Portal leads to the Plugin Dashboard, there you find a "...List" tile which contains a table with all existing thing instances this plugin is managing. There are exceptions to this rule: for example plugins that can scan for their hardware twins automatically and do not need user input to create instances.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk0OTU1MzQ1LDc3NTc4MjgyNSwtODYzNT
+eyJoaXN0b3J5IjpbNjYwNzYxMDQ3LDc3NTc4MjgyNSwtODYzNT
 IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
 OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
 gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
