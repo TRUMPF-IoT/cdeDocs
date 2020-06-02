@@ -184,11 +184,21 @@ Look at our concept documents on GitHub ([https://github.com/TRUMPF-IoT/cdeDocs/
 
 ## Diagnosing issues with Relays
 
-The more complex a system gets the more important it becomes to diagnose issues. C-DEngine bases hosts offer several 
+The more complex a system gets the more important it becomes to diagnose issues. C-DEngine bases hosts offer several ways of diagnostics:
+
+### The cdeStatus.aspx page
+
+Any running node containing the C-DEngine and is setup as a web server provides the cdeStatus.aspx page. For example if you set your MyStationPort to 8800 the cdeStatus page is found at:
+
+```
+http://localhost:8800/cdestatus.aspx
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3OTI4NjkyOSwtODYzNTIxNzUwLDM0ND
-Y5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcs
-LTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MD
-Y1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYs
-Mjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTE5NjYzMTAyNDYsLTg2MzUyMTc1MCwzND
+Q2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUsLTkyNjc4MDI3
+LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1NjQ4MzMsMTg5OT
+A2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwtNDI3NzM5ODA2
+LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
