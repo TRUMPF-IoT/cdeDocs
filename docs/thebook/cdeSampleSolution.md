@@ -350,11 +350,12 @@ If you open the "Value Trend" you will find a long term historian of the KPI.
 
 > This will only work if you have the CDMyC3 plugin installed on your local node because the rendition of the charts data require transformation by the Plugin on the plugin that collects the data. This is required for performance reasons otherwise all the raw data will be sent to the cloud, transformed and then sent back to the browser. In the future the C3 plugin might add even remote transformation as an option
 
+The live chart is not updating is "Max Value" automatically. In order for it to update you have to refresh the page. ***Do NOT use the browser refresh as this will tear down your current secure browser session!***. Instead use the little refresh button on the top left of your "Sensor Report". If you had any confguration sections (
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc5MDYzODM0LDc3NTc4MjgyNSwtODYzNT
-IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
-OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
-gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
-Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTEwMDY4NzQ4MDIsNzc1NzgyODI1LC04Nj
+M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
+LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
+Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
+LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
 -->
