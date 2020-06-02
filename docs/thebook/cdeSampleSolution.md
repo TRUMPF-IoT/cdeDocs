@@ -227,11 +227,17 @@ The cdeStatus.aspx page has several other options you can explore:
 ### cdeStatus.aspx?SUBDET
 Shows all current subscriptions for each Scope. This option will add two more sections:
 #### Current Subscribers by Topic
-Shows all Services and their subscriber
+Shows all Services and their subscribers segmented by Scope Hash.
+
+A Scope Hash is a 4 digit hash of the Scope ID used for the mesh. For security reason only a 4-digit hash is used and not the full ScopeID.
+
+
+#### Current Scopes and its Subscribers
+This is basically the reverse lookup to the previous section. It shows all Scopes and the corresponding subscribers.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc3OTI4NDU0LDc3NTc4MjgyNSwtODYzNT
-IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
-OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
-gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
-Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbMTEyMjYwMzM5Niw3NzU3ODI4MjUsLTg2Mz
+UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
+LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
+Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
+NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
