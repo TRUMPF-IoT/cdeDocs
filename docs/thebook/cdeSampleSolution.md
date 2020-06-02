@@ -113,7 +113,7 @@ If you click on it, you see the device status:
 You can see the "Value" updating frequently. Its shows the roundtrip time of a ping from your host PC to the Google DNS.
 If you open up the "Connectivity" Group by clicking it, you can see that "Auto Connect" and "Is Connected" are selected. you can also see and change the address of the ping as well as change Ping parameter if you open that group.
 
->***Important Note***: If you still have "UseRandomDeviceID=true" set, your new digital twin will be gone after you restart your host. We do recommend that you change this to "false
+>***Important Note***: If you still have "UseRandomDeviceID=true" set, your new digital twin will be gone after you restart your host. We do recommend that you change this to "false" now for the remainder of the tutorial.
 
 Lets have a look where this "Thing" (Digital Twin) was created.
 
@@ -154,9 +154,9 @@ https://Cloud.C-Labs.com/nmi
 You will see the same login dialog as you had locally. 
 After you enter your Scope ID you will see the same NMI as on the local node.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NjUzMjE0OCwxOTk1NjY2NywtMTkyMz
-g1ODc5NSwtOTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4Nzks
-MTg3NjU2NDgzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0Nz
-M5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJd
-fQ==
+eyJoaXN0b3J5IjpbMTczNzc0Njg1LDE5OTU2NjY3LC0xOTIzOD
+U4Nzk1LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwx
+ODc2NTY0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mz
+k4OTgsLTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+
 -->
