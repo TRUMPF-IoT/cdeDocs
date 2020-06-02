@@ -171,12 +171,13 @@ A C-DEngine based Cloud-Relay is a highly-tuned, multi-tenant "Access Point" for
 
 Your local host is connecting to the Cloud-Relay with the scope you generated in program.cs. Any browser must use the exact same scope to connect to the same "Mesh" of nodes. The Cloud-Relay is then working as a relay for the data flowing between the local host and the browser.
 
-The NMI is model based and consists of meta data the browser knows how to render in HTML5. In the future there might be other renderers that can display the NMI in XAML. Unity or other front ends.
+>The NMI is model based and consists of meta data the browser knows how to render in HTML5. In the future there might be other renderers that can display the NMI in XAML. Unity or other front ends.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MzUyMTc1MCwzNDQ2OTY3MDYsMTk5NT
-Y2NjcsLTE5MjM4NTg3OTUsLTkyNjc4MDI3LC0xMDcxNDg4OSwy
-MTE4MTk3ODc5LDE4NzY1NjQ4MzMsMTg5OTA2NTQ5MCwtNTE3MD
-I5MDAwLDYwNDczOTg5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwx
-MDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbMTYyNjE5NTc3OCwtODYzNTIxNzUwLDM0ND
+Y5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcs
+LTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MD
+Y1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYs
+Mjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
