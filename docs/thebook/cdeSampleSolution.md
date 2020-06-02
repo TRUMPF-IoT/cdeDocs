@@ -237,8 +237,12 @@ Use this to see if your nodes have all the correct subscriptions. Data between n
 
 #### Current Scopes and its Subscribers
 This is basically the reverse lookup to the previous section. It shows all Scopes and the corresponding subscribers.
+
+Use this to find out if all expected nodes in a mesh are indeed connected to the same mesh.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE3MTU4MzM4LDc3NTc4MjgyNSwtODYzNT
+eyJoaXN0b3J5IjpbMzM4MjYwNjU4LDc3NTc4MjgyNSwtODYzNT
 IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
 OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
 gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
