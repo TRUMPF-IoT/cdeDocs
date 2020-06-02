@@ -211,11 +211,11 @@ The next tables show connected nodes - either out bound or inbound depending on 
 + ***LocalHost:*** This is the node you are currently on/showing the cdeStatus of. 
 + ***CloudRoutes:*** If the node is connected to one or more Cloud-Relays you will + find the information about this connection here.
 * ***BackChannels:*** If other nodes are connected to your local host, each of these nodes will show up in this list. A "BackChannel" is therefore an inbound connection to the local node
-* ***Device:*** Devices are hosts/nodes that can only connect outbound and dont have their own webserver. This is very useful for devices like phones that cannot or do not accept in
+* ***Device:*** Devices are hosts/nodes that can only connect outbound and do not have their own webserver. This is very useful for devices like phones that cannot or do not accept inbound connections.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NDYzNDksNzc1NzgyODI1LC04NjM1Mj
-E3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05
-MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NTY0OD
-MzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgsLTQy
-NzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbLTY2OTg0MDUwMSw3NzU3ODI4MjUsLTg2Mz
+UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
+LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
+Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
+NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
