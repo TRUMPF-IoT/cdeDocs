@@ -85,10 +85,10 @@ The cdePlugins depot on GitHub has several plugins we can now add to the project
 
 If you want to use the source...
 1) Clone the "cdePlugins" depot to your local drive
-2) Add the project "src/040 - C-DMyComputer (PC)"
+2) Add the project "src/093 - CDMyNetwork"
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NjU2NDgzMywxODk5MDY1NDkwLC01MT
-cwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYx
-LDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbMjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OT
+kwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgsLTQyNzczOTgw
+NiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
 -->
