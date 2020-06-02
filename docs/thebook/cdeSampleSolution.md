@@ -124,12 +124,14 @@ In the "Friendly Name" column you will find your "Google DNS" thing.
 To the left are three buttons:
 ***First Button***: Jump to the Thing's NMI
 ***Second Button***: This button allows you to download the JSON description of the Thing
-***Third Button***:  This button gives you some more options to analyse your Thing.
+***Third Button***:  This button gives you some more options to analyse your Thing. Especially interesting is the "All Properties..." Group. If you open it, you will find all properties a Thing has. 
+
+Things in the C-DEngine only consists of Properties! All of which are stored in the ThingRegistry (class name: TheThingRegistry). Developer can access things c
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTUzMjY3NDIsLTkyNjc4MDI3LC0xMD
-cxNDg4OSwyMTE4MTk3ODc5LDE4NzY1NjQ4MzMsMTg5OTA2NTQ5
-MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwtNDI3NzM5ODA2LDI5OT
-ExNTk2MSwxMDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbMTMxOTI3MjE4MCwtOTI2NzgwMjcsLTEwNz
+E0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1NDkw
+LC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MT
+E1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
