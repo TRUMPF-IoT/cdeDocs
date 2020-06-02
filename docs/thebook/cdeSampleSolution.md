@@ -140,7 +140,7 @@ This brings you back to the main portal
 In the "Friendly Name" column you will find your "Google DNS" thing.
 You can also see the "DeviceType" is stating "Ping Service". You will find two other DeviceTypes that the system has created. 
 ***ApplicationHost***:  The Digital Twin of your Local Host application. Contains only basic information about your host but you can dynamically add your own properties to it. The C-DEngine will persist these properties for you
-***IBaseEngine***: For each Service/
+***IBaseEngine***: For each Service in plugins the C-DEngine will create a Digital Twin with the DeviceType "IBaseEngine". Here all properties that are related to this service are stored. 
 
 To the left are three buttons:
 |Button  |Action  |
@@ -309,12 +309,12 @@ By defaul these KPIs are turned off. In order to enable the KPIs add this to you
 ```
 ArgList["EnableKPIs"] = "True"
 ```
-KPIs are collected in Properties of the "ApplicationHost" thing. 
+KPIs are collected in the Properties of the "ApplicationHost" thing. (see previous chapters). Once you turn on the KPIs and you go back to the ThingRegistry you can see a
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU3ODcwODU3LDc3NTc4MjgyNSwtODYzNT
-IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
-OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
-gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
-Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbMTgzOTE5OTc5NCw3NzU3ODI4MjUsLTg2Mz
+UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
+LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
+Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
+NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
