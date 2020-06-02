@@ -212,11 +212,11 @@ The next tables show connected nodes - either out bound or inbound depending on 
 + ***CloudRoutes:*** If the node is connected to one or more Cloud-Relays you will + find the information about this connection here.
 * ***BackChannels:*** If other nodes are connected to your local host, each of these nodes will show up in this list. A "BackChannel" is therefore an inbound connection to the local node
 * ***Phone/Device:*** Devices are hosts/nodes that can only connect outbound and do not have their own webserver. This is very useful for devices like phones that cannot or do not accept inbound connections.
-* ***JavaJson:*** Browsers are showing up as JavaJson. Browsers are in many cases handled differently than other nodes as they are declared "unsie
+* ***JavaJson:*** Browsers are showing up as JavaJson. Browsers are in many cases handled differently than other nodes as they are declared "unsecure". Since they cannot decrypt any of the incoming telegrams, the node a Browser is connected to is the browsers "Security Proxy" and must decide if a telegram should be forwarded to the browser or not. Its also up to this "First Node" to enforce the http browser security attributes such as HTTPS/TLS and session token b
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM5NzYxNzc3LDc3NTc4MjgyNSwtODYzNT
-IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
-OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
-gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
-Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTIwNjE2MjYzODgsNzc1NzgyODI1LC04Nj
+M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
+LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
+Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
+LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
 -->
