@@ -224,11 +224,14 @@ The next tables show connected nodes - either out bound or inbound depending on 
 
 The cdeStatus.aspx page has several other options you can explore:
 
-cdeStatus.aspx?SUBDET
+### cdeStatus.aspx?SUBDET
+Shows all current subscriptions for each Scope. This option will add two more sections:
+#### Current Subscribers by Topic
+Shows all Services and their subscriber
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTM5MDI5MjQsNzc1NzgyODI1LC04Nj
-M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
-LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
-Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
-LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbMzc3OTI4NDU0LDc3NTc4MjgyNSwtODYzNT
+IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
+OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
+gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
+Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
