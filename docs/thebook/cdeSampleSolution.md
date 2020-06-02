@@ -118,11 +118,16 @@ Lets have a look where this "Thing" (Digital Twin) was created.
 1) Click on the C-DEngine logo in the top left and then the little home icon.
 This brings you back to the main portal
 2) Now click on the NMI Admin and then "Thing Registry" tiles
+3) in the top right corner of the table click the little "Refresh" icon and you will see all "Things" your host is currently managing.
+
+In the "Friendly Name" column you will find your "Google DNS" thing.
+To the left are three buttons:
+***First Button***: 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4OTM1MTg1NSwtOTI2NzgwMjcsLTEwNz
-E0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1NDkw
-LC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MT
-E1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTE0MjEyNTIxMzksLTkyNjc4MDI3LC0xMD
+cxNDg4OSwyMTE4MTk3ODc5LDE4NzY1NjQ4MzMsMTg5OTA2NTQ5
+MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwtNDI3NzM5ODA2LDI5OT
+ExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
