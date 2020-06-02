@@ -341,8 +341,12 @@ This is the "ApplicationHost" Digital twin of your local host
 Immediately after you selected the property, the sensor template will show values in the charts and gauges. 
 > If you do not see the charts, you probably are running the local host without a connection to Cloud.C-labs.com. The charts requires a plugin called "CDMyC3". A plugin you can find in the cdeNMI/src/HMTL5/NMIExtensions depot. If you do not have it installed the charts will not show. But if you are connected to the cloud, the plugins javascript components are fetched from the Cloud Relay and for the browser it looks like all came from the local node. As mentioned before, the nodes are all "Meshing" their information and meta data making distributed development a blast!
 
+11) Click on the Line "Sensor Info". This open a section that allows you to describe your sensor in even more details. The details will be shown in the "Device Description" section of the Virtual Sensor Dashboard
+
+12) Click on "Sensor Settings..." and you can set several important settings of the Virtual Sensor
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTg1ODA0NDgsNzc1NzgyODI1LC04Nj
+eyJoaXN0b3J5IjpbLTE4NjA4ODY1OTUsNzc1NzgyODI1LC04Nj
 M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
 LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
 Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
