@@ -271,10 +271,15 @@ In order to Secure the page you can add the following line to your program.cs (a
 ```
 ArgList["StatusToken"] = "mysecret";
 ```
+If you now want to see the cdeStatus.aspx page you have to add the token in the query path:
+```
+http://localhost:8800/cdeStatus.aspx?mysecret
+```
+You can put this in your App.Config or even write a plugin or extend your host to change this token with any algorith
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NzI1OTUyNSw3NzU3ODI4MjUsLTg2Mz
-UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
-LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
-Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
-NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbLTE3MDExNzMzNjEsNzc1NzgyODI1LC04Nj
+M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
+LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
+Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
+LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
 -->
