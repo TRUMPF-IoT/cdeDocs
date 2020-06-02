@@ -88,10 +88,16 @@ First we are adding the CDMyNetwork plugin.
 If you want to use the source...
 1) Clone the "cdePlugins" depot to your local drive
 2) Add the project "src/093 - CDMyNetwork"
-3) Add a reference to this new  project 
+3) Add a reference to this new project to your Host Project
+4) Run the solution (Make sure your starting project is the Host)
+
+If you now login to your NMI, you will see the NMI for the Network Plugin.
+Lets create some "Digital Twins" in the network plugin.
+
+In the C-DEngine a "Digital Twin" is a "Thing" 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzEzODk3MzQsMjExODE5Nzg3OSwxOD
-c2NTY0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4
-OTgsLTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbLTE2ODE2MTk1OSwyMTE4MTk3ODc5LDE4Nz
+Y1NjQ4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5
+OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
