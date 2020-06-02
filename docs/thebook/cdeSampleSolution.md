@@ -110,11 +110,13 @@ Address: "8.8.8.8:
 Once you click finish, you see a new tile in the NMI for the Google DNS
 If you click on it, you see the device status:
 ***IMAGE OF NMI HERE***
-You can see the "Va
+You can see the "Value" updating frequently. Its shows the roundtrip time of a ping from your host PC to the Google DNS.
+If you open up the "Connectivity" Group by clicking it, you can see that "Auto Connect" and "Is Connected" are selected. you can also see and change the address of the ping as well as change Ping parameter if you 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyODYwNjY3OSwtOTI2NzgwMjcsLTEwNz
-E0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1NDkw
-LC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MT
-E1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTQ3OTUzOTcwLC05MjY3ODAyNywtMTA3MT
+Q4ODksMjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OTkwNjU0OTAs
+LTUxNzAyOTAwMCw2MDQ3Mzk4OTgsLTQyNzczOTgwNiwyOTkxMT
+U5NjEsMTAwNzA2MzIwMl19
 -->
