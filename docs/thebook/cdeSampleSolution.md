@@ -137,11 +137,17 @@ Solutions with the C-DEngine can run completely on premises without the need for
 But if an internet connection is available, the C-DEngine can easily be connected to a "Cloud Relay" allowing access to the local NMI via cloud connected devices.  
 This is as simple as adding one line of code to our hosts program.cs:
 
-1) in the program.cs add the following line after line
+1) in the program.cs add the following line after line 54:
+
+```
+ServiceRoute="wss://cloud.c-labs.com"
+```
+
+Now start your host project again. If you login to the local NMI you will now see a couple more tiles under the category "Diagnostics" and a new category "C
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNjk5NDU1OSwxOTk1NjY2NywtMTkyMz
-g1ODc5NSwtOTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4Nzks
-MTg3NjU2NDgzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0Nz
-M5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJd
-fQ==
+eyJoaXN0b3J5IjpbNDk5OTg4OTg5LDE5OTU2NjY3LC0xOTIzOD
+U4Nzk1LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwx
+ODc2NTY0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mz
+k4OTgsLTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+
 -->
