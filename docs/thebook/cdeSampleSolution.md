@@ -343,10 +343,11 @@ Immediately after you selected the property, the sensor template will show value
 
 11) Click on the Line "Sensor Info". This open a section that allows you to describe your sensor in even more details. The details will be shown in the "Device Description" section of the Virtual Sensor Dashboard
 
-12) Click on "Sensor Settings..." and you can set several important settings of the Virtual Sensor
+12) Click on "Sensor Settings..." and you can set several important settings of the Virtual Sensor.
+For example if you change the "Max Value" to 2000 you see the gauge immediately changing its Range. You should also adjust the "Bucket Steps" to a higher number such as "200" for th
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjA4ODY1OTUsNzc1NzgyODI1LC04Nj
+eyJoaXN0b3J5IjpbLTE0Nzg0NzE5ODUsNzc1NzgyODI1LC04Nj
 M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
 LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
 Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
