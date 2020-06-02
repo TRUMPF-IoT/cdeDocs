@@ -309,10 +309,13 @@ By defaul these KPIs are turned off. In order to enable the KPIs add this to you
 ```
 ArgList["EnableKPIs"] = "True"
 ```
-KPIs are collected in the Properties of the "ApplicationHost" thing. (see previous chapters). Once you turn on the KPIs and you go back to the ThingRegistry you can see a
+KPIs are collected in the Properties of the "ApplicationHost" thing. (see previous chapters). Once you turn on the KPIs and you go back to the ThingRegistry you can see a snapshot of the current KPIs.
 
+Lets display one of these KPIs in the NMI.
+In order to do so we need the CDMyVThings plugin. 
+1) Add the CDMyV-Things plugin to your project (either using NuGet or include the source of 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzOTE5OTc5NCw3NzU3ODI4MjUsLTg2Mz
+eyJoaXN0b3J5IjpbMTcxMTE5MzE2Myw3NzU3ODI4MjUsLTg2Mz
 UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
 LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
 Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
