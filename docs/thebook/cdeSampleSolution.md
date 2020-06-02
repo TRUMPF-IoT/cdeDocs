@@ -101,10 +101,16 @@ In case of the network plugins, we are creating digital twins of ping-able netwo
 1) To add add a digital (endpoint) twin click on the "Devices/Network Status" tile in the NMI
 2) Then click on "Add new Network Service"
 > A wizard will appear. Wizards are part of the plugin and help to create new instances of digital twins
-3) 
+3) In the wizard set the following values:
+```
+Name Your Service: "Google DNS"
+Service Type: Select "Ping Service"
+Address: "8.8.8.8:
+```
+Once you click finish, you see a new tile in the NMI for the Google DNS
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjUyMzA3MDIsLTEwNzE0ODg5LDIxMT
+eyJoaXN0b3J5IjpbLTE5OTQ1MTcyNDYsLTEwNzE0ODg5LDIxMT
 gxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1NDkwLC01MTcwMjkw
 MDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMD
 cwNjMyMDJdfQ==
