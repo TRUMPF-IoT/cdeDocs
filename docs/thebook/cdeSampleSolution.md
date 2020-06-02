@@ -365,11 +365,12 @@ See Mommy- no hands...
 
 Go and login to the cloud.c-labs.com/nmi to see the same dashboards you just created in the cloud! 
 
+Go and play a little with the V-Things plugin. There is a documentation on the V-Things plugins here: [https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/plugins/066-VThing.md](https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/plugins/066-VThing.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNTYzOTgyMSwxMTM4NTEwNTgzLDc3NT
-c4MjgyNSwtODYzNTIxNzUwLDM0NDY5NjcwNiwxOTk1NjY2Nywt
-MTkyMzg1ODc5NSwtOTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOT
-c4NzksMTg3NjU2NDgzMywxODk5MDY1NDkwLC01MTcwMjkwMDAs
-NjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNj
-MyMDJdfQ==
+eyJoaXN0b3J5IjpbLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3Nz
+U3ODI4MjUsLTg2MzUyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2Njcs
+LTE5MjM4NTg3OTUsLTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MT
+k3ODc5LDE4NzY1NjQ4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAw
+LDYwNDczOTg5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MD
+YzMjAyXX0=
 -->
