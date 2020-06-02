@@ -165,9 +165,9 @@ The NMI for this "digital twin" only allows viewing of certain controls via the 
 ### What does the Cloud-Relay do?
 By now you might be wondering why you did not have to sign up for any service, subscription or other registration for the Cloud access to work.
 
-A C-DEngine based Cloud-Relay is a highly-tuned 
+A C-DEngine based Cloud-Relay is a highly-tuned, multi-tenant "Access Point" for authorized hosts. As the names suggests it only "relays" data between two or more hosts. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDA0NTkzOTUsMzQ0Njk2NzA2LDE5OT
+eyJoaXN0b3J5IjpbLTIwNjgwMjQzOTAsMzQ0Njk2NzA2LDE5OT
 U2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAyNywtMTA3MTQ4ODks
 MjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OTkwNjU0OTAsLTUxNz
 AyOTAwMCw2MDQ3Mzk4OTgsLTQyNzczOTgwNiwyOTkxMTU5NjEs
