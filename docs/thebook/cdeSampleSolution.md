@@ -255,8 +255,12 @@ The very last entry per node in the table either shows a thumbprint of the Clien
 
 Use this section to looks at all connected nodes and learn about what Services they consist of. The CMyVisitorLog plugin is able to identify connecting nodes by their "Footprint of Services" for accurate reporting.
 
+### cdeStatus.aspx?SYSLOG
+A very important diagnostics tool is the System Log (SYSLOG). It prints all internal messages that help developers and system administrator to identify issues.
+
+The amount of 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc2MzQ2ODk4LDc3NTc4MjgyNSwtODYzNT
+eyJoaXN0b3J5IjpbMjQ5MTg0Mzk4LDc3NTc4MjgyNSwtODYzNT
 IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
 OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
 gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
