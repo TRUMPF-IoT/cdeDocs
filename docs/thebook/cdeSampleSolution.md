@@ -193,10 +193,12 @@ Any running node containing the C-DEngine and is setup as a web server provides 
 ```
 http://localhost:8800/cdestatus.aspx
 ```
-
+This page has multiple sections that are important for diagnostics:
+#### "NodeInfo"
+This section shows a summary of basic information of the node the status page is called from.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjYzMTAyNDYsLTg2MzUyMTc1MCwzND
+eyJoaXN0b3J5IjpbLTE2NjYxNDg5NDMsLTg2MzUyMTc1MCwzND
 Q2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUsLTkyNjc4MDI3
 LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1NjQ4MzMsMTg5OT
 A2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwtNDI3NzM5ODA2
