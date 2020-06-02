@@ -195,12 +195,15 @@ http://localhost:8800/cdestatus.aspx
 ```
 This page has multiple sections that are important for diagnostics:
 #### "NodeInfo"
-This section shows a summary of basic information of the node the status page is called from.
+This section shows a summary of basic information of the node the status page is called from. The section is fairly self explanatory.
+#### "Status of Engines"
+This table shows a list of all currently running "Engines". An Engine (aka "Service") is the main entry point of 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjYxNDg5NDMsLTg2MzUyMTc1MCwzND
-Q2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUsLTkyNjc4MDI3
-LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1NjQ4MzMsMTg5OT
-A2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwtNDI3NzM5ODA2
-LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbLTg0NjYwMjY4NywtODYzNTIxNzUwLDM0ND
+Y5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcs
+LTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MD
+Y1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYs
+Mjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
