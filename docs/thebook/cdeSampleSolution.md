@@ -258,11 +258,12 @@ Use this section to looks at all connected nodes and learn about what Services t
 ### cdeStatus.aspx?SYSLOG
 A very important diagnostics tool is the System Log (SYSLOG). It prints all internal messages that help developers and system administrator to identify issues.
 
-The amount of 
+The amount of verbose output is determined by the "DebugLevel". 
+> you can find the DebugLevel in line 54 of the program.cs. The higher the level the more output the System Log will generate. ***BEWARE*** more output also means more load on the system by the log. We do not recommend any setting over 1 (Essential)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ5MTg0Mzk4LDc3NTc4MjgyNSwtODYzNT
-IxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwt
-OTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2ND
-gzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00
-Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTg1Njc5MzY3MSw3NzU3ODI4MjUsLTg2Mz
+UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
+LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
+Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
+NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
