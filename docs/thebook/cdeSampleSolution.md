@@ -266,8 +266,13 @@ Like all other tables on the cdeStatus page, you can export the content to a CSV
 ### Securing the cdeStatus.aspx page
 
 For production system you might not want to expose the cdeStatus page to any user. 
+
+In order to Secure the page you can add the following line to your program.cs (after line 82):
+```
+ArgList["StatusToken"] = "mysecret";
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNDQyODE5OCw3NzU3ODI4MjUsLTg2Mz
+eyJoaXN0b3J5IjpbMTk0NzI1OTUyNSw3NzU3ODI4MjUsLTg2Mz
 UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
 LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
 Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
