@@ -333,12 +333,14 @@ Then select the check to create the new thing.
 7) Click on the button in the first column and you will see a empty sensor dashboard
 8) Click on the Blue "Sensor Report" line to open the configuration dialog of the Virtual Sensor
 ***IMAGE OF SENSOR CONFIG***
-9) In the "Thing Picker" select 
+9) In the "Thing Picker" select "Application Host: My-Relay"
+This is the "ApplicationHost" Digital twin of your local host
+10) In the "Property Picker" select any KPI you want to look at. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyOTM0MDIyMCw3NzU3ODI4MjUsLTg2Mz
-UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
-LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
-Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
-NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbNjUyMTczNjEsNzc1NzgyODI1LC04NjM1Mj
+E3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05
+MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NTY0OD
+MzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgsLTQy
+NzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
 -->
