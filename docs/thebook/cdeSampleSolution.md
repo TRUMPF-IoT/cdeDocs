@@ -158,9 +158,9 @@ Click on the "Network Status" tile and you should see your "Google DNS" tile tha
 
 ***ADD IMAGE***
 
-
+The NMI for this "digital twin" only allows viewing of certain controls via the cloud. The developer of the twin (plugin) can determine what controls should be visible on Local Nodes vs Cloud Nodes. Additionally 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NjQwOTQ4OCwxOTk1NjY2NywtMTkyMz
+eyJoaXN0b3J5IjpbLTU0NjI3NDIwMCwxOTk1NjY2NywtMTkyMz
 g1ODc5NSwtOTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4Nzks
 MTg3NjU2NDgzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0Nz
 M5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJd
