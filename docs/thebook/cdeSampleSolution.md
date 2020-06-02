@@ -338,12 +338,12 @@ This is the "ApplicationHost" Digital twin of your local host
 10) In the "Property Picker" select any KPI you want to look at. For example "QKBSent"
 
 Immediately after you selected the property, the sensor template will show values in the charts and gauges. 
-> If you do not see the charts, you probably are ru
+> If you do not see the charts, you probably are running the local host without a connection to Cloud.C-labs.com. The charts requires a pluginc called "CDMyC3". A plugin you can find in the cdeNMI/src/HMTL5/NMIExtensions depot. If you do not have it installed the charts will not show. But if you are connected to the c As mentioned before, the nodes are all "Meshing" their information. The 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTQyMzQwMDIsNzc1NzgyODI1LC04Nj
-M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
-LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
-Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
-LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbLTU4MDg2MjUxMyw3NzU3ODI4MjUsLTg2Mz
+UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
+LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
+Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
+NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
