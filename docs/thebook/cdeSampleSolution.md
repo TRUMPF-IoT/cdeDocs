@@ -23,13 +23,14 @@ We go through the following steps:
 
 During the tutorial we will make use of a variety of existing plugins.
 You only have to do very little coding during this tutorial. The plugins we are using are:
-
-+ CMyNetwork: A ping round-trip meter (Digital Twin)
-+ CDMyComputer: a health monitor for your hosting PC (Digital Twin)
-+ CDMyVThings: A variety of virtual things, algorithm and helpers (Pre-Processor)
-+ CDMyRulesEngine: A minimalistic rules engine to act on trigger (Pre-Processor)
-+ CDMyPrometheus: An exporter plugin for prometheus scrapers (Connector)
-+ CDMyVisitorLog: a plugin that can identify and count incoming connections (Pre-Processor)
+|Plugin Name | Description  | Type |
+|--|--|--|
+|CMyNetwork| A ping round-trip meter|Digital Twin
+|CDMyComputer| a health monitor for your hosting PC|Digital Twin
+| CDMyVThings| A variety of virtual things, algorithm and helpers |Pre-Processor
+| CDMyRulesEngine| A minimalistic rules engine to act on trigger |Pre-Processor
+|CDMyPrometheus| An exporter plugin for prometheus scrapers |Connector
+|CDMyVisitorLog| a plugin that can identify and count incoming connections |Pre-Processor
 
 ## Getting Visual Studio Ready
 
@@ -300,9 +301,9 @@ To learn more about all the settings for the C-DEngine visit this page:
 ### C-DEngine KPIs
 The C-DEngine has many KPIs that can be used to measure its performance over time. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODkwMjIxMzIsNzc1NzgyODI1LC04Nj
-M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
-LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
-Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
-LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbMTY4NTc5ODIyNiw3NzU3ODI4MjUsLTg2Mz
+UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
+LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
+Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
+NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
