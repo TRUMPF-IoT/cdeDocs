@@ -344,12 +344,16 @@ Immediately after you selected the property, the sensor template will show value
 11) Click on the Line "Sensor Info". This open a section that allows you to describe your sensor in even more details. The details will be shown in the "Device Description" section of the Virtual Sensor Dashboard
 
 12) Click on "Sensor Settings..." and you can set several important settings of the Virtual Sensor.
-For example if you change the "Max Value" to 2000 you see the gauge immediately changing its Range. You should also adjust the "Bucket Steps" to a higher number such as "200" for th
+For example if you change the "Max Value" to 2000 you see the gauge immediately changing its Range. You should also adjust the "Bucket Steps" to a higher number such as "200" for the "Distribution Curve" to make sense.
+
+If you open the "Value Trend" you will find a long term historian of the KPI.
+
+> This will only work if you have the CDMyC3 plugin installed on your local node because th
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Nzg0NzE5ODUsNzc1NzgyODI1LC04Nj
-M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
-LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
-Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
-LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbMjAxMTI1MTYzOCw3NzU3ODI4MjUsLTg2Mz
+UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
+LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
+Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
+NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
