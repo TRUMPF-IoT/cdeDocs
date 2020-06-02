@@ -1,4 +1,4 @@
-# C-DEngine Solution Tutorial
+# C-DEngine Technology Tutorial
 This tutorial will walk you step by step through the development process of a C-DEngine bases solution.
 
 ## Computer Health Monitoring - A sample Solution for the C-DEngine
@@ -131,8 +131,8 @@ Things in the C-DEngine only consists of Properties! All of which are stored in 
 ***DESCRIBE MORE OPTIONS ON THINGS***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MzE3NTExMiwtOTI2NzgwMjcsLTEwNz
-E0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1NDkw
-LC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MT
-E1OTYxLDEwMDcwNjMyMDJdfQ==
+eyJoaXN0b3J5IjpbLTE5MjM4NTg3OTUsLTkyNjc4MDI3LC0xMD
+cxNDg4OSwyMTE4MTk3ODc5LDE4NzY1NjQ4MzMsMTg5OTA2NTQ5
+MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwtNDI3NzM5ODA2LDI5OT
+ExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
