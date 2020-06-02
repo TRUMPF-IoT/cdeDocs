@@ -173,11 +173,15 @@ Your local host is connecting to the Cloud-Relay with the scope you generated in
 
 >The NMI is model based and consists of meta data the browser knows how to render in HTML5. In the future there might be other renderers that can display the NMI in XAML. Unity or other front ends.
 
-You can connect as many browsers and local hosts (also called "nodes") to the same mesh (of nodes). As long as all of them use the same Scope ID, they can all see each other. Browsers will see the NMI of all connected nodes in the same portal. Even if you connect your browser to one of the local nodes, you will always se
+You can connect as many browsers and local hosts (also called "nodes") to the same mesh (of nodes). As long as all of them use the same Scope ID, they can all see each other. Browsers will see the NMI of all connected nodes in the same portal. Even if you connect your browser to one of the local nodes, you will always see the NMI of all mesh connected nodes.
+
+Look at our concept documents on GitHub ([https://github.com/TRUMPF-IoT/cdeDocs/tree/master/docs](https://github.com/TRUMPF-IoT/cdeDocs/tree/master/docs) for more details
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTMzMTYzODcsLTg2MzUyMTc1MCwzND
-Q2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUsLTkyNjc4MDI3
-LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1NjQ4MzMsMTg5OT
-A2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwtNDI3NzM5ODA2
-LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
+eyJoaXN0b3J5IjpbMTA1ODg4ODU2OSwtODYzNTIxNzUwLDM0ND
+Y5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcs
+LTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MD
+Y1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYs
+Mjk5MTE1OTYxLDEwMDcwNjMyMDJdfQ==
 -->
