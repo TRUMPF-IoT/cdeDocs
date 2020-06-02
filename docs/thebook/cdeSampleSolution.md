@@ -12,9 +12,12 @@ We go through the following steps:
 3) Adding the NMI Plugin to the Host
 4) Adding plugins from our Plugins Depot
 5) Connecting the Host to the Cloud Relay
-6) Creating an installer for the Solution
-7) Publishing the installer to the WinGet Depot
-8) Customizing the NMI Skin
+6) Diagnosing issues with Relays
+7) Communication between Plugins
+8) Using the Rules Engine
+9) Creating an installer for the Solution
+10) Publishing the installer to the WinGet Depot
+8 Customizing the NMI Skin
 9) Securing the Host using SSL
 
 ## Getting Visual Studio Ready
@@ -179,7 +182,7 @@ Look at our concept documents on GitHub ([https://github.com/TRUMPF-IoT/cdeDocs/
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1ODg4ODU2OSwtODYzNTIxNzUwLDM0ND
+eyJoaXN0b3J5IjpbLTM4OTc2OTU0NiwtODYzNTIxNzUwLDM0ND
 Y5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcs
 LTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MD
 Y1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYs
