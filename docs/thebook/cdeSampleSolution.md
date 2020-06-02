@@ -65,7 +65,17 @@ The C-DEngine can ensure that only plugins are loaded that have the proper code 
 ### UseRandomDeviceID=true
 For development it can help to always start the host fresh without storing any information on your Harddrive. This switch turns off all state management and gives the host a new DeviceID with every new start. If you keep this as the default (false) the DeviceID and other state information are saved in a folder under your bin file: "ClientBin/cache". You can delete this folder to start fresh with the host again.
 
-For easier access to configuration settings you can add a "App.Config" file to your host project and add all these settings there.
+For easier access to configuration settings you can add a "App.Config" file to your host project and add all these settings there:
+
+```XML
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="UseRandomDeviceID" value="true"/>
+    <add key="DontVerifyTrust" value="true"/>
+  </appSettings>
+</configuration>
+```
 
 ### ...meanwhile...
 While the host is running, you can enter "b" in the console and a Brower will open with the User Interface of the node. As we have no NMI Runtime installed, yet, the browser will only show:
@@ -379,11 +389,11 @@ You can do this very easy by adding the CDMyPrometheus plugin to the project eit
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMDcyOTkzNSwtMTQ3Mjc5Nzg5LDQ1Nz
-Q5NDAwMiwtMTk5NzE3ODg5MSwxMTM4NTEwNTgzLDc3NTc4Mjgy
-NSwtODYzNTIxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMz
-g1ODc5NSwtOTI2NzgwMjcsLTEwNzE0ODg5LDIxMTgxOTc4Nzks
-MTg3NjU2NDgzMywxODk5MDY1NDkwLC01MTcwMjkwMDAsNjA0Nz
-M5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYxLDEwMDcwNjMyMDJd
-fQ==
+eyJoaXN0b3J5IjpbLTEzNjA0MzM2NDQsLTE0NzI3OTc4OSw0NT
+c0OTQwMDIsLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3NzU3ODI4
+MjUsLTg2MzUyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5Mj
+M4NTg3OTUsLTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5
+LDE4NzY1NjQ4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwND
+czOTg5OCwtNDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAy
+XX0=
 -->
