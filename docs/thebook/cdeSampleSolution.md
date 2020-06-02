@@ -213,11 +213,15 @@ The next tables show connected nodes - either out bound or inbound depending on 
 * ***BackChannels:*** If other nodes are connected to your local host, each of these nodes will show up in this list. A "BackChannel" is therefore an inbound connection to the local node
 * ***Phone/Device:*** Devices are hosts/nodes that can only connect outbound and do not have their own webserver. This is very useful for devices like phones that cannot or do not accept inbound connections.
 * ***JavaJson:*** Browsers are showing up as JavaJson. Browsers are in many cases handled differently than other nodes as they are declared "unsecure". Since they cannot decrypt any of the incoming telegrams, the node a Browser is connected to is the browsers "Security Proxy" and must decide if a telegram should be forwarded to the browser or not. Its also up to this "First Node" to enforce the http browser security attributes such as HTTPS/TLS and session token based RSA encryption.
-* ***Service:*** A service is similar to a CloudRoute but locally on Premise. The main difference between a Service and a CloudRoute is that a Service can create a bi-directional http-push setup. Meaning if two nodes are connected as services, both sides can connect to the others "WebServer" and push http messages t
+* ***Service:*** A service is similar to a CloudRoute but locally on Premise. The main difference between a Service and a CloudRoute is that a Service can create a bi-directional http-push setup. Meaning if two nodes are connected as services, both sides can connect to the others "WebServer" and push http messages. 
+
+>Nodes are either "Active", "Passive" or "Relays". An active node has not web-Server and "actively" connects to another node that is either Passive or a Relay. An example of an Active Node is a "Device" or a "Phone"
+
+> "Passive" Nodes cannot actively connect to other nodes
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjQ3MjQ4NjYsNzc1NzgyODI1LC04Nj
-M1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1
-LC05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NT
-Y0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgs
-LTQyNzczOTgwNiwyOTkxMTU5NjEsMTAwNzA2MzIwMl19
+eyJoaXN0b3J5IjpbLTg0OTI3ODk3Myw3NzU3ODI4MjUsLTg2Mz
+UyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUs
+LTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4NzY1Nj
+Q4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5OCwt
+NDI3NzM5ODA2LDI5OTExNTk2MSwxMDA3MDYzMjAyXX0=
 -->
