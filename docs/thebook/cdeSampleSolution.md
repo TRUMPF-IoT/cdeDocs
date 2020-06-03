@@ -396,9 +396,9 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 + An Action in the Messaging Plugin to send an alert email to a user
 + Using the Rules Engine to define the trigger and the action
 
-The Messaging plugin has some intersting development features that you can check out in [the source code found here](cdePlugins/src/188 - CDMyPrometheusExporte).
+The Messaging plugin has some intersting development features that you can check out in [https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzIzMTc2MDAsMjEzMDAwOTM5NCwtMT
+eyJoaXN0b3J5IjpbLTE4Mzc2MzkwOTksMjEzMDAwOTM5NCwtMT
 M2MDQzMzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5NzE3
 ODg5MSwxMTM4NTEwNTgzLDc3NTc4MjgyNSwtODYzNTIxNzUwLD
 M0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2Nzgw
