@@ -1,3 +1,7 @@
+<!--
+SPDX-FileCopyrightText: 2020 Connectivity-Labs
+SPDX-License-Identifier: MPL-2.0
+-->
 # C-DEngine Technology Tutorial
 This tutorial will walk you step by step through the development process of a C-DEngine bases solution.
 
@@ -411,11 +415,11 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC0xMz
-YwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4
-ODkxLDExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMz
-Q0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAy
-NywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OT
-kwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgsLTQyNzczOTgw
-Nl19
+eyJoaXN0b3J5IjpbMTU4ODI2MzY3MywtNzcxODc2MDMzLDIxMz
+AwMDkzOTQsLTEzNjA0MzM2NDQsLTE0NzI3OTc4OSw0NTc0OTQw
+MDIsLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3NzU3ODI4MjUsLT
+g2MzUyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3
+OTUsLTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4Nz
+Y1NjQ4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5
+OF19
 -->
