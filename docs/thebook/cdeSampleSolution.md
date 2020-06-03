@@ -396,13 +396,13 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 + An Action in the Messaging Plugin to send an alert email to a user
 + Using the Rules Engine to define the trigger and the action
 
-The Messaging plugin has some intersting development features that you can check out in [https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork).
+The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mzc2MzkwOTksMjEzMDAwOTM5NCwtMT
-M2MDQzMzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5NzE3
-ODg5MSwxMTM4NTEwNTgzLDc3NTc4MjgyNSwtODYzNTIxNzUwLD
-M0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2Nzgw
-MjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxOD
-k5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4
-MDZdfQ==
+eyJoaXN0b3J5IjpbMjA3MTQyNTc4NiwyMTMwMDA5Mzk0LC0xMz
+YwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4
+ODkxLDExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMz
+Q0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAy
+NywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OT
+kwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgsLTQyNzczOTgw
+Nl19
 -->
