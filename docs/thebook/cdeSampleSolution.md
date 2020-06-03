@@ -32,7 +32,6 @@ During the tutorial we will make use of a variety of existing plugins.
 >Plugins contain the "real meet" of a C-DEngine bases solution. Plugins are DLLs that host one or more services. Best practice is to have each service in its own plugin.
 
 You only have to do very little coding during this tutorial. 
-
 The plugins we are using are:
 
 |Plugin Name | Description  | Type |
@@ -45,6 +44,7 @@ The plugins we are using are:
 |CDMyVisitorLog| a plugin that can identify and count incoming connections |Pre-Processor/Service
 |CDMyC3| An NMI Extension plugins for Charts|NMI Extension
 |CDMyMessaging| Allows to send messages to users via email|Service
+|CDMyThingProvisioner| This plugin is used to script the creation of things in order to build headless solutions|Service
 
 ## Chapter 1 - Getting Visual Studio Ready
 
@@ -411,7 +411,7 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMjEzNjUzMCwyMTMwMDA5Mzk0LC0xMz
+eyJoaXN0b3J5IjpbLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC0xMz
 YwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4
 ODkxLDExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMz
 Q0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAy
