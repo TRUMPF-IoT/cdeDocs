@@ -3,7 +3,13 @@ This tutorial will walk you step by step through the development process of a C-
 
 ## A complete sample Solution for the C-DEngine
 
-This sample will show you how to create a small starter solution using several plugins. It will monitor some essential KPIs of your PC and displays the results in the NMI User Interface, send messages on certain events. You can follow the tutorial step by step or start at any point using the source code on GitHub.
+This sample will show you how to create a small starter solution using several plugins. This sample will...
++ ... monitor and export some essential KPIs of the C-DEngine and your PC 
++ ... displays the results in the NMI User Interface
++ ... send messages on certain events 
++ ... show how to use Prometheus and Grafana to monitor KPIs externally
+
+You can follow the tutorial step by step or start at any point using the source code on GitHub.
 
 We go through the following steps:
 
@@ -398,11 +404,11 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMzQ0NDkzNCwyMTMwMDA5Mzk0LC0xMz
-YwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4
-ODkxLDExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMz
-Q0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAy
-NywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OT
-kwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgsLTQyNzczOTgw
-Nl19
+eyJoaXN0b3J5IjpbLTE0OTAwOTE5NDksMjEzMDAwOTM5NCwtMT
+M2MDQzMzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5NzE3
+ODg5MSwxMTM4NTEwNTgzLDc3NTc4MjgyNSwtODYzNTIxNzUwLD
+M0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2Nzgw
+MjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxOD
+k5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4
+MDZdfQ==
 -->
