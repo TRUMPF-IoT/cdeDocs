@@ -392,13 +392,17 @@ You can do this very easy by adding the CDMyPrometheus plugin to the project eit
 A great example how plugins do work with each other is the use of the Virtual Sensor in the V-Things Plugin and the Network Status plugin.
 
 Another example is the use of the Rules Engine. It can combine three plugins in one workflow. For example: 
-+ A trigger 
++ A trigger from the Network Status plugin (If a ping takes more than 1 second)
++ An Action in the Messaging Plugin to send an alert email to a user
++ Using the Rules Engine to define the trigger and the action
+
+The Messaging plugin has some intersting development features that you can check out in [the source code found here](cdePlugins/src/188 - CDMyPrometheusExporte).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NjMyMjEzMCwyMTMwMDA5Mzk0LC0xMz
-YwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4
-ODkxLDExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMz
-Q0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAy
-NywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OT
-kwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgsLTQyNzczOTgw
-Nl19
+eyJoaXN0b3J5IjpbLTEwMzIzMTc2MDAsMjEzMDAwOTM5NCwtMT
+M2MDQzMzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5NzE3
+ODg5MSwxMTM4NTEwNTgzLDc3NTc4MjgyNSwtODYzNTIxNzUwLD
+M0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2Nzgw
+MjcsLTEwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxOD
+k5MDY1NDkwLC01MTcwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4
+MDZdfQ==
 -->
