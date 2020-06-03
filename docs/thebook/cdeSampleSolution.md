@@ -387,10 +387,14 @@ One of the most important diagnostics options is to output all the KPIs of the C
 
 You can do this very easy by adding the CDMyPrometheus plugin to the project either via NuGet or adding the "cdePlugins/src/188 - CDMyPrometheusExporter" source.
 
-### U
+## Chapter 7 - Communication between Plugins
 
+A great example how plugins do work with each other is the use of the Virtual Sensor in the V-Things Plugin and the Network Status plugin.
+
+Another example is the use of the Rules Engine. It can combine three plugins in one workflow. For example: 
++ A trigger 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NTk3NDYwMiwyMTMwMDA5Mzk0LC0xMz
+eyJoaXN0b3J5IjpbMTc2NjMyMjEzMCwyMTMwMDA5Mzk0LC0xMz
 YwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4
 ODkxLDExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMz
 Q0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAy
