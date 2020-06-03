@@ -1,9 +1,9 @@
 # C-DEngine Technology Tutorial
 This tutorial will walk you step by step through the development process of a C-DEngine bases solution.
 
-## Computer Health Monitoring - A sample Solution for the C-DEngine
+## A complete sample Solution for the C-DEngine
 
-This sample will show you how to create a small starter solution using several plugins. It will monitor some essential KPIs of your PC and displays the results in the NMI User Interface. You can follow the tutorial step by step or start at any point using the source code on GitHub.
+This sample will show you how to create a small starter solution using several plugins. It will monitor some essential KPIs of your PC and displays the results in the NMI User Interface, send messages on certain events. You can follow the tutorial step by step or start at any point using the source code on GitHub.
 
 We go through the following steps:
 
@@ -33,7 +33,7 @@ You only have to do very little coding during this tutorial. The plugins we are 
 |CDMyVisitorLog| a plugin that can identify and count incoming connections |Pre-Processor/Service
 |CDMyC3| An NMI Extension plugins for Charts|NMI Extension
 
-## Getting Visual Studio Ready
+## Chapter 1 - Getting Visual Studio Ready
 
 We recommend using the latest version of Visual Studio. By the time of writing this article we were using Visual Studio 2019 16.0.
 Make sure you have the following options installed when you install VS:
@@ -44,7 +44,7 @@ Make sure you have the following options installed when you install VS:
 
 We also recommend that you install the Visual Studio Project Templates for the C-DEngine. You can find the VSIX here: https://github.com/TRUMPF-IoT/cdeSDK/releases/download/5.105.0/CDEngineSDKTemplates.vsix
 
-## Creating a host
+## Chapter 2 - Creating a host
 The C-DEngine is a DLL that contains all the necessary services required to create an application but it does require a host to run in. The C-DEngine supports a variety of hosts like IIS, ASP.NET, Docker, Console or Windows Service. This Tutorial will use a .NET Core Console host.
 
 1) To create the host, launch Visual Studio 2019 as Admin and create a new Project using the template "Console Host App for C-Labs C-DEngine (.NET Core)" in your favorite project folder
@@ -83,7 +83,7 @@ While the host is running, you can enter "b" in the console and a Brower will op
 **Resource http://yourpc:yourport/lnmi not found***
 Right now the C-DEngine is running in headless mode. We will add the NMI in the next step.
 
-## Adding the NMI Plugin to the Host
+## Chapter 3 - Adding the NMI Plugin to the Host
 Adding the NMI Runtime to the project is as easy as adding a NuGet:
 1) Open the Nuget Manager and browser for "NMI"
 You will find the CDMyNMIHtml5RT package - just add it to the project. You don't have to do anything to your program.cs - just run it again
@@ -106,7 +106,7 @@ The Scope ID is a Base32 string with up to 8 characters.
 
 To stop the host, simple press ESC in the console. If you have the browser open you will see that you get immediately logged out of the NMI when the host stops.
 
-## Adding plugins from our Plugins Depot
+## Chapter 4 - Adding plugins from our Plugins Depot
 The cdePlugins depot on GitHub has several plugins we can now add to the project. We are working on publishing all plugins as NuGets as well. You can Browser for Compatible plugins by searching for "CDMy" in the NuGet Package Manager.
 
 >C-DEngine automatically recognizes plugins by the prefix "CDMy" or "C-DMy". Therefore its very simple to add new plugins to NuGet and the bin folder
@@ -165,7 +165,7 @@ To the left are three buttons:
 Things in the C-DEngine only consists of Properties! All of which are stored in the ThingRegistry (class name: TheThingRegistry). Developer can access things via TheThingRegistry APIs.
 
 ***DESCRIBE MORE OPTIONS ON THINGS***
-## Connecting the Host to the Cloud Relay
+## Chapter 5 - Connecting the Host to the Cloud Relay
 
 Solutions with the C-DEngine can run completely on premises without the need for an internet connection. 
 But if an internet connection is available, the C-DEngine can easily be connected to a "Cloud Relay" allowing access to the local NMI via cloud connected devices.  
@@ -211,7 +211,7 @@ You can connect as many browsers and local hosts (also called "nodes") to the sa
 
 Look at our concept documents on GitHub ([https://github.com/TRUMPF-IoT/cdeDocs/tree/master/docs](https://github.com/TRUMPF-IoT/cdeDocs/tree/master/docs) for more details
 
-## Diagnosing issues with Relays
+## Chapter 6 - Diagnosing issues with Relays
 
 The more complex a system gets the more important it becomes to diagnose issues. C-DEngine bases hosts offer several ways of diagnostics:
 
@@ -398,7 +398,7 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MTQyNTc4NiwyMTMwMDA5Mzk0LC0xMz
+eyJoaXN0b3J5IjpbMTIxMzQ0NDkzNCwyMTMwMDA5Mzk0LC0xMz
 YwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4
 ODkxLDExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMz
 Q0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAy
