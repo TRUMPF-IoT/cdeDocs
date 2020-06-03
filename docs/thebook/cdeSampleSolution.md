@@ -387,16 +387,14 @@ One of the most important diagnostics options is to output all the KPIs of the C
 
 You can do this very easy by adding the CDMyPrometheus plugin to the project either via NuGet or adding the "cdePlugins/src/188 - CDMyPrometheusExporter" source.
 
-|  |  |
-|--|--|
-|  |  |
+### U
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMDAwOTM5NCwtMTM2MDQzMzY0NCwtMT
-Q3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MSwxMTM4NTEw
-NTgzLDc3NTc4MjgyNSwtODYzNTIxNzUwLDM0NDY5NjcwNiwxOT
-k1NjY2NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcsLTEwNzE0ODg5
-LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1NDkwLC01MT
-cwMjkwMDAsNjA0NzM5ODk4LC00Mjc3Mzk4MDYsMjk5MTE1OTYx
-XX0=
+eyJoaXN0b3J5IjpbLTc2NTk3NDYwMiwyMTMwMDA5Mzk0LC0xMz
+YwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4
+ODkxLDExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMz
+Q0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAy
+NywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OT
+kwNjU0OTAsLTUxNzAyOTAwMCw2MDQ3Mzk4OTgsLTQyNzczOTgw
+Nl19
 -->
