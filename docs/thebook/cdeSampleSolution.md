@@ -471,7 +471,7 @@ You will now see two new plugins in your dashbard. Lets first configure the Mess
 5) then click return and then click the details button as you should be very familiar with by now.
 
 6) you now need to create a message template and point at a server. 
-7) we want to send a message if the ping latency was too high. You can enter "Ping too High" in the subject and a more detailed message in the "Message". If you want to use properties of Things in the message, you can use %PropertyName% macro.
+7) we want to send a message if the ping latency was too high. You can enter "Ping too High" in the subject and a more detailed message in the "Message". You do not need to put anything here as this text will come from the rules engine. But if you want to test your email it might make sense to put "Test email - please disregard" in here.
 8) Open the "Additional Settings" and enter the information for your SMTP server.
 9) Click on the "Send Email" button to test your configuration
 
@@ -502,7 +502,7 @@ Back in the dashboard you will see your new rule. Click on it to examine what th
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNjk5MzM2NSw4MTIwMzE3NzEsLTY4ND
+eyJoaXN0b3J5IjpbLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4ND
 E5NTk1MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3
 MzgsMTExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLT
 c3MTg3NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcy
