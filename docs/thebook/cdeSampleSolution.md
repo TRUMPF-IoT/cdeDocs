@@ -427,8 +427,9 @@ If you leave the "Address" empty  the plugin will automatically assign "metrics"
 
 4) click on the details button to configure the Prometheus endpoint. 
 5) In the device Status Group click on "Sender Thing List" and then "New Thing"
-
-
+6) in the "Thing to Export" select "My Relay" and add some "Properties to send" (i.e KPI1, QKBSent, QSQueued)
+7) By defaul the thing is disabled, uncheck "Disabled" and you are done
+8) Go back and open the "Connectivity" group. 
 
 ## Chapter 7 - Communication between Plugins
 
@@ -441,11 +442,11 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0ODAzNzc2OCwtODY3NzY4NzM3LDExOD
-AwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1
-Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC
-0xMzYwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3
-MTc4ODkxLDExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NT
-AsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3
-ODAyN119
+eyJoaXN0b3J5IjpbMzA2OTc5ODM4LC04Njc3Njg3MzcsMTE4MD
+A1NjUyNiwtMTg0MDMzMDczOCwxMTE2OTk1MTQwLDExMzMxOTUy
+OTQsMTU4ODI2MzY3MywtNzcxODc2MDMzLDIxMzAwMDkzOTQsLT
+EzNjA0MzM2NDQsLTE0NzI3OTc4OSw0NTc0OTQwMDIsLTE5OTcx
+Nzg4OTEsMTEzODUxMDU4Myw3NzU3ODI4MjUsLTg2MzUyMTc1MC
+wzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUsLTkyNjc4
+MDI3XX0=
 -->
