@@ -451,9 +451,14 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 + An Action in the Messaging Plugin to send an alert email to a user
 + Using the Rules Engine to define the trigger and the action
 
-The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
+The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyMessaging)
+
+1) install the CDMyRulesEngine and C-DMyMessaging plugin (either via NuGet or cloning the cdePlugins Depot for the source)
+2) run your project again and login to the NMI 
+
+You will now see two new plugins in your dashbard. Lets first configure the M
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI2NjE3MzAwLC04Njc3Njg3MzcsMTE4MD
+eyJoaXN0b3J5IjpbOTA2MzY4OTQ1LC04Njc3Njg3MzcsMTE4MD
 A1NjUyNiwtMTg0MDMzMDczOCwxMTE2OTk1MTQwLDExMzMxOTUy
 OTQsMTU4ODI2MzY3MywtNzcxODc2MDMzLDIxMzAwMDkzOTQsLT
 EzNjA0MzM2NDQsLTE0NzI3OTc4OSw0NTc0OTQwMDIsLTE5OTcx
