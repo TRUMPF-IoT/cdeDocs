@@ -486,9 +486,15 @@ Step 2: Trigger - Set these values:
 | Trigger Property | Value|
 | Trigger Condition | Larger |
 | Trigger Value | 500|
-This creates a trigger on the "Value" p
+This creates a trigger on the "Value" property of the "Google DNS" thing if its value is larger than 500.
+
+Step 3: What action to do "Set Property on Thing"
+Step 4: Select "My Email" as the "Action Thing" and "sendmail" as the action property.
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNjgwNTM5OSwtODY3NzY4NzM3LDExOD
+eyJoaXN0b3J5IjpbLTYwNDE1MzU2NSwtODY3NzY4NzM3LDExOD
 AwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1
 Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC
 0xMzYwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3
