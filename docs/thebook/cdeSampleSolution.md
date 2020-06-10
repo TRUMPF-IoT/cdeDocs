@@ -466,9 +466,13 @@ You will now see two new plugins in your dashbard. Lets first configure the Mess
 |--|--|
 | Target Name | My Email |
 | Device Type | Email Message|
-| Receipient | mymetrics |
+| Recipient | yourEmail |
+
+5) then click return and then click the details button as you should be very familiar with by now.
+
+6) you now need to create a message template and point at a server. Open the "Addition
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTY4NjM0MTQsLTg2Nzc2ODczNywxMT
+eyJoaXN0b3J5IjpbLTEwMDAzMTgzMDAsLTg2Nzc2ODczNywxMT
 gwMDU2NTI2LC0xODQwMzMwNzM4LDExMTY5OTUxNDAsMTEzMzE5
 NTI5NCwxNTg4MjYzNjczLC03NzE4NzYwMzMsMjEzMDAwOTM5NC
 wtMTM2MDQzMzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5
