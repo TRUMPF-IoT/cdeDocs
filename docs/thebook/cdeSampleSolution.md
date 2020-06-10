@@ -230,7 +230,9 @@ You can connect as many browsers and local hosts (also called "nodes") to the sa
 
 Look at our concept documents on GitHub ([https://github.com/TRUMPF-IoT/cdeDocs/tree/master/docs](https://github.com/TRUMPF-IoT/cdeDocs/tree/master/docs) for more details
 
-If you change turn on the "UserMappe
+If you change turn on the "UserMapper" your node will prompt you for a UserName and Password. These credentials are then "Mapped" to the ScopeID of the Node. Once you switch to the UserMapper, you cannot switch back to "Scope Login" as that would present a security risk. Also you cannot use the UserMapper with the Cloud.C-Labs.com as the UserMapper is not tu
+ 
+
 
 ## Chapter 6 - Diagnosing issues with Relays
 
@@ -419,7 +421,7 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MDI2NzcxMSwxMTMzMTk1Mjk0LDE1OD
+eyJoaXN0b3J5IjpbLTIwNjM3NTAxMCwxMTMzMTk1Mjk0LDE1OD
 gyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMz
 NjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLD
 ExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMzQ0Njk2
