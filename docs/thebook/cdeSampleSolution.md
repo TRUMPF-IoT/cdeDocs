@@ -128,7 +128,7 @@ The cdePlugins depot on GitHub has several plugins we can now add to the project
 
 >C-DEngine automatically recognizes plugins by the prefix "CDMy" or "C-DMy". Therefore its very simple to add new plugins to NuGet and the bin folder
 
-First we are adding the CDMyNetwork plugin.
+First we are adding the C-DMyNetwork plugin.
 
 If you want to use the source...
 1) Clone the "cdePlugins" depot to your local drive
@@ -415,11 +415,11 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4ODI2MzY3MywtNzcxODc2MDMzLDIxMz
-AwMDkzOTQsLTEzNjA0MzM2NDQsLTE0NzI3OTc4OSw0NTc0OTQw
-MDIsLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3NzU3ODI4MjUsLT
-g2MzUyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3
-OTUsLTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3ODc5LDE4Nz
-Y1NjQ4MzMsMTg5OTA2NTQ5MCwtNTE3MDI5MDAwLDYwNDczOTg5
-OF19
+eyJoaXN0b3J5IjpbMTA2NzU5MTAwLDE1ODgyNjM2NzMsLTc3MT
+g3NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcyNzk3
+ODksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1ODMsNz
+c1NzgyODI1LC04NjM1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3
+LC0xOTIzODU4Nzk1LC05MjY3ODAyNywtMTA3MTQ4ODksMjExOD
+E5Nzg3OSwxODc2NTY0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAw
+MF19
 -->
