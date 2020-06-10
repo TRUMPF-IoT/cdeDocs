@@ -471,15 +471,19 @@ You will now see two new plugins in your dashbard. Lets first configure the Mess
 5) then click return and then click the details button as you should be very familiar with by now.
 
 6) you now need to create a message template and point at a server. 
-7) we want to send a message if the ping latency was too high. You can enter "Ping too High" in the subject and a more detailed message in the "Message". If you want to use 
-Open the "Additional Settings" and enter the information for your SMTP server.
+7) we want to send a message if the ping latency was too high. You can enter "Ping too High" in the subject and a more detailed message in the "Message". If you want to use properties of Things in the message, you can use %PropertyName% macro.
+8) Open the "Additional Settings" and enter the information for your SMTP server.
+9) Click on the "Send Email" button to test your configuration
+
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5OTIyNTIzOSwtODY3NzY4NzM3LDExOD
-AwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1
-Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC
-0xMzYwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3
-MTc4ODkxLDExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NT
-AsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3
-ODAyN119
+eyJoaXN0b3J5IjpbLTE1ODE4NzMzNDYsLTg2Nzc2ODczNywxMT
+gwMDU2NTI2LC0xODQwMzMwNzM4LDExMTY5OTUxNDAsMTEzMzE5
+NTI5NCwxNTg4MjYzNjczLC03NzE4NzYwMzMsMjEzMDAwOTM5NC
+wtMTM2MDQzMzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5
+NzE3ODg5MSwxMTM4NTEwNTgzLDc3NTc4MjgyNSwtODYzNTIxNz
+UwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2
+NzgwMjddfQ==
 -->
