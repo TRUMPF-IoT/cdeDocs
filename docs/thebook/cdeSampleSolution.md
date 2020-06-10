@@ -410,6 +410,8 @@ One of the most important diagnostics options is to output all the KPIs of the C
 
 You can do this very easy by adding the CDMyPrometheus plugin to the project either via NuGet or adding the "cdePlugins/src/188 - CDMyPrometheusExporter" source.
 
+Log back into the NMI and navigate to the Premetheus Plugin T
+
 ## Chapter 7 - Communication between Plugins
 
 A great example how plugins do work with each other is the use of the Virtual Sensor in the V-Things Plugin and the Network Status plugin.
@@ -421,11 +423,11 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMT
-E2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2
-MDMzLDIxMzAwMDkzOTQsLTEzNjA0MzM2NDQsLTE0NzI3OTc4OS
-w0NTc0OTQwMDIsLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3NzU3
-ODI4MjUsLTg2MzUyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLT
-E5MjM4NTg3OTUsLTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3
-ODc5XX0=
+eyJoaXN0b3J5IjpbMjc1OTAyNTQ1LDExODAwNTY1MjYsLTE4ND
+AzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2
+NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC
+0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1
+MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMzQ0Njk2NzA2LD
+E5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAyNywtMTA3MTQ4
+ODldfQ==
 -->
