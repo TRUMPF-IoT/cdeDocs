@@ -470,13 +470,14 @@ You will now see two new plugins in your dashbard. Lets first configure the Mess
 
 5) then click return and then click the details button as you should be very familiar with by now.
 
-6) you now need to create a message template and point at a server. Open the "Addition
+6) you now need to create a message template and point at a server. Open the "Additional Settings" and enter the information for your SMTP server.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDAzMTgzMDAsLTg2Nzc2ODczNywxMT
-gwMDU2NTI2LC0xODQwMzMwNzM4LDExMTY5OTUxNDAsMTEzMzE5
-NTI5NCwxNTg4MjYzNjczLC03NzE4NzYwMzMsMjEzMDAwOTM5NC
-wtMTM2MDQzMzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5
-NzE3ODg5MSwxMTM4NTEwNTgzLDc3NTc4MjgyNSwtODYzNTIxNz
-UwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2
-NzgwMjddfQ==
+eyJoaXN0b3J5IjpbLTY4OTY1NTM2MywtODY3NzY4NzM3LDExOD
+AwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1
+Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC
+0xMzYwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3
+MTc4ODkxLDExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NT
+AsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3
+ODAyN119
 -->
