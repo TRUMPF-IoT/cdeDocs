@@ -182,6 +182,8 @@ To the left are three buttons:
 
 Things in the C-DEngine only consists of Properties! All of which are stored in the ThingRegistry (class name: TheThingRegistry). Developer can access things via TheThingRegistry APIs.
 
+In the C-DEngine 
+
 ***DESCRIBE MORE OPTIONS ON THINGS***
 ## Chapter 5 - Connecting the Host to the Cloud Relay
 
@@ -416,11 +418,11 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMzE5NTI5NCwxNTg4MjYzNjczLC03Nz
-E4NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQzMzY0NCwtMTQ3Mjc5
-Nzg5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MSwxMTM4NTEwNTgzLD
-c3NTc4MjgyNSwtODYzNTIxNzUwLDM0NDY5NjcwNiwxOTk1NjY2
-NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcsLTEwNzE0ODg5LDIxMT
-gxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1NDkwLC01MTcwMjkw
-MDBdfQ==
+eyJoaXN0b3J5IjpbMTIxNzU4MTgzNCwxMTMzMTk1Mjk0LDE1OD
+gyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMz
+NjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLD
+ExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMzQ0Njk2
+NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAyNywtMT
+A3MTQ4ODksMjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OTkwNjU0
+OTBdfQ==
 -->
