@@ -479,14 +479,20 @@ Now lets configure the Rules Engine
 
 The rules engine comes with a wizard:
 Step 1: Give your rule a name like "Ping too high send message"
-Step 2: Trigger - Select the "Google DNS" as the T
-
+Step 2: Trigger - Set these values:
+|Column  | Selection |
+|--|--|
+| Trigger Thing | Google DNS |
+| Trigger Property | Value|
+| Trigger Condition | Larger |
+| Trigger Value | 500|
+This creates a trigger on the "Value" p
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDU0NzAxMzEsLTg2Nzc2ODczNywxMT
-gwMDU2NTI2LC0xODQwMzMwNzM4LDExMTY5OTUxNDAsMTEzMzE5
-NTI5NCwxNTg4MjYzNjczLC03NzE4NzYwMzMsMjEzMDAwOTM5NC
-wtMTM2MDQzMzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5
-NzE3ODg5MSwxMTM4NTEwNTgzLDc3NTc4MjgyNSwtODYzNTIxNz
-UwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2
-NzgwMjddfQ==
+eyJoaXN0b3J5IjpbMTIwNjgwNTM5OSwtODY3NzY4NzM3LDExOD
+AwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1
+Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC
+0xMzYwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3
+MTc4ODkxLDExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NT
+AsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3
+ODAyN119
 -->
