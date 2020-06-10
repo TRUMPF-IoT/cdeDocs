@@ -425,7 +425,7 @@ You will see that there is already one Prometheus plugin running - this is our K
 
 If you leave the "Address" empty  the plugin will automatically assign "metrics" as the address. This is the default endpoint for prometheus but for security reason we do not recommend the default as hackers do know this default as well. Rather give it a specific name for your host.
 
-4) click 
+4) click on the details button to configure the Prometheus endpoint. 
 
 ## Chapter 7 - Communication between Plugins
 
@@ -438,11 +438,11 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY0OTEwMzE4LDExODAwNTY1MjYsLTE4ND
-AzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2
-NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC
-0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1
-MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMzQ0Njk2NzA2LD
-E5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAyNywtMTA3MTQ4
-ODldfQ==
+eyJoaXN0b3J5IjpbLTg2Nzc2ODczNywxMTgwMDU2NTI2LC0xOD
+QwMzMwNzM4LDExMTY5OTUxNDAsMTEzMzE5NTI5NCwxNTg4MjYz
+NjczLC03NzE4NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQzMzY0NC
+wtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MSwxMTM4
+NTEwNTgzLDc3NTc4MjgyNSwtODYzNTIxNzUwLDM0NDY5NjcwNi
+wxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcsLTEwNzE0
+ODg5XX0=
 -->
