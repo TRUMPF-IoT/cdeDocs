@@ -410,7 +410,7 @@ One of the most important diagnostics options is to output all the KPIs of the C
 
 You can do this very easy by adding the CDMyPrometheus plugin to the project either via NuGet or adding the "cdePlugins/src/188 - CDMyPrometheusExporter" source.
 
-1) Log back into the NMI and navigate to the Premetheus Plugin Dashboard
+1) Log back into the NMI and navigate to the Prometheus Plugin Dashboard
 
 You will see that there is already one Prometheus plugin running - this is our KPI exported on the Test Cloud.C-Labs.com.
 
@@ -423,22 +423,22 @@ You will see that there is already one Prometheus plugin running - this is our K
 | Device Type | Prometheus Exported|
 | Address | mymetrics |
 
-If you leave the "Address" empty  the plugin will automatically assign "metrics" as the address. This is the default endpoint for prometheus but for security reason we do not recommend the default as hackers do know this default as well. Rather give it a specific name for your host.
+If you leave the "Address" empty  the plugin will automatically assign "metrics" as the address. This is the default endpoint for Prometheus but for security reason we do not recommend the default as hackers do know this default as well. Rather give it a specific name for your host.
 
 4) click on the details button to configure the Prometheus endpoint. 
 5) In the device Status Group click on "Sender Thing List" and then "New Thing"
 6) in the "Thing to Export" select "My Relay" and add some "Properties to send" (i.e KPI1, QKBSent, QSQueued)
 7) By defaul the thing is disabled, uncheck "Disabled" and you are done
-8) Go back and open the "Connectivity" group then click the "Connect" button and if you like enable "Auto Connect". This will start the prometheus end point when the relay restarts.
+8) Go back and open the "Connectivity" group then click the "Connect" button and if you like enable "Auto Connect". This will start the Prometheus end point when the relay restarts.
 
 You can now test the endpoint by navigating with your browser to
 
 ```
 http://localhost:8700/mymetrics
 ```
-You will see the prometheus formatted output.
+You will see the Prometheus formatted output.
 
-
+If you now install Prometheus and point at this endpoint you have a valid Prometheus data Source that you can use in Grafana or other Prometheus compatible logging application.
 
 ## Chapter 7 - Communication between Plugins
 
@@ -451,7 +451,7 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MDk5NzQwMiwtODY3NzY4NzM3LDExOD
+eyJoaXN0b3J5IjpbLTI4MTU3MTcwNSwtODY3NzY4NzM3LDExOD
 AwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1
 Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC
 0xMzYwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3
