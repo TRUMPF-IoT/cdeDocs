@@ -499,14 +499,14 @@ Back in the dashboard you will see your new rule. Click on it to examine what th
 
 >If you want to test the rule, just click on "Trigger now".
 
-
+You can also send a message to any "Engine/Service" with the rules engine. Just open the "TSM Action" group, select a TSM Engine (this are known services on the local node), set a TSM Text and a Payload.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4ND
-E5NTk1MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3
-MzgsMTExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLT
-c3MTg3NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcy
-Nzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1OD
-MsNzc1NzgyODI1LC04NjM1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2
-NjY3XX0=
+eyJoaXN0b3J5IjpbMzg0NDY1ODA2LC05MTIwNzE3NDUsODEyMD
+MxNzcxLC02ODQxOTU5NTMsLTg2Nzc2ODczNywxMTgwMDU2NTI2
+LC0xODQwMzMwNzM4LDExMTY5OTUxNDAsMTEzMzE5NTI5NCwxNT
+g4MjYzNjczLC03NzE4NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQz
+MzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MS
+wxMTM4NTEwNTgzLDc3NTc4MjgyNSwtODYzNTIxNzUwLDM0NDY5
+NjcwNl19
 -->
