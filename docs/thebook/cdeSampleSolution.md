@@ -475,11 +475,14 @@ You will now see two new plugins in your dashbard. Lets first configure the Mess
 8) Open the "Additional Settings" and enter the information for your SMTP server.
 9) Click on the "Send Email" button to test your configuration
 
+Now lets configure the Rules Engine
 
-
+The rules engine comes with a wizard:
+Step 1: Give your rule a name like "Ping too high send message"
+Step 2: Trigger - Select the "Google DNS" as the T
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODE4NzMzNDYsLTg2Nzc2ODczNywxMT
+eyJoaXN0b3J5IjpbLTIwNDU0NzAxMzEsLTg2Nzc2ODczNywxMT
 gwMDU2NTI2LC0xODQwMzMwNzM4LDExMTY5OTUxNDAsMTEzMzE5
 NTI5NCwxNTg4MjYzNjczLC03NzE4NzYwMzMsMjEzMDAwOTM5NC
 wtMTM2MDQzMzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5
