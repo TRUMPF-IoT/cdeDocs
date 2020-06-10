@@ -491,7 +491,8 @@ This creates a trigger on the "Value" property of the "Google DNS" thing if its 
 
 **Step 3:** What action to do "Set Property on Thing"
 **Step 4:** Select "My Email" as the "Action Thing" and "sendmail" as the action property.
-**Step 5:** use "The ping was higher then expected: %Value%"
+**Step 5:** As "Action Value" use "The ping was higher then expected: %Value%". This will be sent to your email instead of the body of your email template.
+
 In the final step you can set if you want to activate the rule right away and if the rule should be logged whenever it triggers.
 
 Back in the dashboard you will see your new rule. Click on it to examine what the wizard has created for you. In the "Current Value" you can see the actual value of the Ping and if its greater than 500 the rule will fire
@@ -501,11 +502,11 @@ Back in the dashboard you will see your new rule. Click on it to examine what th
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3Mzg1NzMsODEyMDMxNzcxLC02ODQxOT
-U5NTMsLTg2Nzc2ODczNywxMTgwMDU2NTI2LC0xODQwMzMwNzM4
-LDExMTY5OTUxNDAsMTEzMzE5NTI5NCwxNTg4MjYzNjczLC03Nz
-E4NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQzMzY0NCwtMTQ3Mjc5
-Nzg5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MSwxMTM4NTEwNTgzLD
-c3NTc4MjgyNSwtODYzNTIxNzUwLDM0NDY5NjcwNiwxOTk1NjY2
-N119
+eyJoaXN0b3J5IjpbLTczNjk5MzM2NSw4MTIwMzE3NzEsLTY4ND
+E5NTk1MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3
+MzgsMTExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLT
+c3MTg3NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcy
+Nzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1OD
+MsNzc1NzgyODI1LC04NjM1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2
+NjY3XX0=
 -->
