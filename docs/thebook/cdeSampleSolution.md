@@ -456,13 +456,23 @@ The Messaging plugin has some interesting development features that you can chec
 1) install the CDMyRulesEngine and C-DMyMessaging plugin (either via NuGet or cloning the cdePlugins Depot for the source)
 2) run your project again and login to the NMI 
 
-You will now see two new plugins in your dashbard. Lets first configure the M
+You will now see two new plugins in your dashbard. Lets first configure the Messaging Plugin
+
+3) Click on "Messaging" then "Messaging Targets" then "Add a new Messaging Target"
+
+4) In the new row enter:
+
+|Column  | Selection |
+|--|--|
+| Target Name | My Email |
+| Device Type | Email Message|
+| Receipient | mymetrics |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA2MzY4OTQ1LC04Njc3Njg3MzcsMTE4MD
-A1NjUyNiwtMTg0MDMzMDczOCwxMTE2OTk1MTQwLDExMzMxOTUy
-OTQsMTU4ODI2MzY3MywtNzcxODc2MDMzLDIxMzAwMDkzOTQsLT
-EzNjA0MzM2NDQsLTE0NzI3OTc4OSw0NTc0OTQwMDIsLTE5OTcx
-Nzg4OTEsMTEzODUxMDU4Myw3NzU3ODI4MjUsLTg2MzUyMTc1MC
-wzNDQ2OTY3MDYsMTk5NTY2NjcsLTE5MjM4NTg3OTUsLTkyNjc4
-MDI3XX0=
+eyJoaXN0b3J5IjpbLTE1NTY4NjM0MTQsLTg2Nzc2ODczNywxMT
+gwMDU2NTI2LC0xODQwMzMwNzM4LDExMTY5OTUxNDAsMTEzMzE5
+NTI5NCwxNTg4MjYzNjczLC03NzE4NzYwMzMsMjEzMDAwOTM5NC
+wtMTM2MDQzMzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5
+NzE3ODg5MSwxMTM4NTEwNTgzLDc3NTc4MjgyNSwtODYzNTIxNz
+UwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2
+NzgwMjddfQ==
 -->
