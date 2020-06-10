@@ -132,15 +132,16 @@ First we are adding the C-DMyNetwork plugin.
 
 If you want to use the source...
 1) Clone the "cdePlugins" depot to your local drive
-2) Add the project "src/093 - CDMyNetwork"
+2) Add the project "src/093 - C-DMyNetwork"
 3) Add a reference to this new project to your Host Project
 4) Run the solution (Make sure your starting project is the Host)
 
 If you now login to your NMI, you will see the NMI for the Network Plugin.
 Lets create some "Digital Twins" in the network plugin.
 
-In the C-DEngine a "Digital Twin" is a "Thing" managed by the C-DEngine.
-A "Thing" (or the base class "TheBaseThing") is owned by a plugin and represents the state and events of a physical device. 
+>In the C-DEngine a "Digital Twin" is a "Thing" managed by the C-DEngine.
+A "Thing" (of the base class "TheBaseThing") is owned by a plugin and represents the state and events of a physical device.  Things are managed and stored in TheThingRegistry.
+
 In case of the network plugins, we are creating digital twins of ping-able network end points such as the DNS Server of Google (at 8.8.8.8).
 
 1) To add add a digital (endpoint) twin click on the "Devices/Network Status" tile in the NMI
@@ -415,7 +416,7 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NzU5MTAwLDE1ODgyNjM2NzMsLTc3MT
+eyJoaXN0b3J5IjpbNDAxNTEzOTY4LDE1ODgyNjM2NzMsLTc3MT
 g3NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcyNzk3
 ODksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1ODMsNz
 c1NzgyODI1LC04NjM1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3
