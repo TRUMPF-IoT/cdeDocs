@@ -478,8 +478,9 @@ You will now see two new plugins in your dashbard. Lets first configure the Mess
 Now lets configure the Rules Engine
 
 The rules engine comes with a wizard:
-Step 1: Give your rule a name like "Ping too high send message"
-Step 2: Trigger - Set these values:
+
+**Step 1:** Give your rule a name like "Ping too high send message"
+**Step 2:** Trigger - Set these values:
 |Column  | Selection |
 |--|--|
 | Trigger Thing | Google DNS |
@@ -488,23 +489,23 @@ Step 2: Trigger - Set these values:
 | Trigger Value | 500|
 This creates a trigger on the "Value" property of the "Google DNS" thing if its value is larger than 500.
 
-Step 3: What action to do "Set Property on Thing"
-Step 4: Select "My Email" as the "Action Thing" and "sendmail" as the action property.
-Step 5: use "The ping was higher then expected: %Value%"
+**Step 3:** What action to do "Set Property on Thing"
+**Step 4:** Select "My Email" as the "Action Thing" and "sendmail" as the action property.
+**Step 5:** use "The ping was higher then expected: %Value%"
 In the final step you can set if you want to activate the rule right away and if the rule should be logged whenever it triggers.
 
-Back in the dashboard you will see your new rule. Click on it to examine what the wizard has created for you.
-In the "Current Value" you can see the actual value of the Ping and if its greater than 500 the rule will fire
-If you want to test the rule, just click on "Trigger now".
+Back in the dashboard you will see your new rule. Click on it to examine what the wizard has created for you. In the "Current Value" you can see the actual value of the Ping and if its greater than 500 the rule will fire
+
+>If you want to test the rule, just click on "Trigger now".
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEyMDMxNzcxLC02ODQxOTU5NTMsLTg2Nz
-c2ODczNywxMTgwMDU2NTI2LC0xODQwMzMwNzM4LDExMTY5OTUx
-NDAsMTEzMzE5NTI5NCwxNTg4MjYzNjczLC03NzE4NzYwMzMsMj
-EzMDAwOTM5NCwtMTM2MDQzMzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5
-NDAwMiwtMTk5NzE3ODg5MSwxMTM4NTEwNTgzLDc3NTc4MjgyNS
-wtODYzNTIxNzUwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1
-ODc5NV19
+eyJoaXN0b3J5IjpbMTk3Mzg1NzMsODEyMDMxNzcxLC02ODQxOT
+U5NTMsLTg2Nzc2ODczNywxMTgwMDU2NTI2LC0xODQwMzMwNzM4
+LDExMTY5OTUxNDAsMTEzMzE5NTI5NCwxNTg4MjYzNjczLC03Nz
+E4NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQzMzY0NCwtMTQ3Mjc5
+Nzg5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MSwxMTM4NTEwNTgzLD
+c3NTc4MjgyNSwtODYzNTIxNzUwLDM0NDY5NjcwNiwxOTk1NjY2
+N119
 -->
