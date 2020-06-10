@@ -494,11 +494,13 @@ Step 5: use "%Value%"
 In the final step you can set if you want to activate the rule right away and if the rule should be logged whenever it triggers.
 
 Back in the dashboard you will see your new rule. Click on it to examine what the wizard has created for you.
+In the "Current Value" you can see the actual value of the Ping and if its greater than 500 the rule will fire
+If you want to test the rule, just click on "Trigger now".
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMjQ1MzcyMSwtODY3NzY4NzM3LDExOD
+eyJoaXN0b3J5IjpbLTY4NDE5NTk1MywtODY3NzY4NzM3LDExOD
 AwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1
 Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC
 0xMzYwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3
