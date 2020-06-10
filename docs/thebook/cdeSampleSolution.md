@@ -343,7 +343,7 @@ The C-DEngine has many KPIs that can be used to measure its performance over tim
 By defaul these KPIs are turned off. In order to enable the KPIs add this to your configuration settings:
 
 ```
-ArgList["EnableKPIs"] = "True"
+ArgList["EnableKPIs"] = "True";
 ```
 KPIs are collected in the Properties of the "ApplicationHost" thing. (see previous chapters). Once you turn on the KPIs and you go back to the ThingRegistry you can see a snapshot of the current KPIs.
 
@@ -421,11 +421,11 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODQ4MTgwOTIsMTEzMzE5NTI5NCwxNT
-g4MjYzNjczLC03NzE4NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQz
-MzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MS
-wxMTM4NTEwNTgzLDc3NTc4MjgyNSwtODYzNTIxNzUwLDM0NDY5
-NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcsLT
-EwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1
-NDkwXX0=
+eyJoaXN0b3J5IjpbLTk1NzM1MzM5MywxMTMzMTk1Mjk0LDE1OD
+gyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMz
+NjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLD
+ExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMzQ0Njk2
+NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAyNywtMT
+A3MTQ4ODksMjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OTkwNjU0
+OTBdfQ==
 -->
