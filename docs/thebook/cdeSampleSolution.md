@@ -144,6 +144,8 @@ A "Thing" (of the base class "TheBaseThing") is owned by a plugin and represents
 
 In case of the network plugins, we are creating digital twins of ping-able network end points such as the DNS Server of Google (at 8.8.8.8).
 
+>***Important Note***: If you still have "UseRandomDeviceID=true" set, your new digital twin will be gone after you restart your host. We do recommend that you change this to "false" now for the remainder of the tutorial.
+
 1) To add add a digital (endpoint) twin click on the "Devices/Network Status" tile in the NMI
 2) Then click on "Add new Network Service"
 > A wizard will appear. Wizards are part of the plugin and help to create new instances of digital twins
@@ -158,8 +160,6 @@ If you click on it, you see the device status:
 ***IMAGE OF NMI HERE***
 You can see the "Value" updating frequently. Its shows the roundtrip time of a ping from your host PC to the Google DNS.
 If you open up the "Connectivity" Group by clicking it, you can see that "Auto Connect" and "Is Connected" are selected. you can also see and change the address of the ping as well as change Ping parameter if you open that group.
-
->***Important Note***: If you still have "UseRandomDeviceID=true" set, your new digital twin will be gone after you restart your host. We do recommend that you change this to "false" now for the remainder of the tutorial.
 
 Lets have a look where this "Thing" (Digital Twin) was created.
 
@@ -416,11 +416,11 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAxNTEzOTY4LDE1ODgyNjM2NzMsLTc3MT
-g3NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcyNzk3
-ODksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1ODMsNz
-c1NzgyODI1LC04NjM1MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3
-LC0xOTIzODU4Nzk1LC05MjY3ODAyNywtMTA3MTQ4ODksMjExOD
-E5Nzg3OSwxODc2NTY0ODMzLDE4OTkwNjU0OTAsLTUxNzAyOTAw
-MF19
+eyJoaXN0b3J5IjpbMTEzMzE5NTI5NCwxNTg4MjYzNjczLC03Nz
+E4NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQzMzY0NCwtMTQ3Mjc5
+Nzg5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MSwxMTM4NTEwNTgzLD
+c3NTc4MjgyNSwtODYzNTIxNzUwLDM0NDY5NjcwNiwxOTk1NjY2
+NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcsLTEwNzE0ODg5LDIxMT
+gxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1NDkwLC01MTcwMjkw
+MDBdfQ==
 -->
