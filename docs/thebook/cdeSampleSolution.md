@@ -442,6 +442,8 @@ If you now install Prometheus and point at this endpoint you have a valid Promet
 
 ## Chapter 7 - Communication between Plugins
 
+
+
 A great example how plugins do work with each other is the use of the Virtual Sensor in the V-Things Plugin and the Network Status plugin.
 
 Another example is the use of the Rules Engine. It can combine three plugins in one workflow. For example: 
@@ -451,11 +453,11 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MTU3MTcwNSwtODY3NzY4NzM3LDExOD
-AwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1
-Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC
-0xMzYwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3
-MTc4ODkxLDExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NT
-AsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3
-ODAyN119
+eyJoaXN0b3J5IjpbLTE2ODU1MDE4NTMsLTg2Nzc2ODczNywxMT
+gwMDU2NTI2LC0xODQwMzMwNzM4LDExMTY5OTUxNDAsMTEzMzE5
+NTI5NCwxNTg4MjYzNjczLC03NzE4NzYwMzMsMjEzMDAwOTM5NC
+wtMTM2MDQzMzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5
+NzE3ODg5MSwxMTM4NTEwNTgzLDc3NTc4MjgyNSwtODYzNTIxNz
+UwLDM0NDY5NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2
+NzgwMjddfQ==
 -->
