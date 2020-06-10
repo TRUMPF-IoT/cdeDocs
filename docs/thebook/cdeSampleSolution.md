@@ -396,7 +396,7 @@ Here the quick cheat-sheet:
 
 Since "Value" is the default property, you will immediately see the values coming in.
 
-See Mommy- no hands...
+#### See Mommy- no hands...
 
 Go and login to the cloud.c-labs.com/nmi to see the same dashboards you just created in the cloud! 
 
@@ -421,11 +421,11 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDAzMzA3MzgsMTExNjk5NTE0MCwxMT
-MzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5
-Mzk0LC0xMzYwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC
-0xOTk3MTc4ODkxLDExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1
-MjE3NTAsMzQ0Njk2NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC
-05MjY3ODAyNywtMTA3MTQ4ODksMjExODE5Nzg3OSwxODc2NTY0
-ODMzXX0=
+eyJoaXN0b3J5IjpbMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMT
+E2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2
+MDMzLDIxMzAwMDkzOTQsLTEzNjA0MzM2NDQsLTE0NzI3OTc4OS
+w0NTc0OTQwMDIsLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3NzU3
+ODI4MjUsLTg2MzUyMTc1MCwzNDQ2OTY3MDYsMTk5NTY2NjcsLT
+E5MjM4NTg3OTUsLTkyNjc4MDI3LC0xMDcxNDg4OSwyMTE4MTk3
+ODc5XX0=
 -->
