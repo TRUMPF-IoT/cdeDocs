@@ -350,11 +350,11 @@ KPIs are collected in the Properties of the "ApplicationHost" thing. (see previo
 Lets display one of these KPIs in the NMI.
 In order to do so we need the CDMyVThings plugin. 
 1) Add the CDMyV-Things plugin to your project (either using NuGet or include the source of the "cdePlugins/src/066/C-DMyVThings" to your project)
-2) Do not forget to add a reference to the plugin project to your host
-3) Log back into the NMI and you will see a new tile "Virtual Things" in your portal.
-4) Click on the tile then inside the Virtual Things Dashboard, click on "V-Things List"
-5) in the list click the "Add V-Thing" button on the top left of the table
-6) The table will add a new row and ask you to enter a "friendly name" and "Device Type" for the new V-Thing. Enter:
+> Do not forget to add a reference to the plugin project to your host if you use the sources
+2) Log back into the NMI and you will see a new tile "Virtual Things" in your portal.
+3) Click on the tile then inside the Virtual Things Dashboard, click on "V-Things List"
+4) in the list click the "Add V-Thing" button on the top left of the table
+5) The table will add a new row and ask you to enter a "friendly name" and "Device Type" for the new V-Thing. Enter:
 
 |Column  | Selection |
 |--|--|
@@ -421,7 +421,7 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NzM1MzM5MywxMTMzMTk1Mjk0LDE1OD
+eyJoaXN0b3J5IjpbMTExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1OD
 gyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMz
 NjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLD
 ExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMzQ0Njk2
