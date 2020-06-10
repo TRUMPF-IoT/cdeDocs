@@ -490,11 +490,15 @@ This creates a trigger on the "Value" property of the "Google DNS" thing if its 
 
 Step 3: What action to do "Set Property on Thing"
 Step 4: Select "My Email" as the "Action Thing" and "sendmail" as the action property.
+Step 5: use "%Value%"
+In the final step you can set if you want to activate the rule right away and if the rule should be logged whenever it triggers.
+
+Back in the dashboard you will see your new rule. Click on it to examine what the wizard has created for you.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDE1MzU2NSwtODY3NzY4NzM3LDExOD
+eyJoaXN0b3J5IjpbLTIyMjQ1MzcyMSwtODY3NzY4NzM3LDExOD
 AwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1
 Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC
 0xMzYwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3
