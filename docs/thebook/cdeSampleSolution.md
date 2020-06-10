@@ -230,11 +230,11 @@ You can connect as many browsers and local hosts (also called "nodes") to the sa
 
 Look at our concept documents on GitHub ([https://github.com/TRUMPF-IoT/cdeDocs/tree/master/docs](https://github.com/TRUMPF-IoT/cdeDocs/tree/master/docs) for more details
 
-If you change turn on the "UserMapper" your node will prompt you for a UserName and Password. These credentials are then "Mapped" to the ScopeID of the Node. Once you switch to the UserMapper, you cannot switch back to "Scope Login" as that would present a security risk. Also you cannot use the UserMapper with the Cloud.C-Labs.com as the UserMapper is not tu
+If you change turn on the "UserMapper" your node will prompt you for a UserName and Password. These credentials are then "Mapped" to the ScopeID of the Node. Once you switch to the UserMapper, you cannot switch back to "Scope Login" as that would present a security risk. Also you cannot use the UserMapper with the Cloud.C-Labs.com as the UserMapper is not turned on for this test cloud. 
+
+>If you are interested in hosting your own cloud-relay please contact info@C-Labs.com.
  
-
-
-## Chapter 6 - Diagnosing issues with Relays
+## Chapter 6 - Diagnosing issues with Hosts, Nodes and Relays
 
 The more complex a system gets the more important it becomes to diagnose issues. C-DEngine bases hosts offer several ways of diagnostics:
 
@@ -421,11 +421,11 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjM3NTAxMCwxMTMzMTk1Mjk0LDE1OD
-gyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMz
-NjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLD
-ExMzg1MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMzQ0Njk2
-NzA2LDE5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAyNywtMT
-A3MTQ4ODksMjExODE5Nzg3OSwxODc2NTY0ODMzLDE4OTkwNjU0
-OTBdfQ==
+eyJoaXN0b3J5IjpbLTE0ODQ4MTgwOTIsMTEzMzE5NTI5NCwxNT
+g4MjYzNjczLC03NzE4NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQz
+MzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MS
+wxMTM4NTEwNTgzLDc3NTc4MjgyNSwtODYzNTIxNzUwLDM0NDY5
+NjcwNiwxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcsLT
+EwNzE0ODg5LDIxMTgxOTc4NzksMTg3NjU2NDgzMywxODk5MDY1
+NDkwXX0=
 -->
