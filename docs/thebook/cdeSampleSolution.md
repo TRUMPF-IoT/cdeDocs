@@ -415,7 +415,15 @@ You can do this very easy by adding the CDMyPrometheus plugin to the project eit
 You will see that there is already one Prometheus plugin running - this is our KPI exported on the Test Cloud.C-Labs.com.
 
 2) Click on the "Prometheus Exporters" tile and then on "Add a Sender".
+3) Enter these settings:
 
+|Column  | Selection |
+|--|--|
+| Friendly Name | My Prometheus Endpoint |
+| Device Type | Prometheus Exported|
+| Address | mymetrics |
+
+If you leave the "Address" empty  the plugin will automatically assign "metrics" as the address. This is the default endpoint for prometheus but for security reas
 
 ## Chapter 7 - Communication between Plugins
 
@@ -428,11 +436,11 @@ Another example is the use of the Rules Engine. It can combine three plugins in 
 
 The Messaging plugin has some interesting development features that you can check out in [the source code of the Messaging plugin found here](https://github.com/TRUMPF-IoT/cdePlugins/tree/master/src/093%20-%20CDMyNetwork)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NjQyMTA3OSwxMTgwMDU2NTI2LC0xOD
-QwMzMwNzM4LDExMTY5OTUxNDAsMTEzMzE5NTI5NCwxNTg4MjYz
-NjczLC03NzE4NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQzMzY0NC
-wtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MSwxMTM4
-NTEwNTgzLDc3NTc4MjgyNSwtODYzNTIxNzUwLDM0NDY5NjcwNi
-wxOTk1NjY2NywtMTkyMzg1ODc5NSwtOTI2NzgwMjcsLTEwNzE0
-ODg5XX0=
+eyJoaXN0b3J5IjpbLTQyNTIyMDYwLDExODAwNTY1MjYsLTE4ND
+AzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2
+NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC
+0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1
+MTA1ODMsNzc1NzgyODI1LC04NjM1MjE3NTAsMzQ0Njk2NzA2LD
+E5OTU2NjY3LC0xOTIzODU4Nzk1LC05MjY3ODAyNywtMTA3MTQ4
+ODldfQ==
 -->
