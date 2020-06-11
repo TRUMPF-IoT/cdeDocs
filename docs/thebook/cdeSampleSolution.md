@@ -517,14 +517,16 @@ In order to show how a mesh works, lets create a mini mesh.
 2) Choose the same project type "Console Host for C-DEngine (,NET Core)" as before an call your project "cdeMiniNode"
 3) In the program.cs make these changes:
 
-Line 36: Create a new guid or use the same one as before. This guid will only be used by Provisioning Tools once you go into mass production and deployment. 
-Line 39 and 43: Change these ports to a free port (i.e. 8704)
++ Line 36: Create a new guid or use the same one as before. This guid will only be used by Provisioning Tools once you go into mass production and deployment. 
++ Line 39 and 43: Change these ports to a free port (i.e. 8704)
 
-Add this new line after Line 54:
+4) Add this new line after Line 54:
 ```
                 ServiceRoute = "ws://localhost:8700"
 ```
-The Port 8700 must match the port you chose in Chapter 2 above for your first node.
+The Port 8700 must match the port you chose in Chapter 2 above for your first node.  "WS" stands for WebSockets but you can also use HTTP if you prefer.
+Later in this tutorial we show how to secure a node using TLS/SSL. This allows you to use "WSS" (WebSocketsSecure) or HTTPS.
+
 4) You now have to use the same ScopeID on both nodes in order for them to connect. replace line 98 in both projects with:
 ```
 strScope="12345678";
@@ -536,11 +538,11 @@ strScope="12345678";
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMDg2MzU0OSwtMTIxNzgzMzIwMywzOD
-Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
-MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
-ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
-NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcyNzk3OD
-ksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1ODMsNzc1
-NzgyODI1XX0=
+eyJoaXN0b3J5IjpbLTI4NDY1Njc1LC0xMjE3ODMzMjAzLDM4ND
+Q2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUz
+LC04Njc3Njg3MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMT
+E2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2
+MDMzLDIxMzAwMDkzOTQsLTEzNjA0MzM2NDQsLTE0NzI3OTc4OS
+w0NTc0OTQwMDIsLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3NzU3
+ODI4MjVdfQ==
 -->
