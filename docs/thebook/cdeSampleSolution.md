@@ -522,13 +522,17 @@ Line 39 and 43: Change these ports to a free port (i.e. 8704)
 
 Add this new line after Line 54:
 ```
+                ServiceRoute = "ws://localhost:8700"
+```
+The Port 8700 must match the port you chose in Chapter 2 above for your first node.
 
+4) run both the old and new pr
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTM3MjUzMjYsLTEyMTc4MzMyMDMsMz
-g0NDY1ODA2LC05MTIwNzE3NDUsODEyMDMxNzcxLC02ODQxOTU5
-NTMsLTg2Nzc2ODczNywxMTgwMDU2NTI2LC0xODQwMzMwNzM4LD
-ExMTY5OTUxNDAsMTEzMzE5NTI5NCwxNTg4MjYzNjczLC03NzE4
-NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQzMzY0NCwtMTQ3Mjc5Nz
-g5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MSwxMTM4NTEwNTgzLDc3
-NTc4MjgyNV19
+eyJoaXN0b3J5IjpbMTc0ODEwMzA5NCwtMTIxNzgzMzIwMywzOD
+Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
+MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
+ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
+NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcyNzk3OD
+ksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1ODMsNzc1
+NzgyODI1XX0=
 -->
