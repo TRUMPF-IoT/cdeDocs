@@ -525,9 +525,9 @@ Add this new line after Line 54:
                 ServiceRoute = "ws://localhost:8700"
 ```
 The Port 8700 must match the port you chose in Chapter 2 above for your first node.
-4) You now have to use the same ScopeID on both nodes in order for them to connect. replace line 98 with:
+4) You now have to use the same ScopeID on both nodes in order for them to connect. replace line 98 in both projects with:
 ```
-strScope="12345678"
+strScope="12345678";
 ```
 
 > ***WARNING***: Do not use hard coded Scopes in your application. A better way is always to either let the user enter the ScopeID or store the scope ID in some secure store. You could also generate the ScopeID from the MAC address of the PC if your run both nodes on the same PC.
@@ -536,11 +536,11 @@ strScope="12345678"
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAyNDQ2NTk2LC0xMjE3ODMzMjAzLDM4ND
-Q2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUz
-LC04Njc3Njg3MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMT
-E2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2
-MDMzLDIxMzAwMDkzOTQsLTEzNjA0MzM2NDQsLTE0NzI3OTc4OS
-w0NTc0OTQwMDIsLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3NzU3
-ODI4MjVdfQ==
+eyJoaXN0b3J5IjpbLTgxMDg2MzU0OSwtMTIxNzgzMzIwMywzOD
+Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
+MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
+ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
+NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcyNzk3OD
+ksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1ODMsNzc1
+NzgyODI1XX0=
 -->
