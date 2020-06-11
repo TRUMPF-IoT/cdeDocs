@@ -544,9 +544,11 @@ If you have a DebugLevel higher than "OFF" selected, you will see on both nodes 
 
 You can see in the list of "Nodes with SenderType=BackChannel" a new entry for Node2.
 
+If you login to your NMI (on Node1) you can see a new Tile with "Overall Node Status" for Node2 but other than this nothing else...the new node is not running any plugins yet.
 
+Go ahead and install the V-Things plugin 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNjQ1MjYxOCwtMTIxNzgzMzIwMywzOD
+eyJoaXN0b3J5IjpbMjE0MzQ3MzgwNSwtMTIxNzgzMzIwMywzOD
 Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
 MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
 ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
