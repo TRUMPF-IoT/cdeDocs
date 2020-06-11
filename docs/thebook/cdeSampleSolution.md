@@ -526,9 +526,11 @@ Add this new line after Line 54:
 ```
 The Port 8700 must match the port you chose in Chapter 2 above for your first node.
 
-4) run both the old and new pr
+4) run both the old and new project
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0ODEwMzA5NCwtMTIxNzgzMzIwMywzOD
+eyJoaXN0b3J5IjpbLTU2NzQ3NTc3NywtMTIxNzgzMzIwMywzOD
 Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
 MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
 ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
