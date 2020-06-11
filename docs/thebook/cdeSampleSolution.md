@@ -503,13 +503,17 @@ You can also send a message to any "Engine/Service" with the rules engine. Just 
 Marcos for properties of the Trigger Object work for both Text and Payload.
 
 
+## Chapter 8 - Adding a local node to your mesh
 
+We are now going to walk through a couple advanced scenarios.
+
+The Nodes/Hosts conn
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTc4MzMyMDMsMzg0NDY1ODA2LC05MT
-IwNzE3NDUsODEyMDMxNzcxLC02ODQxOTU5NTMsLTg2Nzc2ODcz
-NywxMTgwMDU2NTI2LC0xODQwMzMwNzM4LDExMTY5OTUxNDAsMT
-EzMzE5NTI5NCwxNTg4MjYzNjczLC03NzE4NzYwMzMsMjEzMDAw
-OTM5NCwtMTM2MDQzMzY0NCwtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMi
-wtMTk5NzE3ODg5MSwxMTM4NTEwNTgzLDc3NTc4MjgyNSwtODYz
-NTIxNzUwXX0=
+eyJoaXN0b3J5IjpbLTI5NDc5MTg2MiwtMTIxNzgzMzIwMywzOD
+Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
+MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
+ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
+NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcyNzk3OD
+ksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1ODMsNzc1
+NzgyODI1XX0=
 -->
