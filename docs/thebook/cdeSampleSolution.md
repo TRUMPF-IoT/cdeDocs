@@ -507,17 +507,19 @@ Marcos for properties of the Trigger Object work for both Text and Payload.
 
 We are now going to walk through a couple advanced scenarios.
 
-> Multiple Nodes/Hosts that are connected to each other are forming a "Mesh". There are many different topologes for meshes as you can see in this illustration:
+> Multiple Nodes/Hosts that are connected to each other are forming a "Mesh". There are many different topologies for meshes as you can see in this illustration:
 
 ***IMAGE OF MESHTYPES HERE***
 
+In order to show how a mesh works, lets create a mini mesh.
 
+1) Create a new Project in Visual Studio - either in the same solution as before or start Visual Studio again and create a new project.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkzNjIyNTA2LC0xMjE3ODMzMjAzLDM4ND
-Q2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUz
-LC04Njc3Njg3MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMT
-E2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2
-MDMzLDIxMzAwMDkzOTQsLTEzNjA0MzM2NDQsLTE0NzI3OTc4OS
-w0NTc0OTQwMDIsLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3NzU3
-ODI4MjVdfQ==
+eyJoaXN0b3J5IjpbLTEzMjE4ODE3NTQsLTEyMTc4MzMyMDMsMz
+g0NDY1ODA2LC05MTIwNzE3NDUsODEyMDMxNzcxLC02ODQxOTU5
+NTMsLTg2Nzc2ODczNywxMTgwMDU2NTI2LC0xODQwMzMwNzM4LD
+ExMTY5OTUxNDAsMTEzMzE5NTI5NCwxNTg4MjYzNjczLC03NzE4
+NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQzMzY0NCwtMTQ3Mjc5Nz
+g5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MSwxMTM4NTEwNTgzLDc3
+NTc4MjgyNV19
 -->
