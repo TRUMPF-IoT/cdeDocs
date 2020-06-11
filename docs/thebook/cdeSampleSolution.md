@@ -515,9 +515,12 @@ In order to show how a mesh works, lets create a mini mesh.
 
 1) Create a new Project in Visual Studio - either in the same solution as before or start Visual Studio again and create a new project in this new instance.
 2) Choose the same project type "Console Host for C-DEngine (,NET Core)" as before an call your project "cdeMiniNode"
+3) In the program.cs make these changes:
+
+Line 36: Create a new guid or use the same one as before, it does not really matter
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NTgyNzg1MiwtMTIxNzgzMzIwMywzOD
+eyJoaXN0b3J5IjpbMTY1ODU4MDYxMiwtMTIxNzgzMzIwMywzOD
 Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
 MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
 ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
