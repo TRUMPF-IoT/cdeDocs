@@ -526,17 +526,21 @@ Add this new line after Line 54:
 ```
 The Port 8700 must match the port you chose in Chapter 2 above for your first node.
 4) You now have to use the same ScopeID on both nodes in order for them to connect. replace line 98 with:
+```
+strScope="12345678"
+```
 
+> ***WARNING***: Do not use hard coded Scopes in your application. A better way is always to either let the user enter the ScopeID or store the scope ID in some secure store. You could also generate the ScopeID from the MAC address of the PC if your run both nodes on the same PC.
 
 4) run both the old and new project
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzUyOTUxMTgsLTEyMTc4MzMyMDMsMz
-g0NDY1ODA2LC05MTIwNzE3NDUsODEyMDMxNzcxLC02ODQxOTU5
-NTMsLTg2Nzc2ODczNywxMTgwMDU2NTI2LC0xODQwMzMwNzM4LD
-ExMTY5OTUxNDAsMTEzMzE5NTI5NCwxNTg4MjYzNjczLC03NzE4
-NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQzMzY0NCwtMTQ3Mjc5Nz
-g5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MSwxMTM4NTEwNTgzLDc3
-NTc4MjgyNV19
+eyJoaXN0b3J5IjpbMzAyNDQ2NTk2LC0xMjE3ODMzMjAzLDM4ND
+Q2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUz
+LC04Njc3Njg3MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMT
+E2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2
+MDMzLDIxMzAwMDkzOTQsLTEzNjA0MzM2NDQsLTE0NzI3OTc4OS
+w0NTc0OTQwMDIsLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3NzU3
+ODI4MjVdfQ==
 -->
