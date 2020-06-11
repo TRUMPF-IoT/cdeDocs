@@ -538,10 +538,15 @@ strScope="12345678";
 
 If you have a DebugLevel higher than "OFF" selected, you will see on both nodes a "connecting" message. 
 
-Lets call the node created in the original project "Node1" and the mini
+> Lets call the node created in the original project "Node1" and the mini-Node "Node2".
+
+5) Open the Status.aspx page of Node1
+
+You can see in the list of "Nodes with SenderType=BackChannel" a new entry for Node2.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNzM2NTEwNSwtMTIxNzgzMzIwMywzOD
+eyJoaXN0b3J5IjpbMTAwNjQ1MjYxOCwtMTIxNzgzMzIwMywzOD
 Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
 MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
 ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
