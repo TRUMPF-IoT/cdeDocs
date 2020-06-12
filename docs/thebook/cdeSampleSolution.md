@@ -611,16 +611,20 @@ AccessControlAllowMethods and AccessControlAllowHeaders can be defined in the Ap
 
 The ultimate protection for connections is using Client Side Certificates. The C-DEngine fully supports this secure way of connecting nodes.
 
+Client side Certificates are enforced on nodes other nodes connect to. For example the Cloud-Relay or in our example above "Node1". 
+
+A developer of a node or an admin of a mesh system can specify how strict the usage of Client Certificates should be by setting the "ClientCertificateUsage" setting:
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5OTA5NDQ2MSwxMzU2MTgxMzc1LDIwNj
-Q4NDQ4ODQsLTkwMTIwOTk4OSw1ODg5MDc5OTcsMTUyOTAzMDU0
-MiwtMTIxNzgzMzIwMywzODQ0NjU4MDYsLTkxMjA3MTc0NSw4MT
-IwMzE3NzEsLTY4NDE5NTk1MywtODY3NzY4NzM3LDExODAwNTY1
-MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1Mjk0LD
-E1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC0xMzYw
-NDMzNjQ0XX0=
+eyJoaXN0b3J5IjpbLTE2NzgzMTIzNjEsMTg5OTA5NDQ2MSwxMz
+U2MTgxMzc1LDIwNjQ4NDQ4ODQsLTkwMTIwOTk4OSw1ODg5MDc5
+OTcsMTUyOTAzMDU0MiwtMTIxNzgzMzIwMywzODQ0NjU4MDYsLT
+kxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1MywtODY3NzY4
+NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MC
+wxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMw
+MDA5Mzk0XX0=
 -->
