@@ -559,13 +559,16 @@ If you try to login to the NMI on Node2 you will see the error message we got al
 9) Click on the V-Things List and create a new Virtual Sensor for any KPI you want.
 10) now navigate back to the Virtual Sensor Dashboard and you will see all three sensors: two from Node1 and one from Node2.
 
-You can now login to Node1 or Node2 and you will always see all three sensors.
+You can now login to Node1 or Node2 or even the Cloud.C-Labs.com/NMI and you will always see all three sensors!
 
 ### What is this good for?
 
-What we have created is a so call "Forwarder". 
+What we have created is a so call "Forwarder Mesh". 
 
-***Image of
+***Image of Forwarding Mesh here***
+
+Imaging Node2 being on the OT Shopfloor with no access to the internet but you want to monitor data from that Machine in the cloud. 
+Node1 is in the DMZ or on the IT side of your company. Node
 
 
 
@@ -575,11 +578,11 @@ What we have created is a so call "Forwarder".
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYyOTM1MDg4LC0xMjE3ODMzMjAzLDM4ND
-Q2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUz
-LC04Njc3Njg3MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMT
-E2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2
-MDMzLDIxMzAwMDkzOTQsLTEzNjA0MzM2NDQsLTE0NzI3OTc4OS
-w0NTc0OTQwMDIsLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3NzU3
-ODI4MjVdfQ==
+eyJoaXN0b3J5IjpbMTExNjkwNjQ1OSwtMTIxNzgzMzIwMywzOD
+Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
+MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
+ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
+NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcyNzk3OD
+ksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1ODMsNzc1
+NzgyODI1XX0=
 -->
