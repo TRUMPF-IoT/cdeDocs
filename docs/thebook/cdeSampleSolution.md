@@ -593,7 +593,12 @@ To bring this scenario even further, you can now create another node in a comple
 ## Chapter 9 - Securing the Host using SSL
 
 Depending on the host framework you are using (ASP.NET, IIS, Windows Service or Command Line) the procedure for securing your host is different. 
-Since the C-DEngine is based on standard HTTP/WebSockets code, adding SSL/TLS to your host is more administrative work than coding. In fa
+Since the C-DEngine is based on standard HTTP/WebSockets code, adding SSL/TLS to your host is more administrative work than coding. In fact you do not have to write a single line of code to enable SSL/TLS.
+
+You can require only secure connections to a host by setting this parameter:
+```
+
+```
 
 
 
@@ -601,7 +606,7 @@ Since the C-DEngine is based on standard HTTP/WebSockets code, adding SSL/TLS to
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1OTE4NjEyLDE1MjkwMzA1NDIsLTEyMT
+eyJoaXN0b3J5IjpbNTg4OTA3OTk3LDE1MjkwMzA1NDIsLTEyMT
 c4MzMyMDMsMzg0NDY1ODA2LC05MTIwNzE3NDUsODEyMDMxNzcx
 LC02ODQxOTU5NTMsLTg2Nzc2ODczNywxMTgwMDU2NTI2LC0xOD
 QwMzMwNzM4LDExMTY5OTUxNDAsMTEzMzE5NTI5NCwxNTg4MjYz
