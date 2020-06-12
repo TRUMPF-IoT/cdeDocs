@@ -631,13 +631,19 @@ AccessControlAllowMethods and AccessControlAllowHeaders can be defined in the Ap
 
 ## Chapter 10 - Creating your own custom Plugin
 
-Until now you were using the C-DEngine
+Until now you were using the C-DEngine and plugins with writing almost no lines of code. 
+
+One of the best features of C-DEngine solutions is that you can easily extend its functionality - even at runtime! 
+
+In this chapter we go through the essential steps to create your own custom plugin...and you will finally write some code!
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2ODkwMjkxNiwxODk5MDk0NDYxLDEzNT
-YxODEzNzUsMjA2NDg0NDg4NCwtOTAxMjA5OTg5LDU4ODkwNzk5
-NywxNTI5MDMwNTQyLC0xMjE3ODMzMjAzLDM4NDQ2NTgwNiwtOT
-EyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUzLC04Njc3Njg3
-MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMTE2OTk1MTQwLD
-ExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2MDMzLDIxMzAw
-MDkzOTRdfQ==
+eyJoaXN0b3J5IjpbLTE4MzY4MzYwNDcsMTg5OTA5NDQ2MSwxMz
+U2MTgxMzc1LDIwNjQ4NDQ4ODQsLTkwMTIwOTk4OSw1ODg5MDc5
+OTcsMTUyOTAzMDU0MiwtMTIxNzgzMzIwMywzODQ0NjU4MDYsLT
+kxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1MywtODY3NzY4
+NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MC
+wxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMw
+MDA5Mzk0XX0=
 -->
