@@ -25,9 +25,10 @@ The Tutorial will go through the following steps:
 6) Diagnosing issues with Relays
 7) Communication between Plugins
 8) Adding a local node to your mesh
-9) Securing the Host using SSL
-10) Creating your own custom plugin
-11) Advanced NMI Topics
+9) Pushing data into Azure IoT Hub
+10) Securing the Host using SSL
+11) Creating your own custom plugin
+12) Advanced NMI Topics
 
 During the tutorial we will make use of a variety of existing plugins.
 
@@ -591,8 +592,14 @@ With this in mind you can setup any combination of nodes you can imaging - or be
 
 To bring this scenario even further, you can now create another node in a completely different region of the world and connect to the Cloud-Relay. As long as they share the same ScopeID, data will flow to that node as well.
 
+## Chapter 9 - Pushing data into Azure IoT Hub
 
-## Chapter 9 - Securing the Host using SSL
+A core scenario of the C-DEngine is the on-premise datacollection for Cloud Services such as the Azure IoT Hub. 
+
+
+
+
+## Chapter 10 - Securing the Host using SSL
 
 Depending on the host framework you are using (ASP.NET, IIS, Windows Service or Command Line) the procedure for securing your host is different. 
 Since the C-DEngine is based on standard HTTP/WebSockets code, adding SSL/TLS to your host is more administrative work than coding. In fact you do not have to write a single line of code to enable SSL/TLS.
@@ -623,7 +630,7 @@ A developer of a node or an admin of a mesh system can specify how strict the us
 > Client Side Certificates require a stable and scaling certificate management system. 
 If you are interested in a certificate management solution for your system, please contact us at info@C-Labs.com
 
-## Chapter 10 - Creating your own custom Plugin
+## Chapter 11 - Creating your own custom Plugin
 
 Until now you were using the C-DEngine and plugins with writing almost no lines of code. 
 
@@ -633,11 +640,11 @@ In this chapter we go through the essential steps to create your own custom plug
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzQzMTg3NTEsMTg5OTA5NDQ2MSwxMz
-U2MTgxMzc1LDIwNjQ4NDQ4ODQsLTkwMTIwOTk4OSw1ODg5MDc5
-OTcsMTUyOTAzMDU0MiwtMTIxNzgzMzIwMywzODQ0NjU4MDYsLT
-kxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1MywtODY3NzY4
-NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MC
-wxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMw
-MDA5Mzk0XX0=
+eyJoaXN0b3J5IjpbMTA0NDYwODAwNywtMjA3NDMxODc1MSwxOD
+k5MDk0NDYxLDEzNTYxODEzNzUsMjA2NDg0NDg4NCwtOTAxMjA5
+OTg5LDU4ODkwNzk5NywxNTI5MDMwNTQyLC0xMjE3ODMzMjAzLD
+M4NDQ2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1
+OTUzLC04Njc3Njg3MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOC
+wxMTE2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcx
+ODc2MDMzXX0=
 -->
