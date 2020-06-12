@@ -595,10 +595,7 @@ To bring this scenario even further, you can now create another node in a comple
 Depending on the host framework you are using (ASP.NET, IIS, Windows Service or Command Line) the procedure for securing your host is different. 
 Since the C-DEngine is based on standard HTTP/WebSockets code, adding SSL/TLS to your host is more administrative work than coding. In fact you do not have to write a single line of code to enable SSL/TLS.
 
-You can require only secure connections to a host by setting this parameter:
-```
-
-```
+You can require only secure connections to a host by setting the MyStationPort and MyStationWSPort to 443. This will automatically require the connecting node to use HTTPS or WSS.
 
 To learn more about how to setup your hosting PC check out this document: [https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/Concepts/C-DEngineSecureOn-premiseRelays.pdf](https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/Concepts/C-DEngineSecureOn-premiseRelays.pdf)
 
@@ -607,7 +604,7 @@ To learn more about how to setup your hosting PC check out this document: [https
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMDY5MjQ2Niw1ODg5MDc5OTcsMTUyOT
+eyJoaXN0b3J5IjpbLTkwMTIwOTk4OSw1ODg5MDc5OTcsMTUyOT
 AzMDU0MiwtMTIxNzgzMzIwMywzODQ0NjU4MDYsLTkxMjA3MTc0
 NSw4MTIwMzE3NzEsLTY4NDE5NTk1MywtODY3NzY4NzM3LDExOD
 AwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1
