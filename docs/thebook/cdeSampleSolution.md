@@ -568,7 +568,10 @@ What we have created is a so call "Forwarder Mesh".
 ***Image of Forwarding Mesh here***
 
 Imaging Node2 being on the OT Shopfloor with no access to the internet but you want to monitor data from that Machine in the cloud. 
-Node1 is in the DMZ or on the IT side of your company. Node
+Node1 is in the DMZ or on the IT side of your company. Node2 sends its information to Node1 and Node1 "forwards" that information to the Cloud.
+
+You can have any number of forwarder nodes to overcome any network topology a customer might have!
+You can also use redundant paths by adding a second Node to the IT (DMZ) and have Node2 point at two nodes (s
 
 
 
@@ -578,7 +581,7 @@ Node1 is in the DMZ or on the IT side of your company. Node
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNjkwNjQ1OSwtMTIxNzgzMzIwMywzOD
+eyJoaXN0b3J5IjpbMTgwNDU2NzA3NywtMTIxNzgzMzIwMywzOD
 Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
 MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
 ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
