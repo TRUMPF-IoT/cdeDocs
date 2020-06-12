@@ -600,17 +600,18 @@ You can require only secure connections to a host by setting this parameter:
 
 ```
 
+To learn more about how to setup your hosting PC check out this document: [https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/Concepts/C-DEngineSecureOn-premiseRelays.pdf](https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/Concepts/C-DEngineSecureOn-premiseRelays.pdf)
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg4OTA3OTk3LDE1MjkwMzA1NDIsLTEyMT
-c4MzMyMDMsMzg0NDY1ODA2LC05MTIwNzE3NDUsODEyMDMxNzcx
-LC02ODQxOTU5NTMsLTg2Nzc2ODczNywxMTgwMDU2NTI2LC0xOD
-QwMzMwNzM4LDExMTY5OTUxNDAsMTEzMzE5NTI5NCwxNTg4MjYz
-NjczLC03NzE4NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQzMzY0NC
-wtMTQ3Mjc5Nzg5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MSwxMTM4
-NTEwNTgzXX0=
+eyJoaXN0b3J5IjpbLTgwMDY5MjQ2Niw1ODg5MDc5OTcsMTUyOT
+AzMDU0MiwtMTIxNzgzMzIwMywzODQ0NjU4MDYsLTkxMjA3MTc0
+NSw4MTIwMzE3NzEsLTY4NDE5NTk1MywtODY3NzY4NzM3LDExOD
+AwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1
+Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC
+0xMzYwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3
+MTc4ODkxXX0=
 -->
