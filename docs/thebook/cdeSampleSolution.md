@@ -113,7 +113,7 @@ You will find the Scope ID in the console in the second line of the output:
 
 ```Scope ID: XXXXXXXX```
 
-The Scope ID is a Base32 string with up to 8 characters and will be converted into a secure hash token once "SetScope
+This "Easy Scope ID" is a Base32 string with up to 8 characters and will be converted into a secure hash token once "SetScopeIDFromEasyID" was called. The C-DEngine will not store the EasyScopeID anywhere and only works with the internal hash of the token. 
 
 2) Enter the Scope ID in the Login dialog and click on "Set Security ID"
 
@@ -248,6 +248,9 @@ http://localhost:8800/cdestatus.aspx
 This page has multiple sections that are important for diagnostics:
 #### "NodeInfo"
 This section shows a summary of basic information of the node the status page is called from. The section is fairly self explanatory.
+One notable entry here is the "
+
+
 #### "Status of Engines"
 This table shows a list of all currently running "Engines". 
 >An Engine (aka "Service") is a container service managing one or more "Things". Plugins can have one or more Engines/Services. Most plugins have only one service for better management. 
@@ -595,7 +598,7 @@ To bring this scenario even further, you can now create another node in a comple
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MjA0MjAzNCwtMTIxNzgzMzIwMywzOD
+eyJoaXN0b3J5IjpbLTc1MzExODQyOSwtMTIxNzgzMzIwMywzOD
 Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
 MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
 ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
