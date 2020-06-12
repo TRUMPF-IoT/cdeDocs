@@ -546,13 +546,17 @@ You can see in the list of "Nodes with SenderType=BackChannel" a new entry for N
 
 If you login to your NMI (on Node1) you can see a new Tile with "Overall Node Status" for Node2 but other than this nothing else...the new node is not running any plugins yet.
 
-Go ahead and install the V-Things plugin 
+6) Go ahead and install the V-Things plugin into the project of Node2 and log back into the NMI on Node1. Then click on the V-Things Tile in the main Portal
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MzQ3MzgwNSwtMTIxNzgzMzIwMywzOD
-Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
-MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
-ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
-NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcyNzk3OD
-ksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1ODMsNzc1
-NzgyODI1XX0=
+eyJoaXN0b3J5IjpbNDE5MTE4NDUwLC0xMjE3ODMzMjAzLDM4ND
+Q2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUz
+LC04Njc3Njg3MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMT
+E2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2
+MDMzLDIxMzAwMDkzOTQsLTEzNjA0MzM2NDQsLTE0NzI3OTc4OS
+w0NTc0OTQwMDIsLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3NzU3
+ODI4MjVdfQ==
 -->
