@@ -599,16 +599,21 @@ You can require only secure connections to a host by setting the MyStationPort a
 
 To learn more about how to setup your hosting PC check out this document: [https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/Concepts/C-DEngineSecureOn-premiseRelays.pdf](https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/Concepts/C-DEngineSecureOn-premiseRelays.pdf)
 
+There are many other security related configuration settings at the disposal of the Node Administrator and Developer.
+
+PreFlight permission checks for browser:
+
+AccessControlAllowMethods and AccessControlAllowHeaders can be defined in the App.Config to limit access via browsers.
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMTIwOTk4OSw1ODg5MDc5OTcsMTUyOT
-AzMDU0MiwtMTIxNzgzMzIwMywzODQ0NjU4MDYsLTkxMjA3MTc0
-NSw4MTIwMzE3NzEsLTY4NDE5NTk1MywtODY3NzY4NzM3LDExOD
-AwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1
-Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC
-0xMzYwNDMzNjQ0LC0xNDcyNzk3ODksNDU3NDk0MDAyLC0xOTk3
-MTc4ODkxXX0=
+eyJoaXN0b3J5IjpbMjA2NDg0NDg4NCwtOTAxMjA5OTg5LDU4OD
+kwNzk5NywxNTI5MDMwNTQyLC0xMjE3ODMzMjAzLDM4NDQ2NTgw
+NiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUzLC04Nj
+c3Njg3MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMTE2OTk1
+MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2MDMzLD
+IxMzAwMDkzOTQsLTEzNjA0MzM2NDQsLTE0NzI3OTc4OSw0NTc0
+OTQwMDJdfQ==
 -->
