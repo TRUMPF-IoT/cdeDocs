@@ -68,7 +68,7 @@ The C-DEngine is a DLL that contains all the necessary services required to crea
 > We want to use the kernel http.sys as the WebServer for the host. Only admin has access to the http.sys. If you launch VS without admin, you can still create a host but the C-DEngine will revert back to a user-mode web server that has less performance.
 2) Name the project "cdeHostNetCore"
 >After a short time you will see a small project with a program.cs and the C-DEngine icon.
-3) Open the program.cs and make one change in line 36 by creating a new GUID with the GuidTool shipping with Visual Studio and pasting the guid in the line.
+3) Open the program.cs and make one change in line 36 by creating a new GUID with the GuidTool shipping with Visual Studio and pasting the GUID in the line.
 4) run the project and look at the console output
 >If you see any error in the console, you most likely have a port conflict and something else already uses port 80. If so change line 39 and 43 to use any open port. Our recommendation is to use ports higher than 8700.
 
@@ -113,7 +113,7 @@ You will find the Scope ID in the console in the second line of the output:
 
 ```Scope ID: XXXXXXXX```
 
-The Scope ID is a Base32 string with up to 8 characters.
+The Scope ID is a Base32 string with up to 8 characters and will be converted into a secure hash token once "SetScope
 
 2) Enter the Scope ID in the Login dialog and click on "Set Security ID"
 
@@ -595,11 +595,11 @@ To bring this scenario even further, you can now create another node in a comple
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM4MzgwMTE0LC0xMjE3ODMzMjAzLDM4ND
-Q2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUz
-LC04Njc3Njg3MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMT
-E2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2
-MDMzLDIxMzAwMDkzOTQsLTEzNjA0MzM2NDQsLTE0NzI3OTc4OS
-w0NTc0OTQwMDIsLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3NzU3
-ODI4MjVdfQ==
+eyJoaXN0b3J5IjpbMTk1MjA0MjAzNCwtMTIxNzgzMzIwMywzOD
+Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
+MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
+ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
+NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcyNzk3OD
+ksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1ODMsNzc1
+NzgyODI1XX0=
 -->
