@@ -548,11 +548,14 @@ If you login to your NMI (on Node1) you can see a new Tile with "Overall Node St
 
 6) Go ahead and install the V-Things plugin into the project of Node2 and log back into the NMI on Node1. Then click on the V-Things Tile in the main Portal
 
+You will now see two "Status" icons but you cannot create new V-Things for Node2. The reason is that the security of the C-DEngine recognizes that you use the NMI of Node1. This makes you administrator on Node1 but only "Guest" on Node2. A guest cannot create new instances of things (well, at least not for the V-Things plugin. Its up to the developer of the plugin to make this decision).
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE5MTE4NDUwLC0xMjE3ODMzMjAzLDM4ND
+eyJoaXN0b3J5IjpbNjkwNjc3Mjg3LC0xMjE3ODMzMjAzLDM4ND
 Q2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUz
 LC04Njc3Njg3MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMT
 E2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2
