@@ -25,11 +25,9 @@ The Tutorial will go through the following steps:
 6) Diagnosing issues with Relays
 7) Communication between Plugins
 8) Adding a local node to your mesh
-9) Creating an installer for the Solution
-10) Publishing the installer to the WinGet Depot
-11) Customizing the NMI Skin
-12) Securing the Host using SSL
-13) Creating your own custom plugin
+9) Securing the Host using SSL
+10) Creating your own custom plugin
+11) Advanced NMI Topics
 
 During the tutorial we will make use of a variety of existing plugins.
 
@@ -601,11 +599,11 @@ To bring this scenario even further, you can now create another node in a comple
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyOTAzMDU0MiwtMTIxNzgzMzIwMywzOD
-Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
-MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
-ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
-NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcyNzk3OD
-ksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1ODMsNzc1
-NzgyODI1XX0=
+eyJoaXN0b3J5IjpbODUwNzc2MCwxNTI5MDMwNTQyLC0xMjE3OD
+MzMjAzLDM4NDQ2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwt
+Njg0MTk1OTUzLC04Njc3Njg3MzcsMTE4MDA1NjUyNiwtMTg0MD
+MzMDczOCwxMTE2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3
+MywtNzcxODc2MDMzLDIxMzAwMDkzOTQsLTEzNjA0MzM2NDQsLT
+E0NzI3OTc4OSw0NTc0OTQwMDIsLTE5OTcxNzg4OTEsMTEzODUx
+MDU4M119
 -->
