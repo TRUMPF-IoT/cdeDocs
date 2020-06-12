@@ -603,7 +603,7 @@ To learn more about how to setup your hosting PC check out this document: [https
 
 There are many other security related configuration settings at the disposal of the Node Administrator and Developer.
 
-### PreFlight permission checks for browser:
+### Pre-Flight permission checks for browser:
 
 AccessControlAllowMethods and AccessControlAllowHeaders can be defined in the App.Config to limit access to only specific browsers 
 
@@ -613,11 +613,11 @@ AccessControlAllowMethods and AccessControlAllowHeaders can be defined in the Ap
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NjE4MTM3NSwyMDY0ODQ0ODg0LC05MD
-EyMDk5ODksNTg4OTA3OTk3LDE1MjkwMzA1NDIsLTEyMTc4MzMy
-MDMsMzg0NDY1ODA2LC05MTIwNzE3NDUsODEyMDMxNzcxLC02OD
-QxOTU5NTMsLTg2Nzc2ODczNywxMTgwMDU2NTI2LC0xODQwMzMw
-NzM4LDExMTY5OTUxNDAsMTEzMzE5NTI5NCwxNTg4MjYzNjczLC
-03NzE4NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQzMzY0NCwtMTQ3
-Mjc5Nzg5XX0=
+eyJoaXN0b3J5IjpbLTE4NTM3NzU1NzAsMTM1NjE4MTM3NSwyMD
+Y0ODQ0ODg0LC05MDEyMDk5ODksNTg4OTA3OTk3LDE1MjkwMzA1
+NDIsLTEyMTc4MzMyMDMsMzg0NDY1ODA2LC05MTIwNzE3NDUsOD
+EyMDMxNzcxLC02ODQxOTU5NTMsLTg2Nzc2ODczNywxMTgwMDU2
+NTI2LC0xODQwMzMwNzM4LDExMTY5OTUxNDAsMTEzMzE5NTI5NC
+wxNTg4MjYzNjczLC03NzE4NzYwMzMsMjEzMDAwOTM5NCwtMTM2
+MDQzMzY0NF19
 -->
