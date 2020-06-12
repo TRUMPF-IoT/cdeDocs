@@ -623,12 +623,6 @@ A developer of a node or an admin of a mesh system can specify how strict the us
 > Client Side Certificates require a stable and scaling certificate management system. 
 If you are interested in a certificate management solution for your system, please contact us at info@C-Labs.com
 
-
-### Pre-Flight permission checks for browser:
-
-AccessControlAllowMethods and AccessControlAllowHeaders can be defined in the App.Config to limit access to only specific browsers 
-
-
 ## Chapter 10 - Creating your own custom Plugin
 
 Until now you were using the C-DEngine and plugins with writing almost no lines of code. 
@@ -639,7 +633,7 @@ In this chapter we go through the essential steps to create your own custom plug
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzY4MzYwNDcsMTg5OTA5NDQ2MSwxMz
+eyJoaXN0b3J5IjpbLTIwNzQzMTg3NTEsMTg5OTA5NDQ2MSwxMz
 U2MTgxMzc1LDIwNjQ4NDQ4ODQsLTkwMTIwOTk4OSw1ODg5MDc5
 OTcsMTUyOTAzMDU0MiwtMTIxNzgzMzIwMywzODQ0NjU4MDYsLT
 kxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1MywtODY3NzY4
