@@ -607,17 +607,20 @@ There are many other security related configuration settings at the disposal of 
 
 AccessControlAllowMethods and AccessControlAllowHeaders can be defined in the App.Config to limit access to only specific browsers 
 
+### Client Sided Certificates
+
+The ultimate protection for connections is using Client Side Certificates. The C-DEngine fully supports this secure way of connecting nodes.
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTM3NzU1NzAsMTM1NjE4MTM3NSwyMD
-Y0ODQ0ODg0LC05MDEyMDk5ODksNTg4OTA3OTk3LDE1MjkwMzA1
-NDIsLTEyMTc4MzMyMDMsMzg0NDY1ODA2LC05MTIwNzE3NDUsOD
-EyMDMxNzcxLC02ODQxOTU5NTMsLTg2Nzc2ODczNywxMTgwMDU2
-NTI2LC0xODQwMzMwNzM4LDExMTY5OTUxNDAsMTEzMzE5NTI5NC
-wxNTg4MjYzNjczLC03NzE4NzYwMzMsMjEzMDAwOTM5NCwtMTM2
-MDQzMzY0NF19
+eyJoaXN0b3J5IjpbMTg5OTA5NDQ2MSwxMzU2MTgxMzc1LDIwNj
+Q4NDQ4ODQsLTkwMTIwOTk4OSw1ODg5MDc5OTcsMTUyOTAzMDU0
+MiwtMTIxNzgzMzIwMywzODQ0NjU4MDYsLTkxMjA3MTc0NSw4MT
+IwMzE3NzEsLTY4NDE5NTk1MywtODY3NzY4NzM3LDExODAwNTY1
+MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MCwxMTMzMTk1Mjk0LD
+E1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMwMDA5Mzk0LC0xMzYw
+NDMzNjQ0XX0=
 -->
