@@ -617,8 +617,8 @@ A developer of a node or an admin of a mesh system can specify how strict the us
 
 -   If set to 0 or does not exist, a client certificate is not used and not required (default mode of previous CDE versions)
 -   If Set to 1, client can present a client certificate. If no scopes are in the cert, scopes will be used as before (Mix operation between certificate based and "EasyScopeID" security mode)
--   If Set to 2, client must present a valid client certificate. If no scopes are in the cert, scopes will be used as before 
--   If set to 3, all clients (including NMI browsers) need to present a client certificate (new enforced Client Certificate Mode only - older CDE Nodes will not able to connect)
+-   If Set to 2, client must present a valid client certificate. If no scopes are in the cert, scopes will be used as with "1" 
+-   If set to 3, all clients (including NMI browsers) need to present a client certificate (Nodes with just EasyScopeIDs will not able to connect)
 -   If the client certificate contains one or more SAN URLs of the scheme "com.c-labs.cdescope://" the client will only participate in scopes with that scopeID. The first cdescope is used as the ScopeID if no scope is presented in the message or connection
 -   In IIS, settings 2 and 3 require the "Client Certificates" setting in "SSL Settings" to be set as "Accept" or "Require" for NMI access
 
@@ -626,11 +626,11 @@ A developer of a node or an admin of a mesh system can specify how strict the us
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzODMxOTc1MCwxODk5MDk0NDYxLDEzNT
-YxODEzNzUsMjA2NDg0NDg4NCwtOTAxMjA5OTg5LDU4ODkwNzk5
-NywxNTI5MDMwNTQyLC0xMjE3ODMzMjAzLDM4NDQ2NTgwNiwtOT
-EyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUzLC04Njc3Njg3
-MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMTE2OTk1MTQwLD
-ExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2MDMzLDIxMzAw
-MDkzOTRdfQ==
+eyJoaXN0b3J5IjpbLTExNDIzMjQwMDYsMTg5OTA5NDQ2MSwxMz
+U2MTgxMzc1LDIwNjQ4NDQ4ODQsLTkwMTIwOTk4OSw1ODg5MDc5
+OTcsMTUyOTAzMDU0MiwtMTIxNzgzMzIwMywzODQ0NjU4MDYsLT
+kxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1MywtODY3NzY4
+NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MC
+wxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMw
+MDA5Mzk0XX0=
 -->
