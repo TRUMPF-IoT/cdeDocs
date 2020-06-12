@@ -248,7 +248,10 @@ http://localhost:8800/cdestatus.aspx
 This page has multiple sections that are important for diagnostics:
 #### "NodeInfo"
 This section shows a summary of basic information of the node the status page is called from. The section is fairly self explanatory.
-One notable entry here is the "
+
+One notable entry here is the "Local Node-Scope". It shows only the first 4 digits of a much larger scope-token that is used to establish encrypted communication with other node.
+
+The C-DEngine allows to create a custom Crypto DLL that can be used to change the way the C-DEngine manages and creates 
 
 
 #### "Status of Engines"
@@ -598,11 +601,11 @@ To bring this scenario even further, you can now create another node in a comple
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MzExODQyOSwtMTIxNzgzMzIwMywzOD
-Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
-MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
-ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
-NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcyNzk3OD
-ksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1ODMsNzc1
-NzgyODI1XX0=
+eyJoaXN0b3J5IjpbLTIwOTE0ODU0MzksLTEyMTc4MzMyMDMsMz
+g0NDY1ODA2LC05MTIwNzE3NDUsODEyMDMxNzcxLC02ODQxOTU5
+NTMsLTg2Nzc2ODczNywxMTgwMDU2NTI2LC0xODQwMzMwNzM4LD
+ExMTY5OTUxNDAsMTEzMzE5NTI5NCwxNTg4MjYzNjczLC03NzE4
+NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQzMzY0NCwtMTQ3Mjc5Nz
+g5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MSwxMTM4NTEwNTgzLDc3
+NTc4MjgyNV19
 -->
