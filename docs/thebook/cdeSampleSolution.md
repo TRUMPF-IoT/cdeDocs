@@ -529,7 +529,7 @@ In order to show how a mesh works, lets create a mini mesh.
 ServiceRoute = "ws://localhost:8700"
 ```
 The Port 8700 must match the port you chose in Chapter 2 above for your first node.  "WS" stands for WebSockets but you can also use HTTP if you prefer.
-Later in this tutorial we show how to secure a node using TLS/SSL. This allows you to use "WSS" (WebSocketsSecure) or HTTPS.
+In the next chapter we show how to secure a node using TLS/SSL. This allows you to use "WSS" (WebSocketsSecure) or HTTPS.
 
 4) You now have to use the same ScopeID on both nodes in order for them to connect. replace line 98 in both projects with:
 ```
@@ -590,6 +590,7 @@ With this in mind you can setup any combination of nodes you can imaging - or be
 To bring this scenario even further, you can now create another node in a completely different region of the world and connect to the Cloud-Relay. As long as they share the same ScopeID, data will flow to that node as well.
 
 
+## Chapter 9 - Securing the Host using SSL
 
 
 
@@ -599,11 +600,11 @@ To bring this scenario even further, you can now create another node in a comple
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUwNzc2MCwxNTI5MDMwNTQyLC0xMjE3OD
-MzMjAzLDM4NDQ2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwt
-Njg0MTk1OTUzLC04Njc3Njg3MzcsMTE4MDA1NjUyNiwtMTg0MD
-MzMDczOCwxMTE2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3
-MywtNzcxODc2MDMzLDIxMzAwMDkzOTQsLTEzNjA0MzM2NDQsLT
-E0NzI3OTc4OSw0NTc0OTQwMDIsLTE5OTcxNzg4OTEsMTEzODUx
-MDU4M119
+eyJoaXN0b3J5IjpbLTYwOTI5MTM2MywxNTI5MDMwNTQyLC0xMj
+E3ODMzMjAzLDM4NDQ2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3
+MSwtNjg0MTk1OTUzLC04Njc3Njg3MzcsMTE4MDA1NjUyNiwtMT
+g0MDMzMDczOCwxMTE2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2
+MzY3MywtNzcxODc2MDMzLDIxMzAwMDkzOTQsLTEzNjA0MzM2ND
+QsLTE0NzI3OTc4OSw0NTc0OTQwMDIsLTE5OTcxNzg4OTEsMTEz
+ODUxMDU4M119
 -->
