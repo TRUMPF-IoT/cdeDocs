@@ -557,8 +557,15 @@ If you try to login to the NMI on Node2 you will see the error message we got al
 7) Install the NMI Runtime Plugin on Node2 and restart Node2 (Node1 can continue to run)
 8) Now login to the NMI of Node2 and click on the Virtual Things Tile in the dashboard. You will see the exact same screen as before with a tiny difference: The "V-Things List" is now under the category for Node2! 
 9) Click on the V-Things List and create a new Virtual Sensor for any KPI you want.
+10) now navigate back to the Virtual Sensor Dashboard and you will see all three sensors: two from Node1 and one from Node2.
 
+You can now login to Node1 or Node2 and you will always see all three sensors.
 
+### What is this good for?
+
+What we have created is a so call "Forwarder". 
+
+***Image of
 
 
 
@@ -568,11 +575,11 @@ If you try to login to the NMI on Node2 you will see the error message we got al
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MDI4NjM3NCwtMTIxNzgzMzIwMywzOD
-Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
-MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
-ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
-NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcyNzk3OD
-ksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1ODMsNzc1
-NzgyODI1XX0=
+eyJoaXN0b3J5IjpbMzYyOTM1MDg4LC0xMjE3ODMzMjAzLDM4ND
+Q2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUz
+LC04Njc3Njg3MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMT
+E2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2
+MDMzLDIxMzAwMDkzOTQsLTEzNjA0MzM2NDQsLTE0NzI3OTc4OS
+w0NTc0OTQwMDIsLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3NzU3
+ODI4MjVdfQ==
 -->
