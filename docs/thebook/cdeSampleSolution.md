@@ -550,16 +550,23 @@ If you login to your NMI (on Node1) you can see a new Tile with "Overall Node St
 
 You will now see two "Status" icons but you cannot create new V-Things for Node2. The reason is that the security of the C-DEngine recognizes that you use the NMI of Node1. This makes you administrator on Node1 but only "Guest" on Node2. A guest cannot create new instances of things (well, at least not for the V-Things plugin. Its up to the developer of the plugin to make this decision).
 
+If you try to login to the NMI on Node2 you will see the error message we got already in chapter 2. The NMI Plugin is not installed on Node2 making it a "headless" node. 
+
+7) Install the NMI Runtime Plugin on Node2 and restart Node2 (Node1 can continue to run)
+
+
+
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkwNjc3Mjg3LC0xMjE3ODMzMjAzLDM4ND
-Q2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUz
-LC04Njc3Njg3MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMT
-E2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2
-MDMzLDIxMzAwMDkzOTQsLTEzNjA0MzM2NDQsLTE0NzI3OTc4OS
-w0NTc0OTQwMDIsLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3NzU3
-ODI4MjVdfQ==
+eyJoaXN0b3J5IjpbMTg4MTE4OTYwMCwtMTIxNzgzMzIwMywzOD
+Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
+MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
+ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
+NjAzMywyMTMwMDA5Mzk0LC0xMzYwNDMzNjQ0LC0xNDcyNzk3OD
+ksNDU3NDk0MDAyLC0xOTk3MTc4ODkxLDExMzg1MTA1ODMsNzc1
+NzgyODI1XX0=
 -->
