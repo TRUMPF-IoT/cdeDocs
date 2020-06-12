@@ -596,8 +596,9 @@ To bring this scenario even further, you can now create another node in a comple
 
 A core scenario of the C-DEngine is the on-premise datacollection for Cloud Services such as the Azure IoT Hub. 
 
+***PLUGIN Azure IoT Hub***
 
-
+Elaborate!!
 
 ## Chapter 10 - Securing the Host using SSL
 
@@ -640,7 +641,7 @@ In this chapter we go through the essential steps to create your own custom plug
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NDYwODAwNywtMjA3NDMxODc1MSwxOD
+eyJoaXN0b3J5IjpbLTI0Njc2NTM5NywtMjA3NDMxODc1MSwxOD
 k5MDk0NDYxLDEzNTYxODEzNzUsMjA2NDg0NDg4NCwtOTAxMjA5
 OTg5LDU4ODkwNzk5NywxNTI5MDMwNTQyLC0xMjE3ODMzMjAzLD
 M4NDQ2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1
