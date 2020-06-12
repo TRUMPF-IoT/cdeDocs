@@ -565,6 +565,8 @@ If you try to login to the NMI on Node2 you will see the error message we got al
 
 You can now login to Node1 or Node2 or even the Cloud.C-Labs.com/NMI and you will always see all three sensors!
 
+Check out the "Network Service" dashboard
+
 ### What is this good for?
 
 What we have created is a so call "Forwarder Mesh". 
@@ -618,8 +620,9 @@ A developer of a node or an admin of a mesh system can specify how strict the us
 -   If the client certificate contains one or more SAN URLs of the scheme "com.c-labs.cdescope://" the client will only participate in scopes with that scopeID. The first cdescope is used as the ScopeID if no scope is presented in the message or connection
 -   In IIS, settings 2 and 3 require the "Client Certificates" setting in "SSL Settings" to be set as "Accept" or "Require" for NMI access
 
-Client Side Certificates require a stable and scaling certificate management system. 
-If you are interested in a certificate management solution for your 
+> Client Side Certificates require a stable and scaling certificate management system. 
+If you are interested in a certificate management solution for your system, please contact us at info@C-Labs.com
+
 
 ### Pre-Flight permission checks for browser:
 
@@ -628,11 +631,11 @@ AccessControlAllowMethods and AccessControlAllowHeaders can be defined in the Ap
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0ODM4NDMwMiwxODk5MDk0NDYxLDEzNT
-YxODEzNzUsMjA2NDg0NDg4NCwtOTAxMjA5OTg5LDU4ODkwNzk5
-NywxNTI5MDMwNTQyLC0xMjE3ODMzMjAzLDM4NDQ2NTgwNiwtOT
-EyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUzLC04Njc3Njg3
-MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMTE2OTk1MTQwLD
-ExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2MDMzLDIxMzAw
-MDkzOTRdfQ==
+eyJoaXN0b3J5IjpbLTE0MzY4ODI5OTUsMTg5OTA5NDQ2MSwxMz
+U2MTgxMzc1LDIwNjQ4NDQ4ODQsLTkwMTIwOTk4OSw1ODg5MDc5
+OTcsMTUyOTAzMDU0MiwtMTIxNzgzMzIwMywzODQ0NjU4MDYsLT
+kxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1MywtODY3NzY4
+NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MC
+wxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMw
+MDA5Mzk0XX0=
 -->
