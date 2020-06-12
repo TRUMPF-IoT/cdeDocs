@@ -583,7 +583,8 @@ With this in mind you can setup any combination of nodes you can imaging - or be
 
 > As a rule of thumb always connect from a lower security network into a higher security network. NEVER the other way around! And IT devices/virtual machines/PCs/Servers are much more secure than OT machines or devices.
 
-To bring this scenario even further, you can now create another node in a complee
+To bring this scenario even further, you can now create another node in a completely different region of the world and connect to the Cloud-Relay. As long as they share the same ScopeID, data will flow to that node as well.
+
 
 
 
@@ -594,11 +595,11 @@ To bring this scenario even further, you can now create another node in a comple
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjM4NTE5ODEsLTEyMTc4MzMyMDMsMz
-g0NDY1ODA2LC05MTIwNzE3NDUsODEyMDMxNzcxLC02ODQxOTU5
-NTMsLTg2Nzc2ODczNywxMTgwMDU2NTI2LC0xODQwMzMwNzM4LD
-ExMTY5OTUxNDAsMTEzMzE5NTI5NCwxNTg4MjYzNjczLC03NzE4
-NzYwMzMsMjEzMDAwOTM5NCwtMTM2MDQzMzY0NCwtMTQ3Mjc5Nz
-g5LDQ1NzQ5NDAwMiwtMTk5NzE3ODg5MSwxMTM4NTEwNTgzLDc3
-NTc4MjgyNV19
+eyJoaXN0b3J5IjpbOTM4MzgwMTE0LC0xMjE3ODMzMjAzLDM4ND
+Q2NTgwNiwtOTEyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUz
+LC04Njc3Njg3MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMT
+E2OTk1MTQwLDExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2
+MDMzLDIxMzAwMDkzOTQsLTEzNjA0MzM2NDQsLTE0NzI3OTc4OS
+w0NTc0OTQwMDIsLTE5OTcxNzg4OTEsMTEzODUxMDU4Myw3NzU3
+ODI4MjVdfQ==
 -->
