@@ -565,7 +565,7 @@ If you try to login to the NMI on Node2 you will see the error message we got al
 
 You can now login to Node1 or Node2 or even the Cloud.C-Labs.com/NMI and you will always see all three sensors!
 
-Check out the "Network Service" dashboard
+Check out the "Network Status" dashboard from earlier in the tutorial. If you login via Node2 you see the same reduced dashboard of your "Google DNS" Twin as you saw on the cloud-relay, but you do get all the essential information like the round-trip-time.
 
 ### What is this good for?
 
@@ -631,7 +631,7 @@ AccessControlAllowMethods and AccessControlAllowHeaders can be defined in the Ap
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzY4ODI5OTUsMTg5OTA5NDQ2MSwxMz
+eyJoaXN0b3J5IjpbLTIxMzgwMjA5ODAsMTg5OTA5NDQ2MSwxMz
 U2MTgxMzc1LDIwNjQ4NDQ4ODQsLTkwMTIwOTk4OSw1ODg5MDc5
 OTcsMTUyOTAzMDU0MiwtMTIxNzgzMzIwMywzODQ0NjU4MDYsLT
 kxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1MywtODY3NzY4
