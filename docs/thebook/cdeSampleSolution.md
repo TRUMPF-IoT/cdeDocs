@@ -522,7 +522,7 @@ In order to show how a mesh works, lets create a mini mesh.
 
 4) Add this new line after Line 54:
 ```
-                ServiceRoute = "ws://localhost:8700"
+ServiceRoute = "ws://localhost:8700"
 ```
 The Port 8700 must match the port you chose in Chapter 2 above for your first node.  "WS" stands for WebSockets but you can also use HTTP if you prefer.
 Later in this tutorial we show how to secure a node using TLS/SSL. This allows you to use "WSS" (WebSocketsSecure) or HTTPS.
@@ -571,8 +571,13 @@ Imaging Node2 being on the OT Shopfloor with no access to the internet but you w
 Node1 is in the DMZ or on the IT side of your company. Node2 sends its information to Node1 and Node1 "forwards" that information to the Cloud.
 
 You can have any number of forwarder nodes to overcome any network topology a customer might have!
-You can also use redundant paths by adding a second Node to the IT (DMZ) and have Node2 point at two nodes (s
+You can also use redundant paths by adding a second Node to the IT (DMZ) and have Node2 point at two nodes simply by separating the ServiceRoutes with a semi-colon:
+```
+ServiceRoute = "ws://localhost:8700; ws://anotherip:anotherport;..."
+```
+*** Image of a redundancy path here***
 
+You can also have multiple nodes on the OT floor connecting to Node2 and have it send 
 
 
 
@@ -581,7 +586,7 @@ You can also use redundant paths by adding a second Node to the IT (DMZ) and hav
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNDU2NzA3NywtMTIxNzgzMzIwMywzOD
+eyJoaXN0b3J5IjpbLTYxNzM5NTY3MywtMTIxNzgzMzIwMywzOD
 Q0NjU4MDYsLTkxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1
 MywtODY3NzY4NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMT
 ExNjk5NTE0MCwxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3
