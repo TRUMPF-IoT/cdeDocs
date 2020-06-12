@@ -629,13 +629,15 @@ If you are interested in a certificate management solution for your system, plea
 AccessControlAllowMethods and AccessControlAllowHeaders can be defined in the App.Config to limit access to only specific browsers 
 
 
+## Chapter 10 - Creating your own custom Plugin
 
+Until now you were using the C-DEngine
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzgwMjA5ODAsMTg5OTA5NDQ2MSwxMz
-U2MTgxMzc1LDIwNjQ4NDQ4ODQsLTkwMTIwOTk4OSw1ODg5MDc5
-OTcsMTUyOTAzMDU0MiwtMTIxNzgzMzIwMywzODQ0NjU4MDYsLT
-kxMjA3MTc0NSw4MTIwMzE3NzEsLTY4NDE5NTk1MywtODY3NzY4
-NzM3LDExODAwNTY1MjYsLTE4NDAzMzA3MzgsMTExNjk5NTE0MC
-wxMTMzMTk1Mjk0LDE1ODgyNjM2NzMsLTc3MTg3NjAzMywyMTMw
-MDA5Mzk0XX0=
+eyJoaXN0b3J5IjpbMjA2ODkwMjkxNiwxODk5MDk0NDYxLDEzNT
+YxODEzNzUsMjA2NDg0NDg4NCwtOTAxMjA5OTg5LDU4ODkwNzk5
+NywxNTI5MDMwNTQyLC0xMjE3ODMzMjAzLDM4NDQ2NTgwNiwtOT
+EyMDcxNzQ1LDgxMjAzMTc3MSwtNjg0MTk1OTUzLC04Njc3Njg3
+MzcsMTE4MDA1NjUyNiwtMTg0MDMzMDczOCwxMTE2OTk1MTQwLD
+ExMzMxOTUyOTQsMTU4ODI2MzY3MywtNzcxODc2MDMzLDIxMzAw
+MDkzOTRdfQ==
 -->
