@@ -24,11 +24,12 @@ The Tutorial will go through the following steps:
 5) Connecting the Host to the Cloud Relay
 6) Diagnosing issues with Relays
 7) Communication between Plugins
-8) Adding a local node to your mesh
-9) Pushing data into Azure IoT Hub
-10) Securing the Host using SSL
-11) Creating your own custom plugin
-12) Advanced NMI Topics
+8) Scripting the C-DEngine
+9) Adding a local node to your mesh
+10) Pushing data into Azure IoT Hub
+11) Securing the Host using SSL
+12) Creating your own custom plugin
+13) Advanced NMI Topics
 
 During the tutorial we will make use of a variety of existing plugins.
 
@@ -41,8 +42,8 @@ The plugins we are using are:
 |--|--|--|
 |CMyNetwork| A ping round-trip meter|Digital Twin/Device
 |CDMyComputer| a health monitor for your hosting PC|Digital Twin/Device
-| CDMyVThings| A variety of virtual things, algorithm and helpers |Pre-Processor/Service
-| CDMyRulesEngine| A minimalistic rules engine to act on trigger |Pre-Processor/Service
+|CDMyVThings| A variety of virtual things, algorithm and helpers |Pre-Processor/Service
+|CDMyRulesEngine| A minimalistic rules engine to act on trigger |Pre-Processor/Service
 |CDMyPrometheus| An exporter plugin for prometheus scrapers |Connector/Diagnostics
 |CDMyVisitorLog| a plugin that can identify and count incoming connections |Pre-Processor/Service
 |CDMyC3| An NMI Extension plugins for Charts|NMI Extension
@@ -64,19 +65,25 @@ We also recommend that you install the Visual Studio Project Templates for the C
 The C-DEngine is a DLL that contains all the necessary services required to create an application but it does require a host to run in. The C-DEngine supports a variety of hosts like IIS, ASP.NET, Docker, Console or Windows Service. This Tutorial will use a .NET Core Console host.
 
 1) To create the host, launch Visual Studio 2019 as Admin and create a new Project using the template "Console Host App for C-Labs C-DEngine (.NET Core)" in your favorite project folder
+
+![Im1](Images/im1.png)
+
 > We want to use the kernel http.sys as the WebServer for the host. Only admin has access to the http.sys. If you launch VS without admin, you can still create a host but the C-DEngine will revert back to a user-mode web server that has less performance.
+
 2) Name the project "cdeHostNetCore"
->After a short time you will see a small project with a program.cs and the C-DEngine icon.
+After a short time you will see a small project with a program.cs and the C-DEngine icon.
 3) Open the program.cs and make one change in line 36 by creating a new GUID with the GuidTool shipping with Visual Studio and pasting the GUID in the line.
 4) run the project and look at the console output
->If you see any error in the console, you most likely have a port conflict and something else already uses port 80. If so change line 39 and 43 to use any open port. Our recommendation is to use ports higher than 8700.
+
+If you see any error in the console, you most likely have a port conflict and something else already uses port 80. If so change line 39 and 43 to use any open port. Our recommendation is to use ports higher than 8700.
 
 >If you are running VS as admin, you can use the same port for HTTP (MyStationPort) and WebSockets (MyStationWSPort). The http.sys can share the same port for http and websockets. If you are not running under admin, you have to specify a different port for the WebSockets.
 
 The source of the host is fairly self explanatory but I want to point out a couple details:
+
 #### DontVerifyTrust=true
 The C-DEngine can ensure that only plugins are loaded that have the proper code signing certificate. Code signing requires a certificate and some extra build steps. For simplicity you can turn Code Signing off during development by setting "DontVerifyTrust=true". 
->If you are interested in Code Signing, please contact us and we will write more about it
+>If you are interested in Code Signing, please contact us at info@C-Labs.com of file an incident here and we will write more about it
 
 ### UseRandomDeviceID=true
 For development it can help to always start the host fresh without storing any information on your Harddrive. This switch turns off all state management and gives the host a new DeviceID with every new start. If you keep this as the default (false) the DeviceID and other state information are saved in a folder under your bin file: "ClientBin/cache". You can delete this folder to start fresh with the host again.
@@ -97,11 +104,14 @@ For easier access to configuration settings you can add a "App.Config" file to y
 While the host is running, you can enter "b" in the console and a Brower will open with the User Interface of the node. As we have no NMI Runtime installed, yet, the browser will only show:
 
 **Resource http://yourpc:yourport/lnmi not found***
+
 Right now the C-DEngine is running in headless mode. We will add the NMI in the next step.
 
 ## Chapter 3 - Adding the NMI Plugin to the Host
 Adding the NMI Runtime to the project is as easy as adding a NuGet:
+
 1) Open the Nuget Manager and browser for "NMI"
+
 You will find the CDMyNMIHtml5RT package - just add it to the project. You don't have to do anything to your program.cs - just run it again
 
 If you now enter "b" in the console the browser is showing a login screen.
@@ -112,22 +122,24 @@ You will find the Scope ID in the console in the second line of the output:
 
 ```Scope ID: XXXXXXXX```
 
-This "Easy Scope ID" is a Base32 string with up to 8 characters and will be converted into a secure hash token once "SetScopeIDFromEasyID" was called. The C-DEngine will not store the EasyScopeID anywhere and only works with the internal hash of the token. 
+> This "Easy Scope ID" is a Base32 string with up to 8 characters and will be converted into a secure hash token once "SetScopeIDFromEasyID" was called. The C-DEngine will not store the EasyScopeID anywhere and only works with the internal hash of the token. 
 
 2) Enter the Scope ID in the Login dialog and click on "Set Security ID"
 
->You will now see the minimalist NMI (Natural Machine Interface) of the Host. 
+You will now see the minimalist NMI (Natural Machine Interface) of the Host. 
+
 3) Select NMI Admin and you can see a variety of options.
-***TODO: Explain NMI Admin here***
 
 To stop the host, simple press ESC in the console. If you have the browser open you will see that you get immediately logged out of the NMI when the host stops.
 
+>This happens because the browser is creating a WebSocket connection to the C-DEngine base Host. Once the host stops, the WebSocket connection is terminated and the user is disconnected.
+
 ## Chapter 4 - Adding plugins from our Plugins Depot
-The cdePlugins depot on GitHub has several plugins we can now add to the project. We are working on publishing all plugins as NuGets as well. You can Browser for Compatible plugins by searching for "CDMy" in the NuGet Package Manager.
+The cdePlugins depot on GitHub has several plugins we can now add to the project. We are working on publishing more and more plugins as NuGets over time. You can browse for compatible plugins by searching for "CDMy" or "C-DMy" in the NuGet Package Manager.
 
->C-DEngine automatically recognizes plugins by the prefix "CDMy" or "C-DMy". Therefore its very simple to add new plugins to NuGet and the bin folder
+>C-DEngine requires and automatically recognizes plugins by the prefix "CDMy" or "C-DMy". Therefore its very simple to add new plugins to NuGet and the bin folder
 
-First we are adding the C-DMyNetwork plugin.
+First add the C-DMyNetwork plugin.
 
 If you want to use the source...
 1) Clone the "cdePlugins" depot to your local drive
@@ -136,54 +148,68 @@ If you want to use the source...
 4) Run the solution (Make sure your starting project is the Host)
 
 If you now login to your NMI, you will see the NMI for the Network Plugin.
-Lets create some "Digital Twins" in the network plugin.
+Lets create a "Digital Twin/Thing" in the network plugin.
 
->In the C-DEngine a "Digital Twin" is a "Thing" managed by the C-DEngine.
-A "Thing" (of the base class "TheBaseThing") is owned by a plugin and represents the state and events of a physical device.  Things are managed and stored in TheThingRegistry.
+>In the C-DEngine a "Digital Twin" is a "Thing" managed by the C-DEngine. From now on we will call this a **"Digital Thing" or D-Thing**, A D-Thing (of the base class "TheBaseThing") is owned by a plugin and represents the state of a physical device. Things are managed and stored in **TheThingRegistry**.
 
-In case of the network plugins, we are creating digital twins of ping-able network end points such as the DNS Server of Google (at 8.8.8.8).
+In case of the network plugins, we are creating D-Things of ping-able network end points such as the DNS Server of Google (at 8.8.8.8).
 
 >***Important Note***: If you still have "UseRandomDeviceID=true" set, your new digital twin will be gone after you restart your host. We do recommend that you change this to "false" now for the remainder of the tutorial.
 
-1) To add add a digital (endpoint) twin click on the "Devices/Network Status" tile in the NMI
+1) To add add a digital (endpoint) D-Thing click on the "Devices/Network Status" tile in the NMI
 2) Then click on "Add new Network Service"
+
 > A wizard will appear. Wizards are part of the plugin and help to create new instances of digital twins
+
+![Img3](Images/img3.png)
+
 3) In the wizard set the following values:
-```
-Name Your Service: "Google DNS"
-Service Type: Select "Ping Service"
-Address: "8.8.8.8:
-```
+
+|Button  |Action  |
+|--|--|
+|Name Your Service| Google DNS |
+|Service Type| Ping Service|
+|Address| 8.8.8.8 |
+
 Once you click finish, you see a new tile in the NMI for the Google DNS
 If you click on it, you see the device status:
-***IMAGE OF NMI HERE***
+
+![Img2](Images/img2.png)
+
 You can see the "Value" updating frequently. Its shows the roundtrip time of a ping from your host PC to the Google DNS.
 If you open up the "Connectivity" Group by clicking it, you can see that "Auto Connect" and "Is Connected" are selected. you can also see and change the address of the ping as well as change Ping parameter if you open that group.
 
-Lets have a look where this "Thing" (Digital Twin) was created.
+### TheThingRegistry - Central Digital-Thing Database
+
+Lets have a look where this D-Thing was created.
 
 1) Click on the C-DEngine logo in the top left and then the little home icon.
 This brings you back to the main portal
-2) Now click on the NMI Admin and then "Thing Registry" tiles
+2) Now click on the NMI Admin and then "Thing Registry" tile
 3) in the top right corner of the table click the little "Refresh" icon and you will see all "Things" your host is currently managing.
 
 In the "Friendly Name" column you will find your "Google DNS" thing.
-You can also see the "DeviceType" is stating "Ping Service". You will find two other DeviceTypes that the system has created. 
-***ApplicationHost***:  The Digital Twin of your Local Host application. Contains only basic information about your host but you can dynamically add your own properties to it. The C-DEngine will persist these properties for you
-***IBaseEngine***: For each Service in plugins the C-DEngine will create a Digital Twin with the DeviceType "IBaseEngine". Here all properties that are related to this service are stored. 
+
+You can also see the "DeviceType" is stating "Ping Service". You will find two other DeviceTypes that the system has created:
+
++ ***ApplicationHost***:  The Digital Twin of your Local Host application. Contains only basic information about your host but you can dynamically add your own properties to it. The C-DEngine will persist these properties for you
++ ***IBaseEngine***: For each Service in plugins the C-DEngine will create a Digital Twin with the DeviceType "IBaseEngine". Here all properties that are related to this service are stored. 
 
 To the left are three buttons:
+
 |Button  |Action  |
 |--|--|
-|First button| Jump to the Thing's NMI  |
-|Second button| This button allows you to download the JSON description of the Thing |
-|Third button|  This button gives you some more options to analyse your Thing. Especially interesting is the "All Properties..." Group. If you open it, you will find all properties a Thing has. |
+|![Img4](Images/img4.png)| Jump to the Thing's NMI. This "Details" Button is used in many placed to **open up more details on some-thing**  |
+|![Img5](Images/img5.png)| This button allows you to download the JSON description of the Thing |
+|![Img6](Images/img6.png)|  This button gives you some more options to analyse your Thing. Especially interesting is the "All Properties..." Group. If you open it, you will find all properties a Thing has. |
 
 Things in the C-DEngine only consists of Properties! All of which are stored in the ThingRegistry (class name: TheThingRegistry). Developer can access things via TheThingRegistry APIs.
 
-In the C-DEngine "Digital Things/Twins" consist only of Properties. Properties can be created dynamically at runtime and are stored in TheThingRegistry. This very simple concept is also very powerful as it can be extended at anytime. You can listen to PropertyChange events and trigger actions by these changes. The NMI is the graphical representation of these properties and offers a wide variety of controls a developer can use to design the UX.
+>In the C-DEngine "Digital Things" only consist of Properties!. Properties can be created dynamically at runtime and are stored in TheThingRegistry. This very simple concept is also very powerful as it can be extended at anytime. You can listen to PropertyChange events and trigger actions by these changes. The NMI is the graphical representation of these properties and offers a wide variety of controls a developer can use to design the UX.
 
-***DESCRIBE MORE OPTIONS ON THINGS***
+If you click on the "More Options" of your thing, you can see a lot more interesting things you can do with your D-Thing. 
+We will us the "Export Pipeline" later in Chapter 8 for scripting the creation of D-Things.
+
 ## Chapter 5 - Connecting the Host to the Cloud Relay
 
 Solutions with the C-DEngine can run completely on premises without the need for an internet connection. But if an internet connection is available, the host running the C-DEngine can easily be connected to a "Cloud Relay" allowing access to the local NMI via cloud connected devices.  
@@ -206,9 +232,9 @@ After you enter your Scope ID you will see the same NMI as on the local node.
 
 Click on the "Network Status" tile and you should see your "Google DNS" tile that you have seen in the localhost browser. But when you click on it, you will see a slightly different presentation:
 
-***ADD IMAGE***
+![Img7](Images/img7.png)
 
-The NMI for this "digital twin" only allows viewing of certain controls via the cloud. The developer of the twin (plugin) can determine what controls should be visible on Local Nodes vs Cloud Nodes. These settings can also change by User Access Level Permission. 
+The NMI for this "Digital Thing" only allows viewing of certain controls via the cloud. The developer of the D-Thing (plugin) can determine what controls should be visible on Local Nodes vs Cloud Nodes. These settings can also change by User Access Level Permission. 
 
 >For Development purposes the User Manager is not enabled by default. Also the ***Cloud.C-Labs.com Cloud Relay does not support the user manager and is for testing purposes only!***
 
@@ -217,7 +243,7 @@ By now you might be wondering why you did not have to sign up for any service, s
 
 A C-DEngine based Cloud-Relay is a highly-tuned, multi-tenant "Access Point" for authorized hosts. As the names suggests it only "relays" data between two or more (C-DEngine) hosts. The browser you are using is a special kind of Host running the JavaScript version of the C-DEngine. 
 
-#### Scoping is the Key!
+### Scoping is the Key!
 
 Your local host is connecting to the Cloud-Relay with the scope you generated in program.cs. Any browser must use the exact same scope to connect to the same "Mesh" of nodes. The Cloud-Relay is then working as a relay for the data flowing between the local host and the browser.
 
@@ -227,11 +253,11 @@ You can connect as many browsers and local hosts (also called "nodes") to the sa
 
 >A PC can run multiple nodes at the same time. A "node" is a more abstract term for a host. Theoretically a host can contain multiple nodes when the host connects to multiple other nodes using different scopes. But lets not get ahead of ourselves.
 
-Look at our concept documents on GitHub ([https://github.com/TRUMPF-IoT/cdeDocs/tree/master/docs](https://github.com/TRUMPF-IoT/cdeDocs/tree/master/docs) for more details
+Look at our concept documents on GitHub [https://github.com/TRUMPF-IoT/cdeDocs/tree/master/docs](https://github.com/TRUMPF-IoT/cdeDocs/tree/master/docs) for more details
 
 If you change turn on the "UserMapper" your node will prompt you for a UserName and Password. These credentials are then "Mapped" to the ScopeID of the Node. Once you switch to the UserMapper, you cannot switch back to "Scope Login" as that would present a security risk. Also you cannot use the UserMapper with the Cloud.C-Labs.com as the UserMapper is not turned on for this test cloud. 
 
->If you are interested in hosting your own cloud-relay please contact info@C-Labs.com.
+>If you are interested in hosting your own cloud-relay please contact [info@C-Labs.com](mailto:info@C-Labs.com).
  
 ## Chapter 6 - Diagnosing issues with Hosts, Nodes and Relays
 
@@ -245,7 +271,9 @@ Any running node containing the C-DEngine and is setup as a web server provides 
 http://localhost:8800/cdestatus.aspx
 ```
 This page has multiple sections that are important for diagnostics:
+
 #### "NodeInfo"
+
 This section shows a summary of basic information of the node the status page is called from. The section is fairly self explanatory.
 
 One notable entry here is the "Local Node-Scope". It shows only the first 4 digits of a much larger scope-token that is used to establish encrypted communication with other node.
@@ -265,14 +293,16 @@ In your plugin code you can set this message using:
 #### "Nodes with SenderType=XXX"
 The next tables show connected nodes - either out bound or inbound depending on the SenderType. There are 10 different SenderTypes the C-DEngine manages - each one having a different purpose:
 
-+ ***LocalHost:*** This is the node you are currently on/showing the cdeStatus of. 
-+ ***CloudRoutes:*** If the node is connected to one or more Cloud-Relays you will + find the information about this connection here.
+* ***LocalHost:*** This is the node you are currently on/showing the cdeStatus of. 
+* ***CloudRoutes:*** If the node is connected to one or more Cloud-Relays you will + find the information about this connection here.
 * ***BackChannels:*** If other nodes are connected to your local host, each of these nodes will show up in this list. A "BackChannel" is therefore an inbound connection to the local node
 * ***Phone/Device:*** Devices are hosts/nodes that can only connect outbound and do not have their own webserver. This is very useful for devices like phones that cannot or do not accept inbound connections.
 * ***JavaJson:*** Browsers are showing up as JavaJson. Browsers are in many cases handled differently than other nodes as they are declared "unsecure". Since they cannot decrypt any of the incoming telegrams, the node a Browser is connected to is the browsers "Security Proxy" and must decide if a telegram should be forwarded to the browser or not. Its also up to this "First Node" to enforce the http browser security attributes such as HTTPS/TLS and session token based RSA encryption.
 * ***Service:*** A service is similar to a CloudRoute but locally on Premise. The main difference between a Service and a CloudRoute is that a Service can create a bi-directional http-push setup. Meaning if two nodes are connected as services, both sides can connect to the others "WebServer" and push http messages. 
 
->Nodes are either "Active", "Passive" or "Relays". An active node has not web-Server and "actively" connects to another node that is either Passive or a Relay. An example of an Active Node is a "Device" or a "Phone"
+Nodes are either "Active", "Passive" or "Relays". 
+
+> "Active" nodes have no web-Server and "actively" connect to another node that is either Passive or a Relay. An example of an Active Node is a "Device" or a "Phone"
 
 > "Passive" Nodes cannot actively connect to other nodes and wait for other nodes to connect to them. A Cloud Relay is a passive node as a cloud relay will never actively connect to another node
 
@@ -283,6 +313,7 @@ The cdeStatus.aspx page has several other options you can explore:
 ### cdeStatus.aspx?SUBSUM
 
 This option will adds three more sections around subscriptions on the cdeStatus page:
+
 #### Current Subscribers by Topic
 Shows all Services and their subscribers segmented by Scope Hash.
 
@@ -298,8 +329,7 @@ This is basically the reverse lookup to the previous section. It shows all Scope
 Use this to find out if all expected nodes in a mesh are indeed connected to the same mesh.
 
 #### All known Nodes: XX
-This section shows all known nodes current connected to the local host.
-XX tells you how many nodes are connected.
+This section shows all known nodes current connected to the local host (XX tells you how many nodes are connected).
 
 Each Node connected also shows the services running on the node, their scope (hash) and in brackets the telegrams sent by the service per minute and since start of the node.
 A node is showing in red, if the node has no valid code-signing certificate. 
@@ -311,17 +341,17 @@ The very last entry per node in the table either shows a thumbprint of the Clien
 
 Use this section to looks at all connected nodes and learn about what Services they consist of. The CMyVisitorLog plugin is able to identify connecting nodes by their "Footprint of Services" for accurate reporting.
 
-### cdeStatus.aspx?SYSLOG
+#### cdeStatus.aspx?SYSLOG
 A very important diagnostics tool is the System Log (SYSLOG). It prints all internal messages that help developers and system administrator to identify issues.
 
 The amount of verbose output is determined by the "DebugLevel". 
-> you can find the DebugLevel in line 54 of the program.cs. The higher the level the more output the System Log will generate. ***BEWARE: more output also means more load on the system by the log. We do not recommend any setting over 1 (Essential) for production systems!***
+> you can find the DebugLevel in line 54 of the program.cs. The higher the level the more output the System Log will generate. ***BEWARE: more output also means more load on the system caused by the log. We do not recommend any setting over 1 (Essential) for production systems!***
 
 If you are running your local host from the command line, you will see all the System Log entries in the console as well.
 
 Like all other tables on the cdeStatus page, you can export the content to a CSV file for external analyses. Also almost all tables in these sections can be sorted by clicking on one of the headers.
 
-### Securing the cdeStatus.aspx page
+#### Securing the cdeStatus.aspx page
 
 For production system you might not want to expose the cdeStatus page to any user. 
 
@@ -352,10 +382,12 @@ ArgList["EnableKPIs"] = "True";
 ```
 KPIs are collected in the Properties of the "ApplicationHost" thing. (see previous chapters). Once you turn on the KPIs and you go back to the ThingRegistry you can see a snapshot of the current KPIs.
 
-Lets display one of these KPIs in the NMI.
-In order to do so we need the CDMyVThings plugin. 
+Lets display one of these KPIs in the NMI. In order to do so we need the CDMyVThings plugin. 
+
 1) Add the CDMyV-Things plugin to your project (either using NuGet or include the source of the "cdePlugins/src/066/C-DMyVThings" to your project)
+
 > Do not forget to add a reference to the plugin project to your host if you use the sources
+
 2) Log back into the NMI and you will see a new tile "Virtual Things" in your portal.
 3) Click on the tile then inside the Virtual Things Dashboard, click on "V-Things List"
 4) in the list click the "Add V-Thing" button on the top left of the table
@@ -367,13 +399,14 @@ In order to do so we need the CDMyVThings plugin.
 | Device Type | Virtual Sensor|
 
 Then select the check to create the new thing.
-***SHOW IMAGE OF NEW TABLE***
 
 > Most plugin dashboard follow the same user interface process: click on Main Tile in the Main Portal leads to the Plugin Dashboard, there you find a "...List" tile which contains a table with all existing thing instances this plugin is managing. There are exceptions to this rule: for example plugins that can scan for their hardware twins automatically and do not need user input to create instances.
 
 7) Click on the button in the first column and you will see a empty sensor dashboard
 8) Click on the Blue "Sensor Report" line to open the configuration dialog of the Virtual Sensor
-***IMAGE OF SENSOR CONFIG***
+
+![Img8](Images/img8.png)
+
 9) In the "Thing Picker" select "Application Host: My-Relay"
 This is the "ApplicationHost" Digital twin of your local host
 10) In the "Property Picker" select any KPI you want to look at. For example "QKBSent"
@@ -447,7 +480,7 @@ If you now install Prometheus and point at this endpoint you have a valid Promet
 
 ## Chapter 7 - Communication between Plugins
 
-Plugins can talk with each other either through messages or by listening to property-change-events of Things managed by other plugins.
+Plugins can talk with each other either through messages or by listening to property-change-events of D-Things managed by other plugins.
 
 A great example how plugins do work with each other is the use of the Virtual Sensor in the V-Things Plugin and the Network Status plugin.
 
@@ -464,7 +497,6 @@ The Messaging plugin has some interesting development features that you can chec
 You will now see two new plugins in your dashbard. Lets first configure the Messaging Plugin
 
 3) Click on "Messaging" then "Messaging Targets" then "Add a new Messaging Target"
-
 4) In the new row enter:
 
 |Column  | Selection |
@@ -474,29 +506,34 @@ You will now see two new plugins in your dashbard. Lets first configure the Mess
 | Recipient | yourEmail |
 
 5) then click return and then click the details button as you should be very familiar with by now.
-
 6) you now need to create a message template and point at a server. 
 7) we want to send a message if the ping latency was too high. You can enter "Ping too High" in the subject and a more detailed message in the "Message". You do not need to put anything here as this text will come from the rules engine. But if you want to test your email it might make sense to put "Test email - please disregard" in here.
 8) Open the "Additional Settings" and enter the information for your SMTP server.
 9) Click on the "Send Email" button to test your configuration
 
-Now lets configure the Rules Engine
+#### Now lets configure the Rules Engine
 
 The rules engine comes with a wizard:
 
 **Step 1:** Give your rule a name like "Ping too high send message"
 **Step 2:** Trigger - Set these values:
-|Column  | Selection |
+
+|Column|Selection|
 |--|--|
 | Trigger Thing | Google DNS |
 | Trigger Property | Value|
 | Trigger Condition | Larger |
-| Trigger Value | 500|
+| Trigger Value | 1000|
+
 This creates a trigger on the "Value" property of the "Google DNS" thing if its value is larger than 500.
 
-**Step 3:** What action to do "Set Property on Thing"
+**Step 3:** What action to do: "Set Property on Thing"
+
 **Step 4:** Select "My Email" as the "Action Thing" and "sendmail" as the action property.
-**Step 5:** As "Action Value" use "The ping was higher then expected: %Value%". This will be sent to your email instead of the body of your email template.
+
+**Step 5:** As "Action Value" use "The ping was higher (%Value%) then expected (%TriggerValue%)". 
+
+This will be sent to your email instead of the body of your email template.
 
 In the final step you can set if you want to activate the rule right away and if the rule should be logged whenever it triggers.
 
@@ -507,14 +544,119 @@ Back in the dashboard you will see your new rule. Click on it to examine what th
 You can also send a message to any "Engine/Service" with the rules engine. Just open the "TSM Action" group, select a TSM Engine (this are known services on the local node), set a TSM Text and a Payload.
 Marcos for properties of the Trigger Object work for both Text and Payload.
 
+## Chapter 8 - Scripting the C-DEngine
 
-## Chapter 8 - Adding a local node to your mesh
+The C-DEngine allows to script the creation of Things for headless (without NMI) configuration of your nodes.
+There are two ways of scripting:
+
+* Using .cdeConfig files - this is using the C-DEngine Sensor Pipeline. A detailed description of [this pipeline can be found here](https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/Concepts/SensorPipelineModel.md) 
+* Using .cdeScript files - this is using TheThingProvisioning Plugin to send messages to Things at startup
+
+Lets use the cdeConfig File to automatically create the CDMyNetwork "Google DNS" D-Thing:
+
+1) Go to TheThingRegistry and go to the details of your "Google DNS" D-Thing
+2) Click on the blue Details button ![Img6](Images/img6.png)
+
+Now click on the "Export Pipeline Generalized" button.
+
+Your browser will now download a .cdeConfig file with this content:
+
+```JSON
+{
+  "FriendlyName": "Google DNS",
+  "ThingConfigurations": [
+    {
+      "ThingIdentity": {
+        "EngineName": "CDMyNetwork.MyNetworkServices",
+        "DeviceType": "Ping Service",
+        "ID": "327c7a23-54b7-4e29-bd95-fff6fc47ae2a"
+      },
+      "ConfigurationValues": [
+        {
+          "Name": "AutoConnect",
+          "cdeT": 2,
+          "Value": true,
+          "Generalize": false,
+          "IsThingReference": false,
+          "Required": false,
+          "Secure": false
+        },
+        {
+          "Name": "PingDelay",
+          "cdeT": 1,
+          "Value": 3000,
+          "Generalize": false,
+          "IsThingReference": false,
+          "Required": false,
+          "Secure": false
+        },
+        {
+          "Name": "Address",
+          "cdeT": 0,
+          "Value": "8.8.8.8",
+          "Generalize": false,
+          "IsThingReference": false,
+          "Required": false,
+          "Secure": false
+        },
+        {
+          "Name": "PingTimeOut",
+          "cdeT": 1,
+          "Value": 3000,
+          "Generalize": false,
+          "IsThingReference": false,
+          "Required": false,
+          "Secure": false
+        },
+        {
+          "Name": "FailureLimit",
+          "cdeT": 1,
+          "Value": 1,
+          "Generalize": false,
+          "IsThingReference": false,
+          "Required": false,
+          "Secure": false
+        },
+        {
+          "Name": "FriendlyName",
+          "cdeT": 0,
+          "Generalize": true
+        },
+        {
+          "Name": "ID",
+          "cdeT": 0,
+          "Generalize": true
+        }
+      ],
+      "ThingSpecializationParameters": {
+        "FriendlyName": "Google DNS",
+        "ID": "327c7a23-54b7-4e29-bd95-fff6fc47ae2a"
+      }
+    }
+  ]
+}
+```
+
+3) Change the Friendly Name to "Google DNS2" and give the "ID" a different GUID. ***ASK MARKUS: Why is the ID twice here - can you explain?***
+4) Now copy this file in the ClientBin/Config folder. If this folder does not exist, just create it.
+
+> If you want to delete a D-Thing, you can either do this in the Plugin Dashboard and "List of Things" table, or directly in The Thing Registry
+
+5) Start your project again and you will see during the startup a new "Google DNS2" D-Thing was created.
+
+Using "Answer" files you can set specialized Parameters for each cdeConfig file ***MARKUS: Can you show how this works with some easy steps?***
+
+### For Developers...
+
+In order for the Configuration Pipeline to work, you have to annotate your D-Thing class. How this can be done will be explained in the Chapters 12 and later.
+
+## Chapter 9 - Adding a local node to your mesh
 
 We are now going to walk through a couple advanced scenarios.
 
 > Multiple Nodes/Hosts that are connected to each other are forming a "Mesh". There are many different topologies for meshes as you can see in this illustration:
 
-***IMAGE OF MESHTYPES HERE***
+![Img9](Images/img9.png)
 
 In order to show how a mesh works, lets create a mini mesh.
 
@@ -572,7 +714,7 @@ Check out the "Network Status" dashboard from earlier in the tutorial. If you lo
 
 What we have created is a so call "Forwarder Mesh". 
 
-***Image of Forwarding Mesh here***
+![Img10](Images/img10.png)
 
 Imaging Node2 being on the OT Shopfloor with no access to the internet but you want to monitor data from that Machine in the cloud. 
 Node1 is in the DMZ or on the IT side of your company. Node2 sends its information to Node1 and Node1 "forwards" that information to the Cloud.
@@ -582,9 +724,13 @@ You can also use redundant paths by adding a second Node to the IT (DMZ) and hav
 ```
 ServiceRoute = "ws://localhost:8700; ws://anotherip:anotherport;..."
 ```
-*** Image of a redundancy path here***
+
+![Img11](Images/img11.png)Showing a redundant path in the IT Relay and a custom Azure IoT Hub Plugin in the Cloud-Relay.
+
 
 You can also have multiple nodes on the OT floor connecting to Node2 and have it send Information (called "forwarding" or "relaying") on to the next node.
+
+As you can see you can create very complex mesh setups using C-DEngine nodes. 
 
 With this in mind you can setup any combination of nodes you can imaging - or better - fitting the needs of your customer topology.
 
@@ -592,7 +738,7 @@ With this in mind you can setup any combination of nodes you can imaging - or be
 
 To bring this scenario even further, you can now create another node in a completely different region of the world and connect to the Cloud-Relay. As long as they share the same ScopeID, data will flow to that node as well.
 
-## Chapter 9 - Pushing data into Azure IoT Hub
+## Chapter 10 - Pushing data into Azure IoT Hub
 
 A core scenario of the C-DEngine is the on-premise datacollection for Cloud Services such as the Azure IoT Hub. 
 
@@ -600,7 +746,7 @@ A core scenario of the C-DEngine is the on-premise datacollection for Cloud Serv
 
 Elaborate!!
 
-## Chapter 10 - Securing the Host using SSL
+## Chapter 11 - Securing the Host using SSL
 
 Depending on the host framework you are using (ASP.NET, IIS, Windows Service or Command Line) the procedure for securing your host is different. 
 Since the C-DEngine is based on standard HTTP/WebSockets code, adding SSL/TLS to your host is more administrative work than coding. In fact you do not have to write a single line of code to enable SSL/TLS.
@@ -631,7 +777,7 @@ A developer of a node or an admin of a mesh system can specify how strict the us
 > Client Side Certificates require a stable and scaling certificate management system. 
 If you are interested in a certificate management solution for your system, please contact us at info@C-Labs.com
 
-## Chapter 11 - Creating your own custom Plugin
+## Chapter 12 - Creating your own custom Plugin
 
 Until now you were using the C-DEngine and plugins with writing almost no lines of code. 
 
