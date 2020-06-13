@@ -33,7 +33,7 @@ The Tutorial will go through the following steps:
 
 During the tutorial we will make use of a variety of existing plugins.
 
->Plugins contain the "real meet" of a C-DEngine bases solution. Plugins are DLLs that host one or more services. Best practice is to have each service in its own plugin.
+>Plugins contain the "real meat" of a C-DEngine bases solution. Plugins are DLLs that host one or more services. Best practice is to have each service in its own plugin.
 
 You only have to do very little coding during this tutorial. 
 The plugins we are using are:
@@ -46,7 +46,7 @@ The plugins we are using are:
 |CDMyRulesEngine| A minimalistic rules engine to act on trigger |Pre-Processor/Service
 |CDMyPrometheus| An exporter plugin for prometheus scrapers |Connector/Diagnostics
 |CDMyVisitorLog| a plugin that can identify and count incoming connections |Pre-Processor/Service
-|CDMyC3| An NMI Extension plugins for Charts|NMI Extension
+|CDMyC3| A plugin that can display charts in the NMI |NMI Extension
 |CDMyMessaging| Allows to send messages to users via email|Service
 |CDMyThingProvisioner| This plugin is used to script the creation of things in order to build headless solutions|Service
 
