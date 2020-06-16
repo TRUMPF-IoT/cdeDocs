@@ -31,22 +31,89 @@ The Configuration Model lets a plug-in developer declare that certain properties
 
 With the declarations of the Configuration Model, the TheThing.GetThingConfigurationAsync API can extract only the configuration properties of a thing, which  can then be passed to the TheThing.CreateThingFromConfigurationAsync API to reconstitute the thing or re-apply the configuration values to an existing thing.
 
+#### Declaring Configuration Properties
+
+Declarations can be done via .Net member attributes (recommended) or via API calls.
+
+##### Declaration via `[ConfigProperty]` member attributes
+
+```C#
+        [ConfigProperty(DefaultValue = false, Description = "Allow connections to unsecured servers")]
+        public bool DisableSecurity
+        {
+            get { return TheThing.MemberGetSafePropertyBool(MyBaseThing); }
+            set { TheThing.MemberSetSafePropertyBool(MyBaseThing, value); }
+        }
+        // ...
+```
+
+In order for the ConfigProperty attributes to be found, the containing class must declare the DeviceType:
+
+```C#
+  [DeviceType(
+    DeviceType = eOPCDeviceTypes.OPCRemoteServer,
+    Capabilities = new eThingCaps[] { eThingCaps.SensorProvider, eThingCaps.ConfigManagement },
+    Description="OPC UA Client")]
+  public class TheOPCUARemoteServer : ICDEThing { }
+```
+
+##### Programmatic declaration: `TheThing.DeclareConfigProperty`
+
+A plug-in can declare configuration properties by calling the `TheThing.DeclareConfigProperty` method, typically in the Plug-ins ICDEThing.Init() implementation:
+
+```C#
+MyBaseThing.DeclareConfigProperty(new TheThing.TheConfigurationProperty
+   { Name = nameof(SessionTimeout), cdeT = ePropertyTypes.TNumber, DefaultValue = 60000, });
+```
+
 #### Generalization and Specialization
 
- The information about a configuration property includes an indicator if the value needs to be removed when creating a copy of the thing (i.e. for a different machine or environment).
+ The information about a configuration property includes an indicator (`Generalize=true`) if the value needs to be removed when creating a new instance of the thing (i.e. to connect to a different machine or environment).
 
-    Example: The OPC UA plug-in has an Address property, that indicates the IP address/DNS name of the OPC UA Server it should connect to. It also  has optional username and password properties for secure OPC UA Servers. In addition there are many "knobs" that control session timeouts, keep alive/reconnect intervals etc.. Then there are properties that merely provide information about the current status of the connections (KPIs, connected/connecting/disconnected).
+##### Example: The OPC UA plug-in
 
-With the Configuration Model, the Address property is marked as "Required" as the plug-in will simply not function (connect to anything) with a value. The Address property is also marked as needing to be generalized when creating a copy, because another machine will have a different IP address/DNS name. The Username/Password properties are also marked as generalized, as they also tend to be different between machines.
+The OPC UA plug-in has the following properties:
+
+ an **Address** property, that indicates the IP address/DNS name of the OPC UA Server it should connect to. It also  has
+
+- optional **UserName** and **Password** properties for accessing secure OPC UA Servers. 
+- In addition there are many "knobs" that control session timeouts, keep alive/reconnect intervals etc.
+- Then there are properties that merely track information about the current status of the connections (KPIs, connected/connecting/disconnected) that should not be considered configuration.
+
+With the Configuration Model,
+
+- the Address property is marked as "Required" as the plug-in will simply not function (connect to anything) with a value. The Address property is also marked as needing to be generalized when creating a copy of the client to connect to another OPC UA server, because the other server will have a different IP address/DNS name.
+- The Username/Password properties are also marked as generalized, as they also tend to be different between machines.
+
+```C#
+    [ConfigProperty(Required = true, Generalize = true)]
+    public string Address
+    {
+        get { return TheThing.MemberGetSafePropertyString(MyBaseThing); }
+        set { TheThing.MemberSetSafePropertyString(MyBaseThing, value); }
+    }
+    [ConfigProperty(Generalize = true)]
+    public string UserName
+    {
+        get { return TheThing.GetSafePropertyString(MyBaseThing, "UserName"); }
+        set { TheThing.SetSafePropertyString(MyBaseThing, "UserName", value); }
+    }
+    [ConfigProperty(Secure = true, Generalize = true)]
+    public string Password
+    {
+        get { return TheThing.GetSafePropertyString(MyBaseThing, "Password"); }
+        set { TheThing.SetSafePropertyString(MyBaseThing, "Password", value); }
+    }
+```
 
 #### Configuration Templates
 
 Configuration Templates can be used with certain plug-ins to automatically include all things of a certain characteristic (currently EngineName/DeviceType). It is up to the plug-ins to properly resolve the "wild-card" thing references, but there are APIs that make this easier (TheThingReference, TheThingFinder).
-Configuration Templates are currently not formalized. In future releases, additional capabilities and meta-data may be added to streamline  generating and applying Configuration Templates. 
+Configuration Templates are currently not formalized. In future releases, additional capabilities and meta-data may be added to streamline  generating and applying Configuration Templates.
 
 ### Sensor Containers
 
-Sensor Containers are things that provide information about which of their properties represent sensor values (as opposed to configuration values, KPIs or state).
+Sensor Containers are Things that provide information about which of their properties represent sensor values (as opposed to configuration values, KPIs or state).
 
 The Sensor Model lets developers declare which properties are sensor values, and provide additional meta data about the sensor values like data type, units, or the origin of the sensor value.
 
@@ -54,7 +121,7 @@ Configuration tooling can then use the sensor meta data to offer improved experi
 
 ### Sensor Consumers
 
-Sensor Consumers are things that obtain sensor values from other things (and typically transfer them to other systems). An example is the AXOOM IoTHub Sender that can be configured to get data from arbitrary things and send them to the AXOOM IoTHub using configurable parameters like sample rate, buffer sizes etc.
+Sensor Consumers are Things that obtain sensor values from other things (and typically transfer them to other systems). An example is the IoTHub Sender that can be configured to get data from arbitrary things and send them to an IoTHub using configurable parameters like sample rate, buffer sizes etc.
 
 The Sensor Consumer Model lets developers provide information about which things/properties their plug-in is consuming, as well as mechanisms (TSM messages), through which additional things can be added (or removed/modified) to the consumer ("Thing Subscriptions").
 
