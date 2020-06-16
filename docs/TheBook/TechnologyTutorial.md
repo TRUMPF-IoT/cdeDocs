@@ -169,7 +169,7 @@ In the case of the network plugins, we are creating D-Things of ping-able networ
 
 >**Note**: If you still have "UseRandomDeviceID=true" set, your new digital twin will be gone after you restart your host. We do recommend that you change this to "false" now for the remainder of the tutorial.
 
-To add add an endpoint D-Thing:
+To add an endpoint D-Thing:
 
 1) Click on the "Devices/Network Status" tile in the NMI
 2) Then click on "Add new Network Service"
@@ -596,7 +596,7 @@ There are two ways of automating the installation:
 * Using .cdeConfig files - this mechanism captures the configuration of one or more related D-Things and allows customization during install on another node. A detailed description of this [configuration mechanism can be found here](../Concepts/SensorPipelineModel.md).
 * Using .cdeScript files - this mechanism let's you send messages to create and configure D-Things at startup, and is implemented in the TheThingProvisioning Plugin.
 
-Let's use the cdeConfig File to automatically create the CDMyNetwork "Google DNS" D-Thing and a second D-Thing instance that pings www.microsoft.com:
+Let's use the cdeConfig file to automatically create the CDMyNetwork "Google DNS" D-Thing.
 
 1) Go to TheThingRegistry and go to the details of your "Google DNS" D-Thing
 2) Click on the blue Details button ![Img6](Images/img6.png)
@@ -690,37 +690,27 @@ Let's use the cdeConfig File to automatically create the CDMyNetwork "Google DNS
     }
     ```
 
-    > You can use this .cdeconfig file to re-create the exact Google DNS D-Thing on a fresh C-DEngine node by placing it into the ClientBin/config directory (Tip: To test this quickly stop the host, delete the ClientBin/cache directory and restart).
-    >
-    > However, we want to create two D-Thing instances, so we will now create a new file (.cdeanswer) for each of the instances.
+3) Copy the .cdeconfig file into the ClientBin/config folder. If this folder does not exist, just create it.
 
-3) Create two copies of the Google DNS.cdeconfig file and call them `MyPinger.google.cdeanswer` and `MyPinger.microsoft.cdeanswer`.
+4) Delete the D-Thing in the NMI, or clean the entire node (stop the host, delete the ClientBin/cache directory, or the entire project output).
 
-    > Alternatively, you can download an answer file by clicking on the "Export Pipeline Answer File" button.
-    >
-    > Note: The .cdeanswer file must have the same name prefix (`MyPinger.`) as the .cdeconfig file. The name prefix itself does not matter, it is only used to match .cdeconfig and .cdeanswer files.
+    > If you want to delete a D-Thing, you can either do this in the Plugin Dashboard and "List of Things" table, or directly in The Thing Registry.
 
-4) Rename the Google DNS.cdeconfig file to `MyPinger.cdeconfig` and remove the `"ThingSpecializationParameters"` section (don't forget to remove the dangling comma above).
+5) Restart the Host: you will see the D-Thing getting re-created.
 
-    >This file is now a D-Thing template that can be used to create one or more D-Things by providing only the parameters that should be different from what is specified in the template.
+This lets you deploy new nodes with pre-configured D-Things.
 
-5) Edit the `MyPinger.google.cdeanswer` file to only contain the ThingSpecializationParameters for Google DNS:
+### Creating multiple instances through answer files
 
-    ```JSON
-    {
-        "ThingConfigurations": [
-            {
-                "ThingSpecializationParameters": {
-                    "Address": "8.8.8.8",
-                    "FriendlyName": "Google DNS",
-                    "ID": "4b163664-f217-42bc-ba6f-02c9f29f23ab"
-                }
-            }
-        ]
-    }
-    ```
+Now, let's make this a bit more interesting: suppose we want to track ping latencies to a second server, for example www.microsoft.com. We could manually create a second D-Thing in the NMI, or we can use the answer file mechanism to do this:
 
-6) Edit the `MyPinger.microsoft.cdeanswer` file as in step 5, then change the Friendly Name to "Microsoft.com", change the Address to "www.microsoft.com" and give the "ID" a different GUID:
+1) Export an .cdeanswer file: Go to TheThingRegistry and go to the details of your "Google DNS" D-Thing. Click on the blue Details button ![Img6](Images/img6.png)
+
+    Then click on the "Export Pipeline Answer File" button.
+
+    Your browser will now download a `Google DNS.Instance01.cdeanswer` file with this content:
+
+2) Edit the `Google DNS.Instance01.cdeAnswer` file: change the Friendly Name to "Microsoft.com", change the Address to "www.microsoft.com" and give the "ID" a different GUID:
 
     ```JSON
     {
@@ -736,15 +726,14 @@ Let's use the cdeConfig File to automatically create the CDMyNetwork "Google DNS
     }
     ```
 
-    > You can also put both ThingSpecializationParameters into a single .cdeanswer file.
+3) Now copy the .cdeanswer file into the ClientBin/config folder.
 
-5) Now copy these 3 files into the ClientBin/config folder. If this folder does not exist, just create it.
-    
-6) Start your project again and you will see that during the startup a new "Microsoft.com" D-Thing was created.
+4) Start your project again and you will see that during the startup a new "Microsoft.com" D-Thing was created.
 
     > Delete one or both D-Things, or wipe the entire Node by deleting the ClientBin/cache directory: You will see both D-Things re-created when you start/restart the Node.
 
-    > If you want to delete a D-Thing, you can either do this in the Plugin Dashboard and "List of Things" table, or directly in The Thing Registry
+> Advanced Scenarios: You can also remove the "ThingSpecializationParameters" section from the .cdeconfig file and put it into it's own 'Google DNS.google.cdeanswer' file: that turns the .cdeconfig into a template file, with each answer file creating a D-Thing instances. A .cdeanswer file can also contain parameters for multiple things. This gives you flexiblity to structure your configuration files.
+
 
 > Note for Plug-in Developers: In order for the Configuration Export to work, you have to annotate your D-Thing class to indicate which properties are configuration vs. data vs. internal state. How this can be done is explained in the [Sensor Pipeline document](../Concepts/SensorPipelineModel.md).
 
