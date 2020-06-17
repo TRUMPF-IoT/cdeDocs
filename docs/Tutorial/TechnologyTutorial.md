@@ -47,6 +47,7 @@ The plugins we are using are:
 |CDMyVThings| A variety of virtual things, algorithm and helpers |Pre-Processor/Service
 |CDMyRulesEngine| A minimalistic rules engine to act on trigger |Pre-Processor/Service
 |CDMyPrometheus| An exporter plugin for prometheus scrapers |Connector/Diagnostics
+|CDMyLogger| a plugin that allows to log events to Greylog and other logging services |Connector/Diagnostics
 |CDMyVisitorLog| a plugin that can identify and count incoming connections |Pre-Processor/Service
 |CDMyC3| A plugin that can display charts in the NMI |NMI Extension
 |CDMyMessaging| Allows to send messages to users via email|Service
@@ -518,6 +519,63 @@ http://localhost:8700/mymetrics
 You will see the Prometheus formatted output.
 
 If you now install Prometheus and point at this endpoint you have a valid Prometheus data Source that you can use in Grafana or other Prometheus compatible logging application.
+
+### Using the CMyLogger plugin
+
+The CMyLogger plugin allows to connect the C-DEngine System and Event Log to external loggers such as Graylog. 
+It can also connect to other logs such as the IIS TraceLog and expose log entries via RSS.
+
+1) Install the CMyLogger NuGet or add the CMyLogger source from the cdePlugins Depot
+2) Log back into the NMI and navigate to the "System Logger" dashboard
+
+In the dashboard you find some "Global Logger Settings". There are some settings in there that change the behavior of the general logging of the C-DEngine. 
+For example you can turn off logging to the console or change the console logging format to "GELF". This allows for console redirects into GELF loggers.
+
+3) If you want to create a RSS feed of the System Log go to the Logger Services and "Add new Logger Service" with the Device Type: "RSS Logger".
+4) In the RSS Logger dashboard enter a RSS endpoint name in the corresponding field (i.e. "myrss"). Once you "Connect" the logger, you can go to
+
+```
+http://localhost:8700/myrss
+```
+
+To see the RSS Feed.
+
+Similarily you can configure a Graylog GELF "Post" connection:
+5) "Add new Logger Service" with the Device Type: "Graylog GELF"
+6) In the "Address of Graylog Server" enter the POST endpoing url of your Graylog Server.
+7) Press "Connect" and all system log entries will be posted to the Graylog server
+
+Finally you can also write the Event Log to a text file. 
+
+8) Again click on "Add new Logger Service" in the "Logger Services" table, give your log a name and enter a File Location for the log in the Address field. 
+
+> By default the logger will use "EventLog" which will be created in the "ClientBin" folder.
+
+### System Log vs. Event Log
+
+The C-DEngine has two different logs: The System Log and the Event Log.
+
+#### The System Log
+The System Log is meant for IT Managers, Developers and diagnostics information. 
+
+To write into the System Log a developer uses:
+```csharp
+TheBaseAssets.MySYSLOG.WriteToLog(296, TSM.L(eDEBUG_LEVELS.OFF) ? null : new TSM("Category", $"Message Text", eMsgLevel.l2_Warning));
+```
+The TSM.L() macro allows to filter messages that should not go into the log depending the set debug level.
+
+### The Event Log
+
+The Event Log is aimed at users and operators. It contains "Application" Events like "Motor started" or "Camera unavailable".
+
+To write to the Event Log a developer uses:
+
+```csharp
+TheLoggerFactory.LogEvent("Logger category", "Event Text", eMsgLevel.l4_Message, "Additional Text");
+```
+
+The Rules engine allows to log actions as events when a rule got triggered.
+
 
 ## Chapter 7 - Communication between Plugins
 

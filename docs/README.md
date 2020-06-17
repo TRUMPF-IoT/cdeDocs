@@ -20,6 +20,7 @@ This depot contains the current documentation of the C-DEngine. We are constantl
 
 ## Assembling a solution
 
++ [The C-DEngine Technoloy Tutorial - create a complete solution from scratch](Tutorial/TechnologyTutorial.md)
 + [Working with Plugins - a quick introduction](plugins/UsingPlugins.md)
 
 ## Concept and White Papers
@@ -40,6 +41,9 @@ This depot contains the current documentation of the C-DEngine. We are constantl
 
 + [Build/Tooling Idiosyncracies](https://github.com/TRUMPF-IoT/C-DEngine/blob/master/BuildTools/BuildReadme.md)
 + [Developing and Debugging across Repositories](Coding/MultiRepoDevelopment.md)
+
+## Blogs and articles
++ [A Simple Mesh Chat - by Paul Yao](https://medium.com/@paullinyao_84961/meshchat-a-sample-c-dengine-application-57a015313dfc)
 
 If you want to contribute, please create a branch or fork in the corresponding depot and when you finish create a pull request.
 
