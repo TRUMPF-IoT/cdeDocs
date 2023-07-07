@@ -896,11 +896,9 @@ To bring this scenario even further, you can now create another node in a comple
 
 ## Chapter 10 - Pushing data into Azure IoT Hub
 
-A core scenario of the C-DEngine is the on-premise data collection for Cloud Services such as the Azure IoT Hub. 
+A core scenario of the C-DEngine is the on-premise data collection for Cloud Services such as the Azure IoT Hub or Event Hub.
 
-***PLUGIN Azure IoT Hub***
-
-Elaborate!!
+> C-Labs offers a premium plugin for connectivity to the Azure Hubs. Please contact info@C-Labs.com to inquire about this plugin.
 
 ## Chapter 11 - Securing the Host using SSL
 
