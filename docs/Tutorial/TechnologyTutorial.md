@@ -55,10 +55,10 @@ The plugins we are using are:
 
 ## Chapter 1 - Getting Visual Studio Ready
 
-We recommend using the latest version of Visual Studio. By the time of writing this article we were using Visual Studio 2019 16.0.
+We recommend using the latest version of Visual Studio. By the time of writing this article we were using Visual Studio 2022 17.6.
 Make sure you have the following options installed when you install VS:
 
-* ASP.NET and Web Development (.NET Core 3.1)
+* ASP.NET and Web Development (.NET 6.0)
 * .NET Desktop Development
 * Universal Windows Platform Development (if you want to include the C-DEngine in a UWP application)
 * .NET Core cross-platform development
@@ -69,7 +69,9 @@ We also recommend that you install the Visual Studio Project Templates for the C
 
 The C-DEngine is a DLL that contains all the necessary services required to create an application but it does require a host to run in. The C-DEngine supports a variety of hosts like IIS, ASP.NET, Docker, Console or Windows Service. This Tutorial will use a .NET Core Console host.
 
-1) To create the host, launch Visual Studio 2019 as Admin and create a new Project using the template "Console Host App for C-Labs C-DEngine (.NET Core)" in your favorite project folder
+> If you are looking for other types of hosts, visit our sample section on GitHub: https://github.com/TRUMPF-IoT/cdeSamples. Here you find a host for Docker/ASPNet that will also run on Linux in .NET.
+
+1) To create the host, launch Visual Studio 2019 **as Admin** and create a new Project using the template "Console Host App for C-Labs C-DEngine (.NET Core)" in your favorite project folder
 
     ![Im1](Images/im1.png)
 
@@ -78,7 +80,7 @@ The C-DEngine is a DLL that contains all the necessary services required to crea
 2) Name the project "cdeHostNetCore"
 After a short time you will see a small project with a program.cs and the C-DEngine icon.
 
-3) Open the program.cs and make one change in line 36 by creating a new GUID with the GuidTool shipping with Visual Studio and pasting the GUID in the line.
+3) Open the program.cs and make one change in line 35 by creating a new GUID with the GuidTool shipping with Visual Studio and pasting the GUID in the line.
 
 4) Run the project and look at the console output.
 
@@ -117,16 +119,20 @@ While the host is running, you can enter "b" in the console and a Brower will op
 
 Right now the C-DEngine is running in headless mode. We will add the NMI in the next step.
 
+To see a diagnostics page change the /lnmi to /cdeStatus.aspx and you will see some basic diagnostics information.
+
 ## Chapter 3 - Adding the NMI Plugin to the Host
 
 Adding the NMI Runtime to the project is as easy as adding a NuGet:
 
-1) Open the Nuget Manager and browser for "NMI"
+1) Open the Nuget Manager and browse for "CDMY"
 
-    You will find the CDMyNMIHtml5RT package - just add it to the project. You don't have to do anything to your program.cs - just run it again
+    > You will see many plugins for the C-DEngine available as Nuget Packages.
+
+    Look for the CDMyNMIHtml5RT package - and just add it to the project. You don't have to do anything to your program.cs - just run it again
 
     If you now enter "b" in the console the browser is showing a login screen.
-    By default the program.cs creates a random Scope for the host (in line 98).
+    By default the program.cs creates a random Scope for the host (in line 97).
     You can create a different Scope for easier development as the Scope will change every time you restart the host.
 
     You will find the Scope ID in the console in the second line of the output:
@@ -152,6 +158,8 @@ The cdePlugins depot on GitHub has several plugins we can now add to the project
 > C-DEngine requires and automatically recognizes plugins by the prefix "CDMy" or "C-DMy". Therefore its very simple to add new plugins to NuGet and the bin folder
 
 First add the C-DMyNetwork plugin from nuget.org.
+
+> 5.167.0: There is a missing Font file which makes the Network Plugin look just "white" in the "Lite-Scheme". This will be fixed in the next release. For now click on the C-Labs Logo in the top left corner and switch to the dark scheme.
 
 > If you want to use the source...
 >
@@ -234,7 +242,7 @@ Solutions with the C-DEngine can run completely on premises without the need for
 
 This is as simple as adding one line of code to our hosts program.cs:
 
-1) In the program.cs add the following line after line 54:
+1) In the program.cs add the following line after line 53:
 
     ```C#
     ServiceRoute="wss://cloud.c-labs.com"
