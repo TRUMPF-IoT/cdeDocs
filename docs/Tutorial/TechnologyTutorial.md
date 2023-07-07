@@ -937,7 +937,7 @@ Until now you were using the C-DEngine and plugins with writing almost no lines 
 
 One of the best features of C-DEngine solutions is that you can easily extend its functionality - even at runtime!
 
-In this chapter we go through the essential steps to create your own custom plugin...and you will finally write some code!
+To learn more about writing Plugins check out our HelloWorld Sample here: https://github.com/TRUMPF-IoT/cdeDocs/blob/master/docs/Coding/HelloWorld.md
 
 
 <!--stackedit_data:
